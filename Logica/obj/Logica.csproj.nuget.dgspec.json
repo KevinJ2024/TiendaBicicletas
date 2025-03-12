@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\Logica.csproj": {}
+    "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Logica\\Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\Logica.csproj": {
+    "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\Logica.csproj",
+        "projectUniqueName": "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\Logica.csproj",
+        "projectPath": "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Logica\\Logica.csproj",
         "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\obj\\",
+        "outputPath": "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
