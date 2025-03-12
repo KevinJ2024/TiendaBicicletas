@@ -16,5 +16,29 @@ namespace Principal
         {
             InitializeComponent();
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            FormCliente us = new FormCliente();
+            us.ShowDialog();
+        }
+
+        private void btnVendedor_Click(object sender, EventArgs e)
+        {
+            FormVendedor us = new FormVendedor();
+            us.ShowDialog();
+        }
+
+        private void btnProducto_Click(object sender, EventArgs e)
+        {
+            FormProducto us = new FormProducto();
+            us.ShowDialog();
+        }
+
+        private void btnFactura_Click(object sender, EventArgs e)
+        {
+            FormFactura us = new FormFactura();
+            us.ShowDialog();
+        }
     }
 }
