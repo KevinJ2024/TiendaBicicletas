@@ -1,0 +1,14 @@
+# Archivos de configuración de Visual Studio
+.vs/
+.idea/
+.vscode/
+
+# Archivos binarios
+bin/
+obj/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates

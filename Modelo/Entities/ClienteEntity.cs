@@ -9,7 +9,7 @@ namespace Modelo.Entities
     public class ClienteEntity
     {
         public int ID_cliente;
-        public string Nombre;
+        public string Nombre_cliente;
         public string Email;
         public int Telefono;
     }

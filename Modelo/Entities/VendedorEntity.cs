@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entities
 {
-    internal class VendedorEntity
+    public  class VendedorEntity
     {
+        public int ID_vendedor;
+        public string Nombre_vendedor;
+        public int salario;
+        public string telefono;
     }
 }
