@@ -8,8 +8,10 @@ namespace Modelo.Entities
 {
     public class FacturaEntity
     {
+        public int ID_factura;
         public int ID_cliente;
         public int ID_vendedor;
+        public int ID_producto;
         public string Nombre_Producto;
         public string Precio_Producto;
         public DateTime Fecha;

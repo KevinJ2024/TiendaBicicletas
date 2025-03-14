@@ -38,9 +38,10 @@
             // Titulo
             // 
             Titulo.AutoSize = true;
-            Titulo.Location = new Point(305, 76);
+            Titulo.Font = new Font("Segoe UI", 20F);
+            Titulo.Location = new Point(202, 47);
             Titulo.Name = "Titulo";
-            Titulo.Size = new Size(165, 15);
+            Titulo.Size = new Size(367, 37);
             Titulo.TabIndex = 0;
             Titulo.Text = "Tienda Bicicletas - Back Office";
             // 

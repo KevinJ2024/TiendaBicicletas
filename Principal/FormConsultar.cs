@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormFactura : Form
+    public partial class FormConsultar : Form
     {
-        public FormFactura()
+        public FormConsultar(string entidad)
         {
             InitializeComponent();
         }

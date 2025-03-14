@@ -10,6 +10,7 @@ namespace Modelo.Entities
     {
         public int ID_vendedor;
         public string Nombre_vendedor;
+        public string Email;
         public int salario;
         public string telefono;
     }

@@ -13,6 +13,7 @@ namespace Modelo.Entities
         public string Nombre_producto;
         public int Precio_producto;
         public int Stock;
+        public string descripcion;
         public Blob imagen;
     }
 }

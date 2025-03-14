@@ -12,6 +12,8 @@ namespace Principal
 {
     public partial class FormPrincipal : Form
     {
+        public string entidad;
+
         public FormPrincipal()
         {
             InitializeComponent();
@@ -19,25 +21,29 @@ namespace Principal
 
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            FormCliente us = new FormCliente();
+            entidad = "Cliente";
+            FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
         }
 
         private void btnVendedor_Click(object sender, EventArgs e)
         {
-            FormVendedor us = new FormVendedor();
+            entidad = "Vendedor";
+            FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
         }
 
         private void btnProducto_Click(object sender, EventArgs e)
         {
-            FormProducto us = new FormProducto();
+            entidad = "Producto";
+            FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
         }
 
         private void btnFactura_Click(object sender, EventArgs e)
         {
-            FormFactura us = new FormFactura();
+            entidad = "Factura";
+            FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
         }
     }
