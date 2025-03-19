@@ -18,3 +18,4 @@ C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\r
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormCRUD.resources
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormConsultar.resources
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormRegistro.resources
+C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormActualizar.resources

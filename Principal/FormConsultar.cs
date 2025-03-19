@@ -12,9 +12,15 @@ namespace Principal
 {
     public partial class FormConsultar : Form
     {
+
+        public string entidad;
+
         public FormConsultar(string entidad)
         {
             InitializeComponent();
+            lbTitle.Text += entidad;
+
+            this.entidad = entidad;
         }
     }
 }

@@ -34,13 +34,14 @@
             tbEmail = new TextBox();
             tbTelefono = new TextBox();
             tbNombre = new TextBox();
+            tbID = new TextBox();
             SuspendLayout();
             // 
             // lbTitle
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(282, 60);
+            lbTitle.Location = new Point(282, 59);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(121, 37);
             lbTitle.TabIndex = 0;
@@ -66,7 +67,7 @@
             // 
             // tbEmail
             // 
-            tbEmail.Location = new Point(282, 201);
+            tbEmail.Location = new Point(282, 205);
             tbEmail.Name = "tbEmail";
             tbEmail.PlaceholderText = "Email";
             tbEmail.Size = new Size(195, 23);
@@ -82,17 +83,26 @@
             // 
             // tbNombre
             // 
-            tbNombre.Location = new Point(282, 152);
+            tbNombre.Location = new Point(282, 158);
             tbNombre.Name = "tbNombre";
-            tbNombre.PlaceholderText = "Nombre";
+            tbNombre.PlaceholderText = "Nombre Cliente";
             tbNombre.Size = new Size(195, 23);
             tbNombre.TabIndex = 5;
+            // 
+            // tbID
+            // 
+            tbID.Location = new Point(282, 114);
+            tbID.Name = "tbID";
+            tbID.PlaceholderText = "ID del cliente";
+            tbID.Size = new Size(195, 23);
+            tbID.TabIndex = 6;
             // 
             // FormRegistro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tbID);
             Controls.Add(tbNombre);
             Controls.Add(tbTelefono);
             Controls.Add(tbEmail);
@@ -113,5 +123,6 @@
         private TextBox tbEmail;
         private TextBox tbTelefono;
         private TextBox tbNombre;
+        private TextBox tbID;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,12 +11,12 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormRegistro : Form
+    public partial class FormActualizar : Form
     {
 
-        public string entidad;
+        private string entidad;
 
-        public FormRegistro(string entidad)
+        public FormActualizar(string entidad)
         {
             InitializeComponent();
             lbTitle.Text += entidad;
@@ -34,9 +35,9 @@ namespace Principal
                     tbID.PlaceholderText = "ID del vendedor";
                     tbNombre.PlaceholderText = "Nombre Vendedor";
                     TextBox tbSalario = new TextBox();
-                    tbSalario.Name = "tbSalario";  
-                    tbSalario.Location = new Point(282, 300); 
-                    tbSalario.Size = new Size(195, 23);  
+                    tbSalario.Name = "tbSalario";
+                    tbSalario.Location = new Point(304, 300);
+                    tbSalario.Size = new Size(195, 23);
                     tbSalario.PlaceholderText = "Ingrese el salario";
 
                     this.Controls.Add(tbSalario);
@@ -53,6 +54,14 @@ namespace Principal
                     lbTitle.Location = new Point(272, 59);
                     tbNombre.PlaceholderText = "Nombre Producto";
                     tbNombre.Location = new Point(282, 148);
+
+                    TextBox tbID_producto = new TextBox(); 
+                    tbID_producto.Location = new Point(282, 140);
+                    tbID_producto.Name = "tbPrecio_producto";
+                    tbID_producto.PlaceholderText = "Precio del producto";
+                    tbID_producto.Size = new Size(195, 23);
+                    tbID_producto.TabIndex = 2;
+
                     TextBox tbPrecio_producto = new TextBox();
                     tbPrecio_producto.Location = new Point(282, 180);
                     tbPrecio_producto.Name = "tbPrecio_producto";
@@ -121,16 +130,16 @@ namespace Principal
                     tbID_producto.Size = new Size(195, 23);
                     tbID_producto.TabIndex = 3;
 
-         
+
                     this.Controls.Add(tbID_cliente);
                     this.Controls.Add(tbID_vendedor);
                     this.Controls.Add(tbID_producto);
                     break;
 
-                default: 
-                     
+                default:
+
                     break;
-            }   
+            }
         }
 
         private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
@@ -169,6 +178,11 @@ namespace Principal
                 labelPrueba.Text = rutaImagen;
             }
         }
+
+       private void btnBuscarEntidad_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
-

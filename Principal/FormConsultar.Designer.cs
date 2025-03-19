@@ -40,9 +40,9 @@
             lbTitle.Font = new Font("Segoe UI", 20F);
             lbTitle.Location = new Point(245, 68);
             lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(165, 37);
+            lbTitle.Size = new Size(137, 37);
             lbTitle.TabIndex = 0;
-            lbTitle.Text = "Consulta de ";
+            lbTitle.Text = "Consultar ";
             // 
             // tbID
             // 

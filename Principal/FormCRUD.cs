@@ -34,7 +34,7 @@ namespace Principal
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            FormRegistro us = new FormRegistro(entidad);
+            FormActualizar us = new FormActualizar(entidad);
             us.ShowDialog();
         }
 
