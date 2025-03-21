@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Modelo\\Modelo.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Modelo\\Modelo.csproj",
         "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Modelo\\obj\\",
-=======
-    "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Modelo\\Modelo.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Modelo\\Modelo.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Modelo\\Modelo.csproj",
-        "projectName": "Modelo",
-        "projectPath": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Modelo\\Modelo.csproj",
-        "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Modelo\\obj\\",
->>>>>>> 1adfead54621a9ee24c922097e86aa4b9628cc8c
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",

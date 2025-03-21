@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Modelo;
 using Modelo.DataEntities;
 using Modelo.Entities;
 
-namespace Logica
+namespace Logica.Controller
 {
     public class ClienteController
     {

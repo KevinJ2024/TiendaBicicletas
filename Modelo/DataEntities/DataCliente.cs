@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelo.Entities;
 using MySql.Data.MySqlClient;
-
-namespace Modelo.DataEntities
+namespace Modelo
 
 {
     public class DataCliente : ConexionMySql
@@ -31,7 +30,7 @@ namespace Modelo.DataEntities
             return clientes;
         }
 
-        public int RegistrarUsuario(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public int RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
         {
             int resultado = 0;
             MySqlCommand cmd = GetConnection().CreateCommand();

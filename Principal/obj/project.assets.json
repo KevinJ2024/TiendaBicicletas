@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Principal\\Principal.csproj",
       "projectName": "Principal",
       "projectPath": "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Principal\\Principal.csproj",
       "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Principal\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\Principal.csproj",
-      "projectName": "Principal",
-      "projectPath": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\Principal.csproj",
-      "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\obj\\",
->>>>>>> 1adfead54621a9ee24c922097e86aa4b9628cc8c
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,5 +73,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Principal\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "cKYlvSlGmNE=",
   "success": true,
   "projectFilePath": "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Principal\\Principal.csproj",
-=======
-  "dgSpecHash": "YY2PEEXYlXU=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\Principal.csproj",
->>>>>>> 1adfead54621a9ee24c922097e86aa4b9628cc8c
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Principal\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
