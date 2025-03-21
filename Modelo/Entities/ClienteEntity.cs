@@ -11,6 +11,6 @@ namespace Modelo.Entities
         public int ID_cliente;
         public string Nombre_cliente;
         public string Email;
-        public int Telefono;
+        public string Telefono;
     }
 }

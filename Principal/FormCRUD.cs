@@ -40,7 +40,7 @@ namespace Principal
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            FormRegistro us = new FormRegistro(entidad);
+            FormEliminar us = new FormEliminar(entidad);
             us.ShowDialog();
         }
 

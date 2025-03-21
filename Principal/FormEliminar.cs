@@ -10,18 +10,13 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormConsultar : Form
+    public partial class FormEliminar : Form
     {
-
-        public string entidad;
-
-        public FormConsultar(string entidad)
+        public FormEliminar(string entidad)
         {
             InitializeComponent();
             lbTitle.Text += entidad;
             tbID.PlaceholderText += entidad;
-
-            this.entidad = entidad;
         }
     }
 }

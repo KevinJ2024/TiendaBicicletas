@@ -123,7 +123,7 @@ namespace Principal
                     tbID_vendedor.Size = new Size(195, 23);
                     tbID_vendedor.TabIndex = 2;
 
-                    TextBox tbID_producto = new TextBox();
+                    tbID_producto = new TextBox();
                     tbID_producto.Location = new Point(282, 270);
                     tbID_producto.Name = "tbID_Producto";
                     tbID_producto.PlaceholderText = "ID_producto";

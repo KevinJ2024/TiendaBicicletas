@@ -1,6 +1,6 @@
 ﻿namespace Principal
 {
-    partial class FormConsultar
+    partial class FormEliminar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,49 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbTitle = new Label();
-            tbID = new TextBox();
-            btnConfirmar = new Button();
             btnCancelar = new Button();
+            btnConfirmar = new Button();
+            tbID = new TextBox();
+            lbTitle = new Label();
             SuspendLayout();
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(410, 245);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(101, 49);
+            btnCancelar.TabIndex = 8;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(289, 245);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.Size = new Size(101, 49);
+            btnConfirmar.TabIndex = 7;
+            btnConfirmar.Text = "Eliminar";
+            btnConfirmar.UseVisualStyleBackColor = true;
+            // 
+            // tbID
+            // 
+            tbID.Location = new Point(304, 180);
+            tbID.Name = "tbID";
+            tbID.PlaceholderText = "ID";
+            tbID.Size = new Size(186, 23);
+            tbID.TabIndex = 6;
             // 
             // lbTitle
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(245, 68);
+            lbTitle.Location = new Point(289, 119);
             lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(137, 37);
-            lbTitle.TabIndex = 0;
-            lbTitle.Text = "Consultar ";
+            lbTitle.Size = new Size(120, 37);
+            lbTitle.TabIndex = 5;
+            lbTitle.Text = "Eliminar ";
             // 
-            // tbID
-            // 
-            tbID.Location = new Point(264, 151);
-            tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID";
-            tbID.Size = new Size(186, 23);
-            tbID.TabIndex = 1;
-            // 
-            // btnConfirmar
-            // 
-            btnConfirmar.Location = new Point(245, 194);
-            btnConfirmar.Name = "btnConfirmar";
-            btnConfirmar.Size = new Size(101, 49);
-            btnConfirmar.TabIndex = 3;
-            btnConfirmar.Text = "Consultar";
-            btnConfirmar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Location = new Point(366, 194);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 49);
-            btnCancelar.TabIndex = 4;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // FormConsultar
+            // FormEliminar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -79,17 +79,17 @@
             Controls.Add(btnConfirmar);
             Controls.Add(tbID);
             Controls.Add(lbTitle);
-            Name = "FormConsultar";
-            Text = "FormConsultar";
+            Name = "FormEliminar";
+            Text = "FormEliminar";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label lbTitle;
-        private TextBox tbID;
-        private Button btnConfirmar;
         private Button btnCancelar;
+        private Button btnConfirmar;
+        private TextBox tbID;
+        private Label lbTitle;
     }
 }
