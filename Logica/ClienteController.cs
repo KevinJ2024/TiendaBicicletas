@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using Modelo.DataEntities;
@@ -11,15 +12,7 @@ namespace Logica
     public class ClienteController
     {
 
-        public List<ClienteEntity> ConsultarCliente()
-        {
-            DataCliente db = new DataCliente();
-            List<ClienteEntity> clientes = db.MostrarCliente();
-
-            return clientes;
-        }
-
-        public string RegistrarCliente(string ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public string RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
         {
             string resultado = "";
             DataCliente db = new DataCliente();
@@ -27,7 +20,7 @@ namespace Logica
 
             if (filasAfectadas > 0)
             {
-                resultado = "Guardado";
+                resultado = "Guardado con exito";
 
             }
             else
@@ -37,6 +30,62 @@ namespace Logica
 
             return resultado;
         }
+
+        public ClienteEntity ConsultarCliente(int ID_cliente)
+        {
+            DataCliente db = new DataCliente();
+            ClienteEntity cliente = db.ConsultarCliente(ID_cliente);
+
+            return cliente;
+        }
+
+        public List<ClienteEntity> MostrarClientes()
+        {
+            DataCliente db = new DataCliente();
+            List<ClienteEntity> usuarios = db.MostrarClientes();
+
+            return usuarios;
+        }
+
+        public string ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        {
+            string resultado = "";
+            DataCliente db = new DataCliente();
+            int filasAfectadas = db.ActualizarCliente(ID_cliente, Nombre_cliente, Email, Telefono);
+
+            if (filasAfectadas > 0)
+            {
+                resultado = "Actualizado con exito";
+
+            }
+            else
+            {
+                resultado = "No actualizado";
+            }
+
+            return resultado;
+        }
+
+        public string EliminarCliente(int ID_cliente)
+        {
+            string resultado = "";
+            DataCliente db = new DataCliente();
+            int filasAfectadas = db.EliminarCliente(ID_cliente);
+
+            if (filasAfectadas > 0)
+            {
+                resultado = "Eliminado con exito";
+
+            }
+            else
+            {
+                resultado = "No Eliminado";
+            }
+
+            return resultado;
+        }
+
+
 
     }
 }

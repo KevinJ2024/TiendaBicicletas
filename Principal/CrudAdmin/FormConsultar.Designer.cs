@@ -1,6 +1,6 @@
 ﻿namespace Principal
 {
-    partial class FormRegistro
+    partial class FormConsultar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,88 +29,71 @@
         private void InitializeComponent()
         {
             lbTitle = new Label();
+            tbID = new TextBox();
             btnConfirmar = new Button();
             btnCancelar = new Button();
-            tbEmail = new TextBox();
-            tbTelefono = new TextBox();
-            tbNombre = new TextBox();
-            tbID = new TextBox();
+            lbResultado = new Label();
             SuspendLayout();
             // 
             // lbTitle
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(282, 59);
+            lbTitle.Location = new Point(245, 68);
             lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(121, 37);
+            lbTitle.Size = new Size(137, 37);
             lbTitle.TabIndex = 0;
-            lbTitle.Text = "Registro ";
-            // 
-            // btnConfirmar
-            // 
-            btnConfirmar.Location = new Point(257, 347);
-            btnConfirmar.Name = "btnConfirmar";
-            btnConfirmar.Size = new Size(112, 48);
-            btnConfirmar.TabIndex = 1;
-            btnConfirmar.Text = "Registrar";
-            btnConfirmar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Location = new Point(388, 347);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(112, 48);
-            btnCancelar.TabIndex = 2;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // tbEmail
-            // 
-            tbEmail.Location = new Point(282, 205);
-            tbEmail.Name = "tbEmail";
-            tbEmail.PlaceholderText = "Email";
-            tbEmail.Size = new Size(195, 23);
-            tbEmail.TabIndex = 3;
-            // 
-            // tbTelefono
-            // 
-            tbTelefono.Location = new Point(282, 252);
-            tbTelefono.Name = "tbTelefono";
-            tbTelefono.PlaceholderText = "Telefono";
-            tbTelefono.Size = new Size(195, 23);
-            tbTelefono.TabIndex = 4;
-            // 
-            // tbNombre
-            // 
-            tbNombre.Location = new Point(282, 158);
-            tbNombre.Name = "tbNombre";
-            tbNombre.PlaceholderText = "Nombre Cliente";
-            tbNombre.Size = new Size(195, 23);
-            tbNombre.TabIndex = 5;
+            lbTitle.Text = "Consultar ";
             // 
             // tbID
             // 
-            tbID.Location = new Point(282, 114);
+            tbID.Location = new Point(264, 151);
             tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID del cliente";
-            tbID.Size = new Size(195, 23);
-            tbID.TabIndex = 6;
+            tbID.PlaceholderText = "ID ";
+            tbID.Size = new Size(186, 23);
+            tbID.TabIndex = 1;
             // 
-            // FormRegistro
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(245, 194);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.Size = new Size(101, 49);
+            btnConfirmar.TabIndex = 3;
+            btnConfirmar.Text = "Consultar";
+            btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(366, 194);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(101, 49);
+            btnCancelar.TabIndex = 4;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // lbResultado
+            // 
+            lbResultado.AutoSize = true;
+            lbResultado.Location = new Point(326, 281);
+            lbResultado.Name = "lbResultado";
+            lbResultado.Size = new Size(56, 15);
+            lbResultado.TabIndex = 5;
+            lbResultado.Text = "resultado";
+            // 
+            // FormConsultar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(tbID);
-            Controls.Add(tbNombre);
-            Controls.Add(tbTelefono);
-            Controls.Add(tbEmail);
+            Controls.Add(lbResultado);
             Controls.Add(btnCancelar);
             Controls.Add(btnConfirmar);
+            Controls.Add(tbID);
             Controls.Add(lbTitle);
-            Name = "FormRegistro";
-            Text = "FormRegistrar";
+            Name = "FormConsultar";
+            Text = "FormConsultar";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,11 +101,9 @@
         #endregion
 
         private Label lbTitle;
+        private TextBox tbID;
         private Button btnConfirmar;
         private Button btnCancelar;
-        private TextBox tbEmail;
-        private TextBox tbTelefono;
-        private TextBox tbNombre;
-        private TextBox tbID;
+        private Label lbResultado;
     }
 }

@@ -32,6 +32,7 @@
             btnConfirmar = new Button();
             tbID = new TextBox();
             lbTitle = new Label();
+            lbResultado = new Label();
             SuspendLayout();
             // 
             // btnCancelar
@@ -42,6 +43,7 @@
             btnCancelar.TabIndex = 8;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnConfirmar
             // 
@@ -51,6 +53,7 @@
             btnConfirmar.TabIndex = 7;
             btnConfirmar.Text = "Eliminar";
             btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
             // tbID
             // 
@@ -70,11 +73,21 @@
             lbTitle.TabIndex = 5;
             lbTitle.Text = "Eliminar ";
             // 
+            // lbResultado
+            // 
+            lbResultado.AutoSize = true;
+            lbResultado.Location = new Point(369, 332);
+            lbResultado.Name = "lbResultado";
+            lbResultado.Size = new Size(56, 15);
+            lbResultado.TabIndex = 9;
+            lbResultado.Text = "resultado";
+            // 
             // FormEliminar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbResultado);
             Controls.Add(btnCancelar);
             Controls.Add(btnConfirmar);
             Controls.Add(tbID);
@@ -91,5 +104,6 @@
         private Button btnConfirmar;
         private TextBox tbID;
         private Label lbTitle;
+        private Label lbResultado;
     }
 }

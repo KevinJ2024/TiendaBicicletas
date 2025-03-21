@@ -11,11 +11,41 @@ namespace Modelo.DataEntities
 {
     public class DataCliente : ConexionMySql
     {
-        public List<ClienteEntity> MostrarCliente()
+
+        public int RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        {
+            int resultado = 0;
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "INSERT INTO cliente (ID_cliente,Nombre_cliente,Email,Telefono) VALUES ('" + ID_cliente + "','" + Nombre_cliente + "','"+ Email +"','"+ Telefono +"')";
+            resultado = cmd.ExecuteNonQuery();
+
+            return resultado;
+        }
+
+        public ClienteEntity ConsultarCliente(int ID_cliente)
+        {
+            ClienteEntity cliente = new ClienteEntity();
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM cliente WHERE ID_cliente = @ID_cliente";
+            cmd.Parameters.AddWithValue("@ID_cliente", ID_cliente);
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                cliente.ID_cliente = dr.GetInt32(0);
+                cliente.Nombre_cliente = dr.GetString(1);
+                cliente.Email = dr.GetString(2);
+                cliente.Telefono = dr.GetString(3);
+
+            }
+            return cliente;
+        }
+
+        public List<ClienteEntity> MostrarClientes()
         {
             List<ClienteEntity> clientes = new List<ClienteEntity>();
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "SELECT * FROM users where ID_cliente = ";
+            cmd.CommandText = "SELECT * FROM cliente";
             MySqlDataReader dr = cmd.ExecuteReader();
 
             while (dr.Read())
@@ -31,11 +61,26 @@ namespace Modelo.DataEntities
             return clientes;
         }
 
-        public int RegistrarUsuario(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public int ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
         {
             int resultado = 0;
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO users (ID_cliente,Nombre_cliente,Email,Telefono) VALUES ('" + ID_cliente + "','" + Nombre_cliente + "','"+ Email +"','"+ Telefono +"')";
+            cmd.CommandText = "UPDATE cliente SET Nombre_cliente = @Nombre_cliente, Email = @Email, Telefono = @Telefono WHERE ID_cliente = @ID_cliente";
+            cmd.Parameters.AddWithValue("@Nombre_cliente", Nombre_cliente);
+            cmd.Parameters.AddWithValue("@Email", Email);
+            cmd.Parameters.AddWithValue("@Telefono", Telefono);
+            cmd.Parameters.AddWithValue("@ID_cliente", ID_cliente);
+            resultado = cmd.ExecuteNonQuery();
+
+            return resultado;
+        }
+
+        public int EliminarCliente(int ID_cliente)
+        {
+            int resultado = 0;
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "DELETE FROM cliente WHERE ID_cliente = @ID_cliente";
+            cmd.Parameters.AddWithValue("@ID_cliente", ID_cliente);
             resultado = cmd.ExecuteNonQuery();
 
             return resultado;
