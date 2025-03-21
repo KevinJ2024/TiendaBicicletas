@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Principal\\Principal.csproj": {}
+    "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\Principal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Principal\\Principal.csproj": {
+    "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\Principal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Principal\\Principal.csproj",
+        "projectUniqueName": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\Principal.csproj",
         "projectName": "Principal",
-        "projectPath": "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Principal\\Principal.csproj",
+        "projectPath": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\Principal.csproj",
         "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Principal\\obj\\",
+        "outputPath": "C:\\Users\\SENA\\Desktop\\Miguel 2901722\\Bici\\TiendaBicicletas\\Principal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
