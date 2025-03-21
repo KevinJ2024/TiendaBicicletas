@@ -12,11 +12,11 @@ namespace Logica
     public class ClienteController
     {
 
-        public string RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public string RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)
         {
             string resultado = "";
             DataCliente db = new DataCliente();
-            int filasAfectadas = db.RegistrarCliente(ID_cliente, Nombre_cliente, Email, Telefono);
+            int filasAfectadas = db.RegistrarCliente(ID_cliente, Nombre_cliente, Email, Telefono, Contraseña);
 
             if (filasAfectadas > 0)
             {
@@ -47,11 +47,11 @@ namespace Logica
             return usuarios;
         }
 
-        public string ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public string ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)
         {
             string resultado = "";
             DataCliente db = new DataCliente();
-            int filasAfectadas = db.ActualizarCliente(ID_cliente, Nombre_cliente, Email, Telefono);
+            int filasAfectadas = db.ActualizarCliente(ID_cliente, Nombre_cliente, Email, Telefono, Contraseña);
 
             if (filasAfectadas > 0)
             {

@@ -37,6 +37,7 @@
             lbTitle = new Label();
             btnBuscarEntidad = new Button();
             lbResultado = new Label();
+            tbContraseña = new TextBox();
             SuspendLayout();
             // 
             // tbID
@@ -120,11 +121,20 @@
             lbResultado.TabIndex = 15;
             lbResultado.Text = "resultado";
             // 
+            // tbContraseña
+            // 
+            tbContraseña.Location = new Point(304, 299);
+            tbContraseña.Name = "tbContraseña";
+            tbContraseña.PlaceholderText = "Contraseña";
+            tbContraseña.Size = new Size(195, 23);
+            tbContraseña.TabIndex = 16;
+            // 
             // FormActualizar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tbContraseña);
             Controls.Add(lbResultado);
             Controls.Add(btnBuscarEntidad);
             Controls.Add(tbID);
@@ -151,5 +161,6 @@
         private Label lbTitle;
         private Button btnBuscarEntidad;
         private Label lbResultado;
+        private TextBox tbContraseña;
     }
 }

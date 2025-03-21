@@ -12,11 +12,11 @@ namespace Modelo.DataEntities
     public class DataCliente : ConexionMySql
     {
 
-        public int RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public int RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)
         {
             int resultado = 0;
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO cliente (ID_cliente,Nombre_cliente,Email,Telefono) VALUES ('" + ID_cliente + "','" + Nombre_cliente + "','"+ Email +"','"+ Telefono +"')";
+            cmd.CommandText = "INSERT INTO cliente (ID_cliente,Nombre_cliente,Email,Telefono,Contraseña) VALUES ('" + ID_cliente + "','" + Nombre_cliente + "','"+ Email +"','"+ Telefono +"','"+ Contraseña + "')";
             resultado = cmd.ExecuteNonQuery();
 
             return resultado;
@@ -36,6 +36,7 @@ namespace Modelo.DataEntities
                 cliente.Nombre_cliente = dr.GetString(1);
                 cliente.Email = dr.GetString(2);
                 cliente.Telefono = dr.GetString(3);
+                cliente.Contraseña = dr.GetString(4);
 
             }
             return cliente;
@@ -55,20 +56,22 @@ namespace Modelo.DataEntities
                 clienteActual.Nombre_cliente = dr.GetString(1);
                 clienteActual.Email = dr.GetString(2);
                 clienteActual.Telefono = dr.GetString(3);
+                clienteActual.Contraseña = dr.GetString(4);
 
                 clientes.Add(clienteActual);
             }
             return clientes;
         }
 
-        public int ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public int ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)
         {
             int resultado = 0;
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "UPDATE cliente SET Nombre_cliente = @Nombre_cliente, Email = @Email, Telefono = @Telefono WHERE ID_cliente = @ID_cliente";
+            cmd.CommandText = "UPDATE cliente SET Nombre_cliente = @Nombre_cliente, Email = @Email, Telefono = @Telefono, Contraseña = @Contraseña WHERE ID_cliente = @ID_cliente";
             cmd.Parameters.AddWithValue("@Nombre_cliente", Nombre_cliente);
             cmd.Parameters.AddWithValue("@Email", Email);
             cmd.Parameters.AddWithValue("@Telefono", Telefono);
+            cmd.Parameters.AddWithValue("@Contraseña", Contraseña);
             cmd.Parameters.AddWithValue("@ID_cliente", ID_cliente);
             resultado = cmd.ExecuteNonQuery();
 

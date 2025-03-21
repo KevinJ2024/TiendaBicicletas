@@ -12,6 +12,7 @@ namespace Modelo.Entities
         public string Nombre_vendedor;
         public string Email;
         public int salario;
-        public string telefono;
+        public string Telefono;
+        public string Contraseña;
     }
 }

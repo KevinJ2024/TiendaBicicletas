@@ -192,6 +192,7 @@ namespace Principal
                     tbNombre.Text = cliente.Nombre_cliente;
                     tbEmail.Text = cliente.Email;
                     tbTelefono.Text = cliente.Telefono;
+                    tbContraseña.Text = cliente.Contraseña;
 
                     lbResultado.Text = resultado;
                     break;
@@ -208,7 +209,7 @@ namespace Principal
             {
                 case "Cliente":
                     ClienteController controller = new ClienteController();
-                    string resultado = controller.ActualizarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
+                    string resultado = controller.ActualizarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
                     lbResultado.Text = resultado;
                     break;
 

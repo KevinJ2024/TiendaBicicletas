@@ -38,9 +38,13 @@ namespace Principal
                     tbNombre.PlaceholderText = "Nombre Vendedor";
                     TextBox tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
-                    tbSalario.Location = new Point(282, 300);
+                    tbSalario.Location = new Point(282, 298);
                     tbSalario.Size = new Size(195, 23);
                     tbSalario.PlaceholderText = "Ingrese el salario";
+
+                    tbContraseña.Location = new Point(282, 340);
+                    btnConfirmar.Location = new Point(257, 380);
+                    btnCancelar.Location = new Point(388, 380);
 
                     this.Controls.Add(tbSalario);
                     break;
@@ -179,13 +183,13 @@ namespace Principal
             {
                 case "Cliente":
                     ClienteController controller = new ClienteController();
-                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || !int.TryParse(tbID.Text, out _))
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
                     {
                         lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
                     }
                     else
                     {
-                        string resultado = controller.RegistrarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
+                        string resultado = controller.RegistrarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
                         lbResultado.Text = resultado;
                     }
                     break;

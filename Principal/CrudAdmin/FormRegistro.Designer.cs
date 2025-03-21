@@ -36,6 +36,7 @@
             tbNombre = new TextBox();
             tbID = new TextBox();
             lbResultado = new Label();
+            tbContraseña = new TextBox();
             SuspendLayout();
             // 
             // lbTitle
@@ -109,11 +110,20 @@
             lbResultado.TabIndex = 7;
             lbResultado.Text = "resultado";
             // 
+            // tbContraseña
+            // 
+            tbContraseña.Location = new Point(282, 298);
+            tbContraseña.Name = "tbContraseña";
+            tbContraseña.PlaceholderText = "Contraseña";
+            tbContraseña.Size = new Size(195, 23);
+            tbContraseña.TabIndex = 8;
+            // 
             // FormRegistro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tbContraseña);
             Controls.Add(lbResultado);
             Controls.Add(tbID);
             Controls.Add(tbNombre);
@@ -138,5 +148,6 @@
         private TextBox tbNombre;
         private TextBox tbID;
         private Label lbResultado;
+        private TextBox tbContraseña;
     }
 }

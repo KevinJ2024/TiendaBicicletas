@@ -36,7 +36,7 @@ namespace Principal
 
             foreach (var clienteActual in clientes)
             {
-                resultado += "ID: " + clienteActual.ID_cliente + "---Nombre: " + clienteActual.Nombre_cliente + "---Email: " + clienteActual.Email + "---Telefono: " + clienteActual.Telefono + "\n";
+                resultado += "ID: " + clienteActual.ID_cliente + "---Nombre: " + clienteActual.Nombre_cliente + "---Email: " + clienteActual.Email + "---Telefono: " + clienteActual.Telefono + "--- Contraseña: "+ clienteActual.Contraseña + "\n";
             }
             lbResultado.Text = resultado;
         }
@@ -49,7 +49,7 @@ namespace Principal
                     var cliente = controller.ConsultarCliente(int.Parse(tbID.Text));
                     string resultado = "";
 
-                    resultado += "ID: " + cliente.ID_cliente + "---Nombre: " + cliente.Nombre_cliente + "---Email: " + cliente.Email + "---Telefono: " + cliente.Telefono + "\n";
+                    resultado += "ID: " + cliente.ID_cliente + "---Nombre: " + cliente.Nombre_cliente + "---Email: " + cliente.Email + "---Telefono: " + cliente.Telefono + "--- Contraseña: " + cliente.Contraseña + "\n";
 
                     lbResultado.Text = resultado;
                     break;

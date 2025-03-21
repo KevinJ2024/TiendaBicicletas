@@ -76,7 +76,7 @@
             // lbResultado
             // 
             lbResultado.AutoSize = true;
-            lbResultado.Location = new Point(326, 281);
+            lbResultado.Location = new Point(245, 281);
             lbResultado.Name = "lbResultado";
             lbResultado.Size = new Size(56, 15);
             lbResultado.TabIndex = 5;
