@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Logica;
+using Logica.Controllers;
 
 namespace Principal
 {
@@ -16,6 +16,7 @@ namespace Principal
     {
 
         private string entidad;
+        public TextBox tbSalario;
 
         public FormActualizar(string entidad)
         {
@@ -35,7 +36,7 @@ namespace Principal
                     lbTitle.Location = new Point(262, 59);
                     tbID.PlaceholderText = "ID del vendedor";
                     tbNombre.PlaceholderText = "Nombre Vendedor";
-                    TextBox tbSalario = new TextBox();
+                    tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
                     tbSalario.Location = new Point(304, 300);
                     tbSalario.Size = new Size(195, 23);
@@ -182,12 +183,13 @@ namespace Principal
 
         private void btnBuscarEntidad_Click(object sender, EventArgs e)
         {
+            string resultado;
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController controller = new ClienteController();
-                    var cliente = controller.ConsultarCliente(int.Parse(tbID.Text));
-                    string resultado = "";
+                    ClienteController Clientecontroller = new ClienteController();
+                    var cliente = Clientecontroller.ConsultarCliente(int.Parse(tbID.Text));
+                    resultado = "";
 
                     tbNombre.Text = cliente.Nombre_cliente;
                     tbEmail.Text = cliente.Email;
@@ -196,23 +198,38 @@ namespace Principal
 
                     lbResultado.Text = resultado;
                     break;
+                case "Vendedor":
+                    VendedorController VendedorController = new VendedorController();
+                    var vendedor = VendedorController.ConsultarVendedor(int.Parse(tbID.Text));
+                    resultado = "";
 
+                    tbNombre.Text = vendedor.Nombre_vendedor;
+                    tbEmail.Text = vendedor.Email;
+                    tbTelefono.Text = vendedor.Telefono;
+                    tbSalario.Text = vendedor.Salario.ToString();
+                    tbContraseña.Text = vendedor.Contraseña;
+
+                    break;
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
             }
-
         }
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            string resultado;
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController controller = new ClienteController();
-                    string resultado = controller.ActualizarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
+                    ClienteController Clientecontroller = new ClienteController();
+                    resultado = Clientecontroller.ActualizarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
                     lbResultado.Text = resultado;
                     break;
-
+                case "Vendedor":
+                    VendedorController VendedorController = new VendedorController();
+                    resultado = VendedorController.ActualizarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
+                    lbResultado.Text = resultado;
+                    break;
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
@@ -225,6 +242,8 @@ namespace Principal
             tbNombre.Text = "";
             tbEmail.Text = "";
             tbTelefono.Text = "";
+            tbContraseña.Text = "";
+            tbSalario.Text = "";
         }
     }
 }

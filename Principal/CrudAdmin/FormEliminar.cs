@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Logica;
+using Logica.Controllers;
 
 namespace Principal
 {
@@ -27,14 +27,19 @@ namespace Principal
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            string resultado;
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController controller = new ClienteController();
-                    string resultado = controller.EliminarCliente(int.Parse(tbID.Text));
+                    ClienteController Clientecontroller = new ClienteController();
+                     resultado = Clientecontroller.EliminarCliente(int.Parse(tbID.Text));
                     lbResultado.Text = resultado;
                     break;
-
+                case "Vendedor":
+                    VendedorController VendedorController = new VendedorController();
+                    resultado = VendedorController.EliminarVendedor(int.Parse(tbID.Text));
+                    lbResultado.Text = resultado;
+                    break;
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;

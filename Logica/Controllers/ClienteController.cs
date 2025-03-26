@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Modelo.DataEntities;
 using Modelo.Entities;
 
-namespace Logica
+namespace Logica.Controllers
 {
     public class ClienteController
     {
@@ -42,9 +42,9 @@ namespace Logica
         public List<ClienteEntity> MostrarClientes()
         {
             DataCliente db = new DataCliente();
-            List<ClienteEntity> usuarios = db.MostrarClientes();
+            List<ClienteEntity> clientes = db.MostrarClientes();
 
-            return usuarios;
+            return clientes;
         }
 
         public string ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)
@@ -84,8 +84,5 @@ namespace Logica
 
             return resultado;
         }
-
-
-
     }
 }

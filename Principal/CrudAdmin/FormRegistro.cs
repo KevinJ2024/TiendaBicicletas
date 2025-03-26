@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Xml.Linq;
 using Logica;
+using Logica.Controllers;
 
 namespace Principal
 {
@@ -17,6 +18,12 @@ namespace Principal
     {
 
         public string entidad;
+        public TextBox tbSalario;
+        public TextBox tbPrecio_producto;
+        public TextBox tbStock;
+        public TextBox tbDescripcion_producto;
+        private byte[] imagenSeleccionada;
+
 
         public FormRegistro(string entidad)
         {
@@ -36,7 +43,7 @@ namespace Principal
                     lbTitle.Location = new Point(262, 59);
                     tbID.PlaceholderText = "ID del vendedor";
                     tbNombre.PlaceholderText = "Nombre Vendedor";
-                    TextBox tbSalario = new TextBox();
+                    tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
                     tbSalario.Location = new Point(282, 298);
                     tbSalario.Size = new Size(195, 23);
@@ -56,25 +63,27 @@ namespace Principal
                     tbEmail.Dispose();
                     this.Controls.Remove(tbTelefono);
                     tbTelefono.Dispose();
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
 
                     lbTitle.Location = new Point(272, 59);
                     tbNombre.PlaceholderText = "Nombre Producto";
                     tbNombre.Location = new Point(282, 148);
-                    TextBox tbPrecio_producto = new TextBox();
+                    tbPrecio_producto = new TextBox();
                     tbPrecio_producto.Location = new Point(282, 180);
                     tbPrecio_producto.Name = "tbPrecio_producto";
                     tbPrecio_producto.PlaceholderText = "Precio del producto";
                     tbPrecio_producto.Size = new Size(195, 23);
                     tbPrecio_producto.TabIndex = 2;
 
-                    TextBox tbStock = new TextBox();
+                    tbStock = new TextBox();
                     tbStock.Location = new Point(282, 210);
                     tbStock.Name = "tbStock";
                     tbStock.PlaceholderText = "Stock del producto";
                     tbStock.Size = new Size(195, 23);
                     tbStock.TabIndex = 3;
 
-                    TextBox tbDescripcion_producto = new TextBox();
+                    tbDescripcion_producto = new TextBox();
                     tbDescripcion_producto.Location = new Point(282, 240);
                     tbDescripcion_producto.Name = "tbDescripcion_producto";
                     tbDescripcion_producto.PlaceholderText = "descripcion del producto";
@@ -144,6 +153,7 @@ namespace Principal
         {
             PictureBox pbImagen = this.Controls["pbImagen"] as PictureBox;
             Label labelPrueba = this.Controls["labelPrueba"] as Label;
+
             if (pbImagen == null)
             {
                 pbImagen = new PictureBox();
@@ -168,32 +178,59 @@ namespace Principal
             openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
             openFileDialog.Title = "Seleccionar Imagen";
 
-
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string rutaImagen = openFileDialog.FileName;
                 pbImagen.Image = Image.FromFile(rutaImagen);
                 labelPrueba.Text = rutaImagen;
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    pbImagen.Image.Save(ms, pbImagen.Image.RawFormat);
+                    imagenSeleccionada = ms.ToArray();  
+                }
             }
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            string resultado;
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController controller = new ClienteController();
+                    ClienteController Clientecontroller = new ClienteController();
                     if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
                     {
                         lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
                     }
                     else
                     {
-                        string resultado = controller.RegistrarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
+                        resultado = Clientecontroller.RegistrarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
+                        lbResultado.Text = resultado;
+                    }
+                    break;
+                case "Vendedor":
+                    VendedorController Vendedorcontroller = new VendedorController();
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbSalario.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
+                    {
+                        lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
+                    }
+                    else
+                    {
+                        resultado = Vendedorcontroller.RegistrarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
                         lbResultado.Text = resultado;
                     }
                     break;
 
+                case "Producto":
+                    ProductoController ProductoController = new ProductoController();
+                    resultado = ProductoController.RegistrarProducto(tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Factura":
+
+                    break;
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
@@ -206,6 +243,12 @@ namespace Principal
             tbNombre.Text = "";
             tbEmail.Text = "";
             tbTelefono.Text = "";
+            tbContraseña.Text = "";
+            if (tbSalario != null)
+            {
+                tbSalario.Text = "";
+            }
+            
         }
     }
 }
