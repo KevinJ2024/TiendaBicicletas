@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Modelo;
 
-namespace Logica.Controller.InicioController
+namespace TiendaBicicletas.Logica.Controller
 {
-    internal class LoginController
+    public class LoginController
     {
+        public string Login(string Email, string Contraseña)
+        {
+            DataCliente cliente = new DataCliente();
+
+            bool usuarioExiste = cliente.VerificarCliente(Email, Contraseña);
+
+            if (usuarioExiste)
+            {
+                string yes = "Login exitoso. Usuario encontrado";
+                return yes;
+            }
+            else
+            {
+                string no = "El correo o la contraseña son incorrectos.";
+                return no;
+            }
+        }
     }
 }

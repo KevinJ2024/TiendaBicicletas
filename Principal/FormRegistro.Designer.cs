@@ -35,17 +35,21 @@
             tbTelefono = new TextBox();
             tbNombre = new TextBox();
             tbID = new TextBox();
+            tbContraseña = new TextBox();
+            label1 = new Label();
+            lbResult = new Label();
             SuspendLayout();
             // 
             // lbTitle
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(282, 59);
+            lbTitle.Location = new Point(282, 9);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(121, 37);
             lbTitle.TabIndex = 0;
             lbTitle.Text = "Registro ";
+            lbTitle.Click += lbTitle_Click;
             // 
             // btnConfirmar
             // 
@@ -55,6 +59,7 @@
             btnConfirmar.TabIndex = 1;
             btnConfirmar.Text = "Registrar";
             btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
             // btnCancelar
             // 
@@ -64,6 +69,7 @@
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+
             // 
             // tbEmail
             // 
@@ -72,6 +78,7 @@
             tbEmail.PlaceholderText = "Email";
             tbEmail.Size = new Size(195, 23);
             tbEmail.TabIndex = 3;
+          
             // 
             // tbTelefono
             // 
@@ -80,6 +87,7 @@
             tbTelefono.PlaceholderText = "Telefono";
             tbTelefono.Size = new Size(195, 23);
             tbTelefono.TabIndex = 4;
+ 
             // 
             // tbNombre
             // 
@@ -88,6 +96,7 @@
             tbNombre.PlaceholderText = "Nombre Cliente";
             tbNombre.Size = new Size(195, 23);
             tbNombre.TabIndex = 5;
+    
             // 
             // tbID
             // 
@@ -96,12 +105,42 @@
             tbID.PlaceholderText = "ID del cliente";
             tbID.Size = new Size(195, 23);
             tbID.TabIndex = 6;
+            tbID.Text = "as";
+      
+            // 
+            // tbContraseña
+            // 
+            tbContraseña.Location = new Point(282, 293);
+            tbContraseña.Name = "tbContraseña";
+            tbContraseña.PlaceholderText = "contraseña";
+            tbContraseña.Size = new Size(195, 23);
+            tbContraseña.TabIndex = 7;
+           
+            // 
+            // label1
+            // 
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 23);
+            label1.TabIndex = 0;
+            // 
+            // lbResult
+            // 
+            lbResult.AutoSize = true;
+            lbResult.Location = new Point(593, 114);
+            lbResult.Name = "lbResult";
+            lbResult.Size = new Size(38, 15);
+            lbResult.TabIndex = 8;
+            lbResult.Text = "label2";
             // 
             // FormRegistro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbResult);
+            Controls.Add(label1);
+            Controls.Add(tbContraseña);
             Controls.Add(tbID);
             Controls.Add(tbNombre);
             Controls.Add(tbTelefono);
@@ -124,5 +163,8 @@
         private TextBox tbTelefono;
         private TextBox tbNombre;
         private TextBox tbID;
+        private TextBox tbContraseña;
+        private Label label1;
+        private Label lbResult;
     }
 }

@@ -1,31 +1,29 @@
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormPrincipal.resources
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.csproj.GenerateResource.cache
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.AssemblyInfoInputs.cache
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.AssemblyInfo.cs
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.csproj.CoreCompileInputs.cache
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.sourcelink.json
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.exe
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.deps.json
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.runtimeconfig.json
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.dll
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.pdb
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.dll
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\refint\Principal.dll
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.pdb
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.genruntimeconfig.cache
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\ref\Principal.dll
-<<<<<<< HEAD
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormCRUD.resources
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormConsultar.resources
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormRegistro.resources
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormActualizar.resources
-C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormEliminar.resources
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.exe
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.deps.json
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.runtimeconfig.json
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.dll
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.pdb
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Logica.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Modelo.dll
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Logica.pdb
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Modelo.pdb
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.csproj.AssemblyReference.cache
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormActualizar.resources
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormConsultar.resources
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormCRUD.resources
@@ -38,31 +36,10 @@ C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-win
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.AssemblyInfo.cs
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.csproj.CoreCompileInputs.cache
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.sourcelink.json
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.csproj.Up2Date
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.dll
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\refint\Principal.dll
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.pdb
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.genruntimeconfig.cache
 C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\ref\Principal.dll
-=======
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.exe
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.deps.json
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.runtimeconfig.json
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.dll
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.pdb
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormCliente.resources
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormFactura.resources
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormPrincipal.resources
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormProducto.resources
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormVendedor.resources
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.csproj.GenerateResource.cache
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.AssemblyInfoInputs.cache
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.AssemblyInfo.cs
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.csproj.CoreCompileInputs.cache
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.sourcelink.json
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.dll
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\refint\Principal.dll
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.pdb
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.genruntimeconfig.cache
-C:\Users\SENA\Desktop\Miguel 2901722\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\ref\Principal.dll
->>>>>>> 1adfead54621a9ee24c922097e86aa4b9628cc8c
+C:\Users\SENA\Desktop\Tiendabici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormLogin.resources

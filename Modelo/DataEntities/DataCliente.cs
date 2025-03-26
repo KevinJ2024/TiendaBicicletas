@@ -10,31 +10,47 @@ namespace Modelo
 {
     public class DataCliente : ConexionMySql
     {
-        public List<ClienteEntity> MostrarCliente()
+        public bool VerificarCliente(string Email, string Contraseña)
         {
-            List<ClienteEntity> clientes = new List<ClienteEntity>();
+            bool clienteExiste = false;
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "SELECT * FROM users where ID_cliente = ";
+            cmd.CommandText = "SELECT COUNT(*) FROM cliente WHERE Email = @Email AND Contraseña = @Contraseña";
+            cmd.Parameters.AddWithValue("@Email", Email);
+            cmd.Parameters.AddWithValue("@Contraseña", Contraseña);
+
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            if (count > 0)
+            {
+                clienteExiste = true;
+            }
+
+            return clienteExiste;
+        }
+        public ClienteEntity ConsultarCliente(int ID_cliente)
+        {
+            ClienteEntity cliente = new ClienteEntity();
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM cliente WHERE ID_cliente = @ID_cliente";
+            cmd.Parameters.AddWithValue("@ID_cliente", ID_cliente);
             MySqlDataReader dr = cmd.ExecuteReader();
 
             while (dr.Read())
             {
-                ClienteEntity clienteActual = new ClienteEntity();
-                clienteActual.ID_cliente = dr.GetInt32(0);
-                clienteActual.Nombre_cliente = dr.GetString(1);
-                clienteActual.Email = dr.GetString(2);
-                clienteActual.Telefono = dr.GetString(3);
+                cliente.ID_cliente = dr.GetInt32(0);
+                cliente.Nombre_cliente = dr.GetString(1);
+                cliente.Email = dr.GetString(2);
+                cliente.Telefono = dr.GetString(3);
+                cliente.Contraseña = dr.GetString(4);
 
-                clientes.Add(clienteActual);
             }
-            return clientes;
+            return cliente;
         }
 
-        public int RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono)
+        public int RegistrarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)
         {
             int resultado = 0;
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO users (ID_cliente,Nombre_cliente,Email,Telefono) VALUES ('" + ID_cliente + "','" + Nombre_cliente + "','"+ Email +"','"+ Telefono +"')";
+            cmd.CommandText = "INSERT INTO cliente (ID_cliente,Nombre_cliente,Email,Telefono, Contraseña) VALUES ('" + ID_cliente + "','" + Nombre_cliente + "','"+ Email +"','"+ Telefono +"','"+ Contraseña+"')";
             resultado = cmd.ExecuteNonQuery();
 
             return resultado;
