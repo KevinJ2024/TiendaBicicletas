@@ -22,7 +22,8 @@ namespace Principal
         public TextBox tbPrecio_producto;
         public TextBox tbStock;
         public TextBox tbDescripcion_producto;
-        private byte[] imagenSeleccionada;
+        public PictureBox pbImagen;
+        public byte[] imagenSeleccionada;
 
 
         public FormRegistro(string entidad)
@@ -69,6 +70,7 @@ namespace Principal
                     lbTitle.Location = new Point(272, 59);
                     tbNombre.PlaceholderText = "Nombre Producto";
                     tbNombre.Location = new Point(282, 148);
+
                     tbPrecio_producto = new TextBox();
                     tbPrecio_producto.Location = new Point(282, 180);
                     tbPrecio_producto.Name = "tbPrecio_producto";
@@ -149,49 +151,6 @@ namespace Principal
             }
         }
 
-        private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
-        {
-            PictureBox pbImagen = this.Controls["pbImagen"] as PictureBox;
-            Label labelPrueba = this.Controls["labelPrueba"] as Label;
-
-            if (pbImagen == null)
-            {
-                pbImagen = new PictureBox();
-                pbImagen.Location = new Point(500, 140);
-                pbImagen.Name = "pbImagen";
-                pbImagen.Size = new Size(195, 195);
-                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-                pbImagen.TabIndex = 6;
-                this.Controls.Add(pbImagen);
-            }
-
-            if (labelPrueba == null)
-            {
-                labelPrueba = new Label();
-                labelPrueba.Name = "labelPrueba";
-                labelPrueba.Location = new Point(500, 400);
-                labelPrueba.Size = new Size(300, 195);
-                this.Controls.Add(labelPrueba);
-            }
-
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
-            openFileDialog.Title = "Seleccionar Imagen";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string rutaImagen = openFileDialog.FileName;
-                pbImagen.Image = Image.FromFile(rutaImagen);
-                labelPrueba.Text = rutaImagen;
-
-                using (MemoryStream ms = new MemoryStream())
-                {
-                    pbImagen.Image.Save(ms, pbImagen.Image.RawFormat);
-                    imagenSeleccionada = ms.ToArray();  
-                }
-            }
-        }
-
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             string resultado;
@@ -244,11 +203,49 @@ namespace Principal
             tbEmail.Text = "";
             tbTelefono.Text = "";
             tbContraseña.Text = "";
-            if (tbSalario != null)
+            if (tbSalario != null )
             {
                 tbSalario.Text = "";
+                
+            } else if (tbPrecio_producto != null || tbStock != null || tbDescripcion_producto != null || pbImagen != null) // fallita en la verificacion de la imagen
+            {
+                tbPrecio_producto.Text = "";
+                tbStock.Text = "";
+                tbDescripcion_producto.Text = "";
+                pbImagen.Image = null;
             }
-            
+        }
+
+        private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
+        {
+            pbImagen = this.Controls["pbImagen"] as PictureBox;
+
+            if (pbImagen == null)
+            {
+                pbImagen = new PictureBox();
+                pbImagen.Location = new Point(500, 140);
+                pbImagen.Name = "pbImagen";
+                pbImagen.Size = new Size(195, 195);
+                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImagen.TabIndex = 6;
+                this.Controls.Add(pbImagen);
+            }
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+            openFileDialog.Title = "Seleccionar Imagen";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string rutaImagen = openFileDialog.FileName;
+                pbImagen.Image = Image.FromFile(rutaImagen);
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    pbImagen.Image.Save(ms, pbImagen.Image.RawFormat);
+                    imagenSeleccionada = ms.ToArray();
+                }
+            }
         }
     }
 }

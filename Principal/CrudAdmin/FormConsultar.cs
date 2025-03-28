@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logica.Controllers;
+using Modelo.Entities;
 using MySqlX.XDevAPI;
 
 namespace Principal
@@ -100,8 +101,8 @@ namespace Principal
                     ProductoController ProductoController = new ProductoController();
                     var producto = ProductoController.ConsultarProducto(int.Parse(tbID.Text));
                     resultado = "";
-
-                    resultado += "ID: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Stock: " + producto.Stock + "---Descripcion: " + producto.Descripcion + "---Imagen: " + producto.Imagen + "\n";
+                    resultado += "ID: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Stock: " + producto.Stock + "---Descripcion: " + producto.Descripcion + "\n";
+                    MostrarImagen(producto.Imagen);
                     lbResultado.Text = resultado;
                     break;
                 default:
@@ -114,6 +115,42 @@ namespace Principal
         {
             tbID.Text = "";
             MostrarEntidades();
+        }
+
+        private void MostrarImagen(byte[] imagen)
+        {
+            PictureBox pbImagen = this.Controls["pbImagen"] as PictureBox;
+
+            if (pbImagen == null)
+            {
+                pbImagen = new PictureBox();
+                pbImagen.Location = new Point(500, 140);
+                pbImagen.Name = "pbImagen";
+                pbImagen.Size = new Size(195, 195);
+                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImagen.TabIndex = 6;
+                this.Controls.Add(pbImagen);
+            }
+
+            if (imagen != null && imagen.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imagen))
+                {
+                    try
+                    {
+                        pbImagen.Image = Image.FromStream(ms);  
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al cargar la imagen: " + ex.Message);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay imagen disponible para mostrar.");
+                pbImagen.Image = null; 
+            }
         }
     }
 }

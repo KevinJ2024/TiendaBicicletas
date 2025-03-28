@@ -13,7 +13,7 @@
     <Compile Update="CrudAdmin\FormEliminar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormPrincipal.cs">
+    <Compile Update="FormBackOffice.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CrudAdmin\FormRegistro.cs">

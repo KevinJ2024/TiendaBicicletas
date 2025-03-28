@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelo.DataEntities;
 using Modelo.Entities;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Logica.Controllers
 {
@@ -17,7 +18,7 @@ namespace Logica.Controllers
             string resultado = "";
             DataProducto db = new DataProducto();
             int filasAfectadas = db.RegistrarProducto(Nombre_producto, Precio_producto, Stock, Descripcion, Imagen);
-
+            
             if (filasAfectadas > 0)
             {
                 resultado = "Guardado con exito";
@@ -47,24 +48,24 @@ namespace Logica.Controllers
             return productos;
         }
 
-        //public string ActualizarVendedor(int ID_vendedor, string Nombre_vendedor, string Email, string Telefono, decimal Salario, string Contraseña)
-        //{
-        //    string resultado = "";
-        //    DataVendedor db = new DataVendedor();
-        //    int filasAfectadas = db.ActualizarVendedor(ID_vendedor, Nombre_vendedor, Email, Telefono, Salario, Contraseña);
+        public string ActualizarProducto(int ID_producto, string Nombre_producto, decimal Precio_producto, int Stock, string Descripcion, byte[] Imagen)
+        {
+            string resultado = "";
+            DataProducto db = new DataProducto();
+            int filasAfectadas = db.ActualizarProducto(ID_producto, Nombre_producto, Precio_producto, Stock, Descripcion, Imagen);
 
-        //    if (filasAfectadas > 0)
-        //    {
-        //        resultado = "Actualizado con exito";
+            if (filasAfectadas > 0)
+            {
+                resultado = "Actualizado con exito";
 
-        //    }
-        //    else
-        //    {
-        //        resultado = "No actualizado";
-        //    }
+            }
+            else
+            {
+                resultado = "No actualizado";
+            }
 
-        //    return resultado;
-        //}
+            return resultado;
+        }
 
         public string EliminarProducto(int ID_producto)
         {

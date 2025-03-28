@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormPrincipal : Form
+    public partial class FormBackOffice : Form
     {
         public string entidad;
 
-        public FormPrincipal()
+        public FormBackOffice()
         {
             InitializeComponent();
         }

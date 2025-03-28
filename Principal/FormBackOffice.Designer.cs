@@ -1,6 +1,6 @@
 ﻿namespace Principal
 {
-    partial class FormPrincipal
+    partial class FormBackOffice
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@
             btnCliente.Name = "btnCliente";
             btnCliente.Size = new Size(163, 64);
             btnCliente.TabIndex = 1;
-            btnCliente.Text = "Usuario";
+            btnCliente.Text = "Cliente";
             btnCliente.UseVisualStyleBackColor = true;
             btnCliente.Click += btnCliente_Click;
             // 

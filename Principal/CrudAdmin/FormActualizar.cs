@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Protobuf.WellKnownTypes;
 using Logica.Controllers;
 
 namespace Principal
@@ -17,6 +18,11 @@ namespace Principal
 
         private string entidad;
         public TextBox tbSalario;
+        public TextBox tbPrecio_producto;
+        public TextBox tbStock;
+        public TextBox tbDescripcion_producto;
+        public PictureBox pbImagen;
+        public byte[] imagenSeleccionada;
 
         public FormActualizar(string entidad)
         {
@@ -24,6 +30,8 @@ namespace Principal
             lbTitle.Text += entidad;
 
             this.entidad = entidad;
+            tbID.PlaceholderText += entidad;
+            tbNombre.PlaceholderText += entidad;
 
             ModificarFormularioPorEntidad();
         }
@@ -34,8 +42,6 @@ namespace Principal
             {
                 case "Vendedor":
                     lbTitle.Location = new Point(262, 59);
-                    tbID.PlaceholderText = "ID del vendedor";
-                    tbNombre.PlaceholderText = "Nombre Vendedor";
                     tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
                     tbSalario.Location = new Point(304, 300);
@@ -46,39 +52,34 @@ namespace Principal
                     break;
 
                 case "Producto":
-                    this.Controls.Remove(tbID);
-                    tbID.Dispose();
                     this.Controls.Remove(tbEmail);
                     tbEmail.Dispose();
                     this.Controls.Remove(tbTelefono);
                     tbTelefono.Dispose();
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
 
+                    btnBuscarEntidad.Location = new Point(200, 112);
                     lbTitle.Location = new Point(272, 59);
-                    tbNombre.PlaceholderText = "Nombre Producto";
+                    tbID.Location = new Point(282, 112);
                     tbNombre.Location = new Point(282, 148);
 
-                    TextBox tbID_producto = new TextBox();
-                    tbID_producto.Location = new Point(282, 140);
-                    tbID_producto.Name = "tbPrecio_producto";
-                    tbID_producto.PlaceholderText = "Precio del producto";
-                    tbID_producto.Size = new Size(195, 23);
-                    tbID_producto.TabIndex = 2;
 
-                    TextBox tbPrecio_producto = new TextBox();
+                    tbPrecio_producto = new TextBox();
                     tbPrecio_producto.Location = new Point(282, 180);
                     tbPrecio_producto.Name = "tbPrecio_producto";
                     tbPrecio_producto.PlaceholderText = "Precio del producto";
                     tbPrecio_producto.Size = new Size(195, 23);
                     tbPrecio_producto.TabIndex = 2;
 
-                    TextBox tbStock = new TextBox();
+                    tbStock = new TextBox();
                     tbStock.Location = new Point(282, 210);
                     tbStock.Name = "tbStock";
                     tbStock.PlaceholderText = "Stock del producto";
                     tbStock.Size = new Size(195, 23);
                     tbStock.TabIndex = 3;
 
-                    TextBox tbDescripcion_producto = new TextBox();
+                    tbDescripcion_producto = new TextBox();
                     tbDescripcion_producto.Location = new Point(282, 240);
                     tbDescripcion_producto.Name = "tbDescripcion_producto";
                     tbDescripcion_producto.PlaceholderText = "descripcion del producto";
@@ -125,7 +126,7 @@ namespace Principal
                     tbID_vendedor.Size = new Size(195, 23);
                     tbID_vendedor.TabIndex = 2;
 
-                    tbID_producto = new TextBox();
+                    TextBox tbID_producto = new TextBox();
                     tbID_producto.Location = new Point(282, 270);
                     tbID_producto.Name = "tbID_Producto";
                     tbID_producto.PlaceholderText = "ID_producto";
@@ -141,43 +142,6 @@ namespace Principal
                 default:
 
                     break;
-            }
-        }
-
-        private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
-        {
-            PictureBox pbImagen = this.Controls["pbImagen"] as PictureBox;
-            Label labelPrueba = this.Controls["labelPrueba"] as Label;
-            if (pbImagen == null)
-            {
-                pbImagen = new PictureBox();
-                pbImagen.Location = new Point(500, 140);
-                pbImagen.Name = "pbImagen";
-                pbImagen.Size = new Size(195, 195);
-                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-                pbImagen.TabIndex = 6;
-                this.Controls.Add(pbImagen);
-            }
-
-            if (labelPrueba == null)
-            {
-                labelPrueba = new Label();
-                labelPrueba.Name = "labelPrueba";
-                labelPrueba.Location = new Point(500, 400);
-                labelPrueba.Size = new Size(300, 195);
-                this.Controls.Add(labelPrueba);
-            }
-
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
-            openFileDialog.Title = "Seleccionar Imagen";
-
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string rutaImagen = openFileDialog.FileName;
-                pbImagen.Image = Image.FromFile(rutaImagen);
-                labelPrueba.Text = rutaImagen;
             }
         }
 
@@ -210,6 +174,18 @@ namespace Principal
                     tbContraseña.Text = vendedor.Contraseña;
 
                     break;
+                case "Producto":
+                    ProductoController ProductoController = new ProductoController();
+                    var producto = ProductoController.ConsultarProducto(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    tbNombre.Text = producto.Nombre_producto;
+                    tbPrecio_producto.Text = producto.Precio_producto.ToString();
+                    tbStock.Text = producto.Stock.ToString();
+                    tbDescripcion_producto.Text = producto.Descripcion;
+                    MostrarImagen(producto.Imagen);
+
+                    break;
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
@@ -230,6 +206,11 @@ namespace Principal
                     resultado = VendedorController.ActualizarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
                     lbResultado.Text = resultado;
                     break;
+                case "Producto":
+                    ProductoController ProductoController = new ProductoController();
+                    resultado = ProductoController.ActualizarProducto(int.Parse(tbID.Text), tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                    lbResultado.Text = resultado;
+                    break;
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
@@ -243,7 +224,86 @@ namespace Principal
             tbEmail.Text = "";
             tbTelefono.Text = "";
             tbContraseña.Text = "";
-            tbSalario.Text = "";
+            if (tbSalario != null)
+            {
+                tbSalario.Text = "";
+
+            }
+            else if (tbPrecio_producto != null || tbStock != null || tbDescripcion_producto != null || pbImagen.Image != null) // fallita en la verificacion de la imagen
+            {
+                tbPrecio_producto.Text = "";
+                tbStock.Text = "";
+                tbDescripcion_producto.Text = "";
+                pbImagen.Image = null;
+            }
+        }
+
+        private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
+        {
+            pbImagen = this.Controls["pbImagen"] as PictureBox;
+
+            if (pbImagen == null)
+            {
+                pbImagen = new PictureBox();
+                pbImagen.Location = new Point(500, 140);
+                pbImagen.Name = "pbImagen";
+                pbImagen.Size = new Size(195, 195);
+                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImagen.TabIndex = 6;
+                this.Controls.Add(pbImagen);
+            }
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+            openFileDialog.Title = "Seleccionar Imagen";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string rutaImagen = openFileDialog.FileName;
+                pbImagen.Image = Image.FromFile(rutaImagen);
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    pbImagen.Image.Save(ms, pbImagen.Image.RawFormat);
+                    imagenSeleccionada = ms.ToArray();
+                }
+            }
+        }
+
+        private void MostrarImagen(byte[] imagen)
+        {
+            pbImagen = this.Controls["pbImagen"] as PictureBox;
+
+            if (pbImagen == null)
+            {
+                pbImagen = new PictureBox();
+                pbImagen.Location = new Point(500, 140);
+                pbImagen.Name = "pbImagen";
+                pbImagen.Size = new Size(195, 195);
+                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImagen.TabIndex = 6;
+                this.Controls.Add(pbImagen);
+            }
+
+            if (imagen != null && imagen.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imagen))
+                {
+                    try
+                    {
+                        pbImagen.Image = Image.FromStream(ms);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al cargar la imagen: " + ex.Message);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay imagen disponible para mostrar.");
+                pbImagen.Image = null;
+            }
         }
     }
 }

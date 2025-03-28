@@ -59,7 +59,7 @@
             // 
             tbID.Location = new Point(304, 180);
             tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID";
+            tbID.PlaceholderText = "ID ";
             tbID.Size = new Size(186, 23);
             tbID.TabIndex = 6;
             // 

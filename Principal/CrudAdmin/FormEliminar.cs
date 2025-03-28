@@ -40,6 +40,11 @@ namespace Principal
                     resultado = VendedorController.EliminarVendedor(int.Parse(tbID.Text));
                     lbResultado.Text = resultado;
                     break;
+                case "Producto":
+                    ProductoController ProductoController = new ProductoController();
+                    resultado = ProductoController.EliminarProducto(int.Parse(tbID.Text));
+                    lbResultado.Text = resultado;
+                    break;
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
