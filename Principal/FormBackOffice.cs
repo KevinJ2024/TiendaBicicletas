@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormPrincipal : Form
+    public partial class FormBackOffice : Form
     {
         public string entidad;
 
-        public FormPrincipal()
+        public FormBackOffice()
         {
             InitializeComponent();
         }
@@ -45,6 +45,11 @@ namespace Principal
             entidad = "Factura";
             FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

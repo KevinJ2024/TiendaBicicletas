@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MQW8MgdnF8I=",
+  "dgSpecHash": "lN5M1GQ2Amw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\SENA\\Desktop\\Tiendabici\\TiendaBicicletas\\Modelo\\Modelo.csproj",
+  "projectFilePath": "C:\\Users\\SENA\\Desktop\\Bici\\TiendaBicicletas\\Modelo\\Modelo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SENA\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\SENA\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

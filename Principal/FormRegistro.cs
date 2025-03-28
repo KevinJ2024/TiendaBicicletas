@@ -192,6 +192,9 @@ namespace Principal
                 lbResult.Text = resultado;
 
                 MessageBox.Show(resultado, "Resultado del Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               FormPrincipalCliente formPrincipalCliente = new FormPrincipalCliente();
+                formPrincipalCliente.ShowDialog();
+
             }
             catch (FormatException)
             {
@@ -206,6 +209,15 @@ namespace Principal
         private void lbTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            string entidad;
+
+            
+            Entrar entrada = new Entrar();
+            entrada.ShowDialog();
         }
     }
 }

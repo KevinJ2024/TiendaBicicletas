@@ -69,7 +69,7 @@
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
-
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // tbEmail
             // 
@@ -78,7 +78,6 @@
             tbEmail.PlaceholderText = "Email";
             tbEmail.Size = new Size(195, 23);
             tbEmail.TabIndex = 3;
-          
             // 
             // tbTelefono
             // 
@@ -87,7 +86,6 @@
             tbTelefono.PlaceholderText = "Telefono";
             tbTelefono.Size = new Size(195, 23);
             tbTelefono.TabIndex = 4;
- 
             // 
             // tbNombre
             // 
@@ -96,7 +94,6 @@
             tbNombre.PlaceholderText = "Nombre Cliente";
             tbNombre.Size = new Size(195, 23);
             tbNombre.TabIndex = 5;
-    
             // 
             // tbID
             // 
@@ -105,8 +102,6 @@
             tbID.PlaceholderText = "ID del cliente";
             tbID.Size = new Size(195, 23);
             tbID.TabIndex = 6;
-            tbID.Text = "as";
-      
             // 
             // tbContraseña
             // 
@@ -115,7 +110,6 @@
             tbContraseña.PlaceholderText = "contraseña";
             tbContraseña.Size = new Size(195, 23);
             tbContraseña.TabIndex = 7;
-           
             // 
             // label1
             // 
@@ -129,9 +123,8 @@
             lbResult.AutoSize = true;
             lbResult.Location = new Point(593, 114);
             lbResult.Name = "lbResult";
-            lbResult.Size = new Size(38, 15);
+            lbResult.Size = new Size(0, 15);
             lbResult.TabIndex = 8;
-            lbResult.Text = "label2";
             // 
             // FormRegistro
             // 
