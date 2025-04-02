@@ -27,7 +27,6 @@ namespace Principal
         public TextBox tbID_cliente;
         public TextBox tbID_vendedor;
         public TextBox tbID_producto;
-        public DateTimePicker tbFecha;
 
 
         public FormRegistro(string entidad)
@@ -150,17 +149,9 @@ namespace Principal
                     tbID_producto.Size = new Size(195, 23);
                     tbID_producto.TabIndex = 3;
 
-                    tbFecha = new DateTimePicker();
-                    tbFecha.Location = new Point(282, 250);
-                    tbFecha.Name = "tbID_Producto";
-                    tbFecha.Size = new Size(195, 23);
-                    tbFecha.TabIndex = 3;
-
-
                     this.Controls.Add(tbID_cliente);
                     this.Controls.Add(tbID_vendedor);
                     this.Controls.Add(tbID_producto);
-                    this.Controls.Add(tbFecha);
                     break;
 
                 default:
@@ -212,8 +203,9 @@ namespace Principal
                     break;
 
                 case "Factura":
+                    DateTime fechaUtc = DateTime.UtcNow;
                     FacturaController FacturaController = new FacturaController();
-                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID_cliente.Text), int.Parse(tbID_vendedor.Text), int.Parse(tbID_producto.Text), tbFecha.Value);
+                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID_cliente.Text), int.Parse(tbID_vendedor.Text), int.Parse(tbID_producto.Text), fechaUtc);
                     lbResultado.Text = resultado;
 
                     break;

@@ -69,6 +69,7 @@ namespace Principal
                     }
                     lbResultado.Text = resultado;
                     break;
+
                 case "Proveedor":
                     ProveedorController ProveedorController = new ProveedorController();
                     var proveedores = ProveedorController.MostrarProveedores();
@@ -77,6 +78,18 @@ namespace Principal
                     foreach (var proveedorActual in proveedores)
                     {
                         resultado += "ID: " + proveedorActual.ID_proveedor + "---Nombre: " + proveedorActual.Nombre_proveedor + "---Email: " + proveedorActual.Email + "---Telefono: " + proveedorActual.Telefono +"\n";
+                    }
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Factura":
+                    FacturaController FacturaController = new FacturaController();
+                    var facturas = FacturaController.MostrarFacturas();
+                    resultado = "";
+
+                    foreach (var FacturaActual in facturas)
+                    {
+                        resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---ID_producto: " + FacturaActual.ID_producto + "---Fecha: " + FacturaActual.Fecha + "\n";
                     }
                     lbResultado.Text = resultado;
                     break;
@@ -125,6 +138,15 @@ namespace Principal
 
                     resultado += "ID: " + proveedor.ID_proveedor + "---Nombre: " + proveedor.Nombre_proveedor + "---Email: " + proveedor.Email + "---Telefono: " + proveedor.Telefono  +"\n";
 
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Factura":
+                    FacturaController FacturaController = new FacturaController();
+                    var factura = FacturaController.ConsultarFactura(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    resultado += "ID_factura: " + factura.ID_factura + "---ID_cliente: " + factura.ID_cliente + "---ID_vendedor: " + factura.ID_vendedor + "---ID_producto: " + factura.ID_producto + "---Fecha: " + factura.Fecha + "\n";
                     lbResultado.Text = resultado;
                     break;
 
