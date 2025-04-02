@@ -92,3 +92,6 @@ C:\Users\SENA\Desktop\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\P
 C:\Users\SENA\Desktop\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormBackOffice.resources
 C:\Users\SENA\Desktop\Bici\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormPrincipalCliente.resources
 >>>>>>> Miguel
+C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.Entrar.resources
+C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormLogin.resources
+C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormPrincipalCliente.resources

@@ -78,7 +78,7 @@
             // 
             // btnFactura
             // 
-            btnFactura.Location = new Point(92, 245);
+            btnFactura.Location = new Point(292, 246);
             btnFactura.Name = "btnFactura";
             btnFactura.Size = new Size(163, 64);
             btnFactura.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             // btnProveedor
             // 
-            btnProveedor.Location = new Point(92, 261);
+            btnProveedor.Location = new Point(92, 246);
             btnProveedor.Name = "btnProveedor";
             btnProveedor.Size = new Size(163, 64);
             btnProveedor.TabIndex = 5;
@@ -109,7 +109,6 @@
             Controls.Add(Titulo);
             Name = "FormBackOffice";
             Text = "FormPrincipal";
-            Load += FormPrincipal_Load;
             ResumeLayout(false);
             PerformLayout();
         }

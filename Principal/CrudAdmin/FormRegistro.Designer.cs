@@ -35,14 +35,8 @@
             tbTelefono = new TextBox();
             tbNombre = new TextBox();
             tbID = new TextBox();
-<<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.Designer.cs
             lbResultado = new Label();
             tbContraseña = new TextBox();
-=======
-            tbContraseña = new TextBox();
-            label1 = new Label();
-            lbResult = new Label();
->>>>>>> Miguel:Principal/FormRegistro.Designer.cs
             SuspendLayout();
             // 
             // lbTitle
@@ -54,7 +48,6 @@
             lbTitle.Size = new Size(121, 37);
             lbTitle.TabIndex = 0;
             lbTitle.Text = "Registro ";
-            lbTitle.Click += lbTitle_Click;
             // 
             // btnConfirmar
             // 
@@ -108,7 +101,6 @@
             tbID.Size = new Size(195, 23);
             tbID.TabIndex = 6;
             // 
-<<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.Designer.cs
             // lbResultado
             // 
             lbResultado.AutoSize = true;
@@ -125,44 +117,14 @@
             tbContraseña.PlaceholderText = "Contraseña";
             tbContraseña.Size = new Size(195, 23);
             tbContraseña.TabIndex = 8;
-=======
-            // tbContraseña
-            // 
-            tbContraseña.Location = new Point(282, 293);
-            tbContraseña.Name = "tbContraseña";
-            tbContraseña.PlaceholderText = "contraseña";
-            tbContraseña.Size = new Size(195, 23);
-            tbContraseña.TabIndex = 7;
-            // 
-            // label1
-            // 
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(100, 23);
-            label1.TabIndex = 0;
-            // 
-            // lbResult
-            // 
-            lbResult.AutoSize = true;
-            lbResult.Location = new Point(593, 114);
-            lbResult.Name = "lbResult";
-            lbResult.Size = new Size(0, 15);
-            lbResult.TabIndex = 8;
->>>>>>> Miguel:Principal/FormRegistro.Designer.cs
             // 
             // FormRegistro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-<<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.Designer.cs
             Controls.Add(tbContraseña);
             Controls.Add(lbResultado);
-=======
-            Controls.Add(lbResult);
-            Controls.Add(label1);
-            Controls.Add(tbContraseña);
->>>>>>> Miguel:Principal/FormRegistro.Designer.cs
             Controls.Add(tbID);
             Controls.Add(tbNombre);
             Controls.Add(tbTelefono);
@@ -185,13 +147,7 @@
         private TextBox tbTelefono;
         private TextBox tbNombre;
         private TextBox tbID;
-<<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.Designer.cs
         private Label lbResultado;
         private TextBox tbContraseña;
-=======
-        private TextBox tbContraseña;
-        private Label label1;
-        private Label lbResult;
->>>>>>> Miguel:Principal/FormRegistro.Designer.cs
     }
 }
