@@ -1,4 +1,5 @@
 ﻿using Modelo;
+using Modelo.DataEntities;
 
 namespace Logica.Controllers.InicioController
 {

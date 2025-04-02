@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelo.Entities;
 using MySql.Data.MySqlClient;
-namespace Modelo
+
+namespace Modelo.DataEntities
 
 {
     public class DataCliente : ConexionMySql
@@ -43,7 +44,23 @@ namespace Modelo
 
         public List<ClienteEntity> MostrarClientes()
         {
+            List<ClienteEntity> clientes = new List<ClienteEntity>();
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM cliente";
+            MySqlDataReader dr = cmd.ExecuteReader();
 
+            while (dr.Read())
+            {
+                ClienteEntity clienteActual = new ClienteEntity();
+                clienteActual.ID_cliente = dr.GetInt32(0);
+                clienteActual.Nombre_cliente = dr.GetString(1);
+                clienteActual.Email = dr.GetString(2);
+                clienteActual.Telefono = dr.GetString(3);
+                clienteActual.Contraseña = dr.GetString(4);
+
+                clientes.Add(clienteActual);
+            }
+            return clientes;
         }
 
         public int ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)
@@ -88,6 +105,5 @@ namespace Modelo
 
             return clienteExiste;
         }
-
     }
 }

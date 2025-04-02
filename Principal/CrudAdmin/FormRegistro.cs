@@ -24,6 +24,10 @@ namespace Principal
         public TextBox tbDescripcion_producto;
         public PictureBox pbImagen;
         public byte[] imagenSeleccionada;
+        public TextBox tbID_cliente;
+        public TextBox tbID_vendedor;
+        public TextBox tbID_producto;
+        public DateTimePicker tbFecha;
 
 
         public FormRegistro(string entidad)
@@ -102,8 +106,6 @@ namespace Principal
                     btnSeleccionar_Imagen.Click += new EventHandler(btnSeleccionar_Imagen_Click);
                     tbDescripcion_producto.TabIndex = 5;
 
-
-
                     this.Controls.Add(tbPrecio_producto);
                     this.Controls.Add(tbStock);
                     this.Controls.Add(tbDescripcion_producto);
@@ -124,32 +126,41 @@ namespace Principal
                     tbEmail.Dispose();
                     this.Controls.Remove(tbTelefono);
                     tbTelefono.Dispose();
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
 
-                    TextBox tbID_cliente = new TextBox();
-                    tbID_cliente.Location = new Point(282, 170);
+                    tbID_cliente = new TextBox();
+                    tbID_cliente.Location = new Point(282, 140);
                     tbID_cliente.Name = "tbID_cliente";
                     tbID_cliente.PlaceholderText = "ID_cliente";
                     tbID_cliente.Size = new Size(195, 23);
                     tbID_cliente.TabIndex = 1;
 
-                    TextBox tbID_vendedor = new TextBox();
-                    tbID_vendedor.Location = new Point(282, 220);
+                    tbID_vendedor = new TextBox();
+                    tbID_vendedor.Location = new Point(282, 170);
                     tbID_vendedor.Name = "tbID_vendedor";
                     tbID_vendedor.PlaceholderText = "ID_vendedor";
                     tbID_vendedor.Size = new Size(195, 23);
                     tbID_vendedor.TabIndex = 2;
 
-                    TextBox tbID_producto = new TextBox();
-                    tbID_producto.Location = new Point(282, 270);
+                    tbID_producto = new TextBox();
+                    tbID_producto.Location = new Point(282, 210);
                     tbID_producto.Name = "tbID_Producto";
                     tbID_producto.PlaceholderText = "ID_producto";
                     tbID_producto.Size = new Size(195, 23);
                     tbID_producto.TabIndex = 3;
 
+                    tbFecha = new DateTimePicker();
+                    tbFecha.Location = new Point(282, 250);
+                    tbFecha.Name = "tbID_Producto";
+                    tbFecha.Size = new Size(195, 23);
+                    tbFecha.TabIndex = 3;
+
 
                     this.Controls.Add(tbID_cliente);
                     this.Controls.Add(tbID_vendedor);
                     this.Controls.Add(tbID_producto);
+                    this.Controls.Add(tbFecha);
                     break;
 
                 default:
@@ -201,6 +212,9 @@ namespace Principal
                     break;
 
                 case "Factura":
+                    FacturaController FacturaController = new FacturaController();
+                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID_cliente.Text), int.Parse(tbID_vendedor.Text), int.Parse(tbID_producto.Text), tbFecha.Value);
+                    lbResultado.Text = resultado;
 
                     break;
                 default:
