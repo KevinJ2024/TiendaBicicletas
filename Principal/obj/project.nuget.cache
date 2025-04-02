@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "cjpwRTWuvz4=",
   "success": true,
   "projectFilePath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\Principal.csproj",
@@ -34,5 +35,11 @@
     "C:\\Users\\SENA\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\SENA\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "VIn+MYJmPrc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SENA\\Source\\Repos\\TiendaBicicletas\\Principal\\Principal.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> Origin/Miguel
   "logs": []
 }
