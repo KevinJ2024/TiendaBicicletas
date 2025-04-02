@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\xxxx\\tiendabicicletas\\principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\xxxx\\tiendabicicletas\\logica\\controllers\\iniciocontroller\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\iniciocontroller\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\xxxx\\tiendabicicletas\\logica\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\xxxx\\tiendabicicletas\\principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\xxxx\\tiendabicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AdministradorController.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\Controllers\\AdministradorController.cs",
               "RelativeDocumentMoniker": "Logica\\Controllers\\AdministradorController.cs",
@@ -184,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "FormBackOffice.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormBackOffice.cs",
               "RelativeDocumentMoniker": "Principal\\FormBackOffice.cs",
@@ -209,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FormPrincipalCliente.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormPrincipalCliente.cs",
               "RelativeDocumentMoniker": "Principal\\FormPrincipalCliente.cs",
@@ -221,13 +221,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\Controllers\\InicioController\\LoginController.cs",
               "RelativeDocumentMoniker": "Logica\\Controllers\\InicioController\\LoginController.cs",
               "ToolTip": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\Controllers\\InicioController\\LoginController.cs",
               "RelativeToolTip": "Logica\\Controllers\\InicioController\\LoginController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T21:15:45.274Z",
               "EditorCaption": ""
@@ -246,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DataAdmin.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Modelo\\DataEntities\\DataAdmin.cs",
               "RelativeDocumentMoniker": "Modelo\\DataEntities\\DataAdmin.cs",
@@ -283,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Logica\\Controllers\\ClienteController.cs",
@@ -361,9 +361,9 @@
               "Title": "FormLogin.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormLogin.cs",
               "RelativeDocumentMoniker": "Principal\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormLogin.cs",
-              "RelativeToolTip": "Principal\\FormLogin.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCQAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormLogin.cs*",
+              "RelativeToolTip": "Principal\\FormLogin.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T21:14:43.53Z",
               "EditorCaption": ""
@@ -394,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Entrar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\Entrar.cs",
               "RelativeDocumentMoniker": "Principal\\Entrar.cs",
@@ -406,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Entrar.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\Entrar.cs",
               "RelativeDocumentMoniker": "Principal\\Entrar.cs",
@@ -423,8 +423,8 @@
               "Title": "FormLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormLogin.cs",
               "RelativeDocumentMoniker": "Principal\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal\\FormLogin.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\FormLogin.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Principal\\FormLogin.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T21:16:10.481Z",
               "EditorCaption": " [Dise\u00F1o]"
