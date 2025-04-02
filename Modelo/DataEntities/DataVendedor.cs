@@ -90,6 +90,5 @@ namespace Modelo.DataEntities
 
             return resultado;
         }
-
     }
 }

@@ -89,7 +89,7 @@
             // 
             tbNombre.Location = new Point(282, 158);
             tbNombre.Name = "tbNombre";
-            tbNombre.PlaceholderText = "Nombre Cliente";
+            tbNombre.PlaceholderText = "Nombre ";
             tbNombre.Size = new Size(195, 23);
             tbNombre.TabIndex = 5;
             // 
@@ -97,7 +97,7 @@
             // 
             tbID.Location = new Point(282, 114);
             tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID del cliente";
+            tbID.PlaceholderText = "ID ";
             tbID.Size = new Size(195, 23);
             tbID.TabIndex = 6;
             // 

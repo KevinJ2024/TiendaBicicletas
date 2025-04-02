@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelo.Entities;
 using MySql.Data.MySqlClient;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Modelo.DataEntities
 {

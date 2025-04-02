@@ -33,6 +33,7 @@
             btnVendedor = new Button();
             btnProducto = new Button();
             btnFactura = new Button();
+            btnProveedor = new Button();
             SuspendLayout();
             // 
             // Titulo
@@ -85,17 +86,28 @@
             btnFactura.UseVisualStyleBackColor = true;
             btnFactura.Click += btnFactura_Click;
             // 
-            // FormPrincipal
+            // btnProveedor
+            // 
+            btnProveedor.Location = new Point(92, 261);
+            btnProveedor.Name = "btnProveedor";
+            btnProveedor.Size = new Size(163, 64);
+            btnProveedor.TabIndex = 5;
+            btnProveedor.Text = "Proveedor";
+            btnProveedor.UseVisualStyleBackColor = true;
+            btnProveedor.Click += btnProveedor_Click;
+            // 
+            // FormBackOffice
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnProveedor);
             Controls.Add(btnFactura);
             Controls.Add(btnProducto);
             Controls.Add(btnVendedor);
             Controls.Add(btnCliente);
             Controls.Add(Titulo);
-            Name = "FormPrincipal";
+            Name = "FormBackOffice";
             Text = "FormPrincipal";
             ResumeLayout(false);
             PerformLayout();
@@ -108,5 +120,6 @@
         private Button btnVendedor;
         private Button btnProducto;
         private Button btnFactura;
+        private Button btnProveedor;
     }
 }

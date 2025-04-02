@@ -31,8 +31,8 @@ namespace Principal
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController Clientecontroller = new ClienteController();
-                     resultado = Clientecontroller.EliminarCliente(int.Parse(tbID.Text));
+                    ClienteController ClienteController = new ClienteController();
+                     resultado = ClienteController.EliminarCliente(int.Parse(tbID.Text));
                     lbResultado.Text = resultado;
                     break;
                 case "Vendedor":
@@ -43,6 +43,11 @@ namespace Principal
                 case "Producto":
                     ProductoController ProductoController = new ProductoController();
                     resultado = ProductoController.EliminarProducto(int.Parse(tbID.Text));
+                    lbResultado.Text = resultado;
+                    break;
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    resultado = ProveedorController.EliminarProveedor(int.Parse(tbID.Text));
                     lbResultado.Text = resultado;
                     break;
                 default:

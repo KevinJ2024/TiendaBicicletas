@@ -30,6 +30,8 @@ namespace Principal
         {
             InitializeComponent();
             lbTitle.Text += entidad;
+            tbID.PlaceholderText += entidad;
+            tbNombre.PlaceholderText += entidad;
 
             this.entidad = entidad;
 
@@ -108,6 +110,11 @@ namespace Principal
                     this.Controls.Add(btnSeleccionar_Imagen);
                     break;
 
+                case "Proveedor":
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
+                    break;
+
                 case "Factura":
                     this.Controls.Remove(tbID);
                     tbID.Dispose();
@@ -157,26 +164,26 @@ namespace Principal
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController Clientecontroller = new ClienteController();
+                    ClienteController ClienteController = new ClienteController();
                     if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
                     {
                         lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
                     }
                     else
                     {
-                        resultado = Clientecontroller.RegistrarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
+                        resultado = ClienteController.RegistrarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
                         lbResultado.Text = resultado;
                     }
                     break;
                 case "Vendedor":
-                    VendedorController Vendedorcontroller = new VendedorController();
+                    VendedorController VendedorController = new VendedorController();
                     if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbSalario.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
                     {
                         lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
                     }
                     else
                     {
-                        resultado = Vendedorcontroller.RegistrarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
+                        resultado = VendedorController.RegistrarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
                         lbResultado.Text = resultado;
                     }
                     break;
@@ -184,6 +191,12 @@ namespace Principal
                 case "Producto":
                     ProductoController ProductoController = new ProductoController();
                     resultado = ProductoController.RegistrarProducto(tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    resultado = ProveedorController.RegistrarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
                     lbResultado.Text = resultado;
                     break;
 
