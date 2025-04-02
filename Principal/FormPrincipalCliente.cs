@@ -21,5 +21,14 @@ namespace Principal
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            Entrar entrar = new Entrar();
+            entrar.ShowDialog();
+
+            this.Close();
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            FromPrincipalBack = new Button();
             SuspendLayout();
             // 
             // label1
@@ -41,11 +42,22 @@
             label1.Text = "Hola que tal :D";
             label1.Click += label1_Click;
             // 
+            // FromPrincipalBack
+            // 
+            FromPrincipalBack.Location = new Point(3, 425);
+            FromPrincipalBack.Name = "FromPrincipalBack";
+            FromPrincipalBack.Size = new Size(75, 23);
+            FromPrincipalBack.TabIndex = 1;
+            FromPrincipalBack.Text = "Volver";
+            FromPrincipalBack.UseVisualStyleBackColor = true;
+            FromPrincipalBack.Click += button1_Click;
+            // 
             // FormPrincipalCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(FromPrincipalBack);
             Controls.Add(label1);
             Name = "FormPrincipalCliente";
             Text = "FormPrincipalCliente";
@@ -56,5 +68,6 @@
         #endregion
 
         private Label label1;
+        private Button FromPrincipalBack;
     }
 }

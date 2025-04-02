@@ -21,7 +21,6 @@ namespace Logica.Controllers
 
             return admin;
         }
-
         public string RegistrarAdmin(int ID_admin, string Nombre_admin, string Email, string Telefono, string Contraseña)
         {
             string resultado = "";

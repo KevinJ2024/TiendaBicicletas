@@ -24,7 +24,13 @@ namespace Principal
                 LoginController controllerLogin = new LoginController();
                 string resultado = controllerLogin.Login(email, contraseña);
 
-                if (resultado == "Login exitoso. Usuario encontrado")
+                if (resultado == "Login exitoso. Bienvenido administrador.")
+                {
+                    MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FormPrincipalCliente cliente = new FormPrincipalCliente();
+                    cliente.ShowDialog();
+                }
+                else if (resultado == "Login exitoso. Bienvenido cliente.")
                 {
                     MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     FormPrincipalCliente cliente = new FormPrincipalCliente();
@@ -45,6 +51,8 @@ namespace Principal
         {
             Entrar entrar = new Entrar();
             entrar.ShowDialog();
+            this.Close();
         }
+
     }
 }

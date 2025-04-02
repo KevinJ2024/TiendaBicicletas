@@ -1649,11 +1649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\Principal.csproj",
+      "projectUniqueName": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\Principal.csproj",
       "projectName": "Principal",
-      "projectPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\Principal.csproj",
+      "projectPath": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\Principal.csproj",
       "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\obj\\",
+      "outputPath": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Principal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1671,8 +1671,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\Logica.csproj": {
-              "projectPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\Logica.csproj"
+            "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\Logica.csproj": {
+              "projectPath": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\Logica.csproj"
             }
           }
         }

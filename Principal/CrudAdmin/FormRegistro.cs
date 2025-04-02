@@ -246,6 +246,7 @@ namespace Principal
 
             Entrar entrada = new Entrar();
             entrada.ShowDialog();
+            this.Close();
         }
 
         private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
