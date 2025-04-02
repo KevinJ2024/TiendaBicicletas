@@ -53,7 +53,5 @@ namespace Principal
             FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
         }
-
-       
     }
 }

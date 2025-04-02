@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
+using Modelo;
 using Modelo.DataEntities;
 using Modelo.Entities;
 
@@ -81,7 +82,6 @@ namespace Logica.Controllers
             {
                 resultado = "No Eliminado";
             }
-
             return resultado;
         }
     }
