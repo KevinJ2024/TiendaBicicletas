@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using TiendaBicicletas.Logica.Controller;
 using Modelo.Entities;
 using Logica.Controllers.InicioController;
 
@@ -26,9 +27,9 @@ namespace Principal
 
                 if (resultado == "Login exitoso. Bienvenido administrador.")
                 {
-                    MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    FormPrincipalCliente cliente = new FormPrincipalCliente();
-                    cliente.ShowDialog();
+                MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FormPrincipalCliente cliente = new FormPrincipalCliente();
+                cliente.ShowDialog();
                 }
                 else if (resultado == "Login exitoso. Bienvenido cliente.")
                 {
@@ -45,6 +46,9 @@ namespace Principal
             {
                 MessageBox.Show("Error durante el login: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

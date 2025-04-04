@@ -9,7 +9,7 @@ namespace Modelo.DataEntities
 
         public bool VerificarAdmin(string Email_admin, string Contraseña_admin)
         {
-           bool adminExiste = false;
+            bool adminExiste = false;
             MySqlCommand cmd = GetConnection().CreateCommand();
             cmd.CommandText = "SELECT COUNT(*) FROM administrador WHERE Email_admin = @Email_admin AND Contraseña_admin = @Contraseña_admin";
             cmd.Parameters.AddWithValue("@Email_admin", Email_admin);

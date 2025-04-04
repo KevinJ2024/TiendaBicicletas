@@ -12,9 +12,9 @@ namespace Modelo.DataEntities
 	public class DataFactura : ConexionMySql
 	{
         public int RegistrarFactura(int ID_cliente, int ID_vendedor, int ID_producto, DateTime Fecha)
-        {
+		{
             int resultado = 0;
-            MySqlCommand cmd = GetConnection().CreateCommand();
+			MySqlCommand cmd = GetConnection().CreateCommand();
             cmd.CommandText = "INSERT INTO factura (ID_cliente, ID_vendedor, ID_producto, Fecha) VALUES ('" + ID_cliente + "','" + ID_vendedor + "','" + ID_producto + "','" + Fecha + "')";
             resultado = cmd.ExecuteNonQuery();
 
@@ -27,18 +27,18 @@ namespace Modelo.DataEntities
             MySqlCommand cmd = GetConnection().CreateCommand();
             cmd.CommandText = "SELECT * FROM factura WHERE ID_factura = @ID_factura";
             cmd.Parameters.AddWithValue("@ID_factura", ID_factura);
-            MySqlDataReader dr = cmd.ExecuteReader();
+			MySqlDataReader dr = cmd.ExecuteReader();
 
-            while (dr.Read())
-            {
+			while (dr.Read())
+			{
                 factura.ID_cliente = dr.GetInt32(0);
                 factura.ID_vendedor = dr.GetInt32(1);
                 factura.ID_producto = dr.GetInt32(2);
                 factura.Fecha = dr.GetDateTime(3);
 
-            }
+			}
             return factura;
-        }
+		}
 
         public List<FacturaEntity> MostrarFacturas()
         {
@@ -48,18 +48,19 @@ namespace Modelo.DataEntities
             MySqlDataReader dr = cmd.ExecuteReader();
 
             while (dr.Read())
-            {
+		{
                 FacturaEntity facturaActual = new FacturaEntity();
                 facturaActual.ID_cliente = dr.GetInt32(0);
                 facturaActual.ID_vendedor = dr.GetInt32(1);
                 facturaActual.ID_producto = dr.GetInt32(2);
                 facturaActual.Fecha = dr.GetDateTime(3);
 
+            resultado = cmd.ExecuteNonQuery();
 
                 facturas.Add(facturaActual);
             }
             return facturas;
-        }
+		}
 
         //public int ActualizarFactura(int ID_cliente, int ID_vendedor, int ID_producto, DateTime Fecha)
         //{
@@ -74,5 +75,5 @@ namespace Modelo.DataEntities
 
         //    return resultado;
         //}
-    }
+	}
 }
