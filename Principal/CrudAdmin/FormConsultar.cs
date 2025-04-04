@@ -89,10 +89,23 @@ namespace Principal
 
                     foreach (var FacturaActual in facturas)
                     {
-                        resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---ID_producto: " + FacturaActual.ID_producto + "---Fecha: " + FacturaActual.Fecha + "\n";
+                        resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---Fecha: " + FacturaActual.Fecha + "\n";
                     }
                     lbResultado.Text = resultado;
                     break;
+
+                case "ProductoFactura":
+                    ProductoFacturaController ProductoFacturaController = new ProductoFacturaController();
+                    var productosfacturas = ProductoFacturaController.MostrarProductoFactura();
+                    resultado = "";
+
+                    foreach (var productoFacturaActual in productosfacturas)
+                    {
+                        resultado += "ID_productofactura: " + productoFacturaActual.ID_productofactura + "---ID_factura: " + productoFacturaActual.ID_factura + "---ID_producto: " + productoFacturaActual.ID_producto + "---Cantidad: " + productoFacturaActual.Cantidad + "\n";
+                    }
+                    lbResultado.Text = resultado;
+                    break;
+
                 default:
 
                     break;
@@ -146,7 +159,19 @@ namespace Principal
                     var factura = FacturaController.ConsultarFactura(int.Parse(tbID.Text));
                     resultado = "";
 
-                    resultado += "ID_factura: " + factura.ID_factura + "---ID_cliente: " + factura.ID_cliente + "---ID_vendedor: " + factura.ID_vendedor + "---ID_producto: " + factura.ID_producto + "---Fecha: " + factura.Fecha + "\n";
+                    resultado += "ID_factura: " + factura.ID_factura + "---ID_cliente: " + factura.ID_cliente + "---ID_vendedor: " + factura.ID_vendedor + "---Fecha: " + factura.Fecha + "\n";
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "ProductoFactura":
+                    ProductoFacturaController ProductoFacturaController = new ProductoFacturaController();
+                    var productosfacturas = ProductoFacturaController.ConsultarProductosFacturas(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    foreach (var productoFacturaActual in productosfacturas)
+                    {
+                        resultado += "ID_productofactura: " + productoFacturaActual.ID_productofactura + "---ID_factura: " + productoFacturaActual.ID_factura + "---ID_producto: " + productoFacturaActual.ID_producto + "---Cantidad: " + productoFacturaActual.Cantidad + "\n";
+                    }
                     lbResultado.Text = resultado;
                     break;
 

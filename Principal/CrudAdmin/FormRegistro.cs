@@ -24,9 +24,9 @@ namespace Principal
         public TextBox tbDescripcion_producto;
         public PictureBox pbImagen;
         public byte[] imagenSeleccionada;
-        public TextBox tbID_cliente;
         public TextBox tbID_vendedor;
         public TextBox tbID_producto;
+        public TextBox tbCantidadProducto;
 
 
         public FormRegistro(string entidad)
@@ -117,8 +117,6 @@ namespace Principal
                     break;
 
                 case "Factura":
-                    this.Controls.Remove(tbID);
-                    tbID.Dispose();
                     this.Controls.Remove(tbNombre);
                     tbNombre.Dispose();
                     this.Controls.Remove(tbEmail);
@@ -128,30 +126,49 @@ namespace Principal
                     this.Controls.Remove(tbContraseña);
                     tbContraseña.Dispose();
 
-                    tbID_cliente = new TextBox();
-                    tbID_cliente.Location = new Point(282, 140);
-                    tbID_cliente.Name = "tbID_cliente";
-                    tbID_cliente.PlaceholderText = "ID_cliente";
-                    tbID_cliente.Size = new Size(195, 23);
-                    tbID_cliente.TabIndex = 1;
+                    tbID.Location = new Point(282,180);
+                    tbID.PlaceholderText = "ID Cliente";
 
                     tbID_vendedor = new TextBox();
-                    tbID_vendedor.Location = new Point(282, 170);
+                    tbID_vendedor.Location = new Point(282, 220);
                     tbID_vendedor.Name = "tbID_vendedor";
-                    tbID_vendedor.PlaceholderText = "ID_vendedor";
+                    tbID_vendedor.PlaceholderText = "ID Vendedor";
                     tbID_vendedor.Size = new Size(195, 23);
                     tbID_vendedor.TabIndex = 2;
 
-                    tbID_producto = new TextBox();
-                    tbID_producto.Location = new Point(282, 210);
-                    tbID_producto.Name = "tbID_Producto";
-                    tbID_producto.PlaceholderText = "ID_producto";
-                    tbID_producto.Size = new Size(195, 23);
-                    tbID_producto.TabIndex = 3;
-
-                    this.Controls.Add(tbID_cliente);
                     this.Controls.Add(tbID_vendedor);
+                    break;
+
+                case "ProductoFactura":
+                    this.Controls.Remove(tbNombre);
+                    tbNombre.Dispose();
+                    this.Controls.Remove(tbEmail);
+                    tbEmail.Dispose();
+                    this.Controls.Remove(tbTelefono);
+                    tbTelefono.Dispose();
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
+
+                    tbID.Location = new Point(282, 180);
+                    tbID.PlaceholderText = "ID Factura";
+
+                    tbID_producto = new TextBox();
+                    tbID_producto.Location = new Point(282, 220);
+                    tbID_producto.Name = "tbID_producto";
+                    tbID_producto.PlaceholderText = "ID Producto";
+                    tbID_producto.Size = new Size(195, 23);
+                    tbID_producto.TabIndex = 2;
+
+                    tbCantidadProducto = new TextBox();
+                    tbCantidadProducto.Location = new Point(282, 260);
+                    tbCantidadProducto.Name = "tbCantidadProducto";
+                    tbCantidadProducto.PlaceholderText = "Cantidad del producto";
+                    tbCantidadProducto.Size = new Size(195, 23);
+                    tbCantidadProducto.TabIndex = 2;
+
                     this.Controls.Add(tbID_producto);
+                    this.Controls.Add(tbCantidadProducto);
+
                     break;
 
                 default:
@@ -205,10 +222,18 @@ namespace Principal
                 case "Factura":
                     DateTime fechaUtc = DateTime.UtcNow;
                     FacturaController FacturaController = new FacturaController();
-                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID_cliente.Text), int.Parse(tbID_vendedor.Text), int.Parse(tbID_producto.Text), fechaUtc);
+                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID.Text), int.Parse(tbID_vendedor.Text), fechaUtc);
                     lbResultado.Text = resultado;
 
                     break;
+
+                case "ProductoFactura":
+                    ProductoFacturaController ProductoFacturaController = new ProductoFacturaController();
+                    resultado = ProductoFacturaController.RegistrarProductoFactura(int.Parse(tbID.Text), int.Parse(tbID_producto.Text), int.Parse(tbCantidadProducto.Text));
+                    lbResultado.Text = resultado;
+
+                    break;
+
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
