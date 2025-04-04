@@ -43,7 +43,7 @@
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(282, 59);
+            lbTitle.Location = new Point(282, 9);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(121, 37);
             lbTitle.TabIndex = 0;
@@ -89,7 +89,7 @@
             // 
             tbNombre.Location = new Point(282, 158);
             tbNombre.Name = "tbNombre";
-            tbNombre.PlaceholderText = "Nombre Cliente";
+            tbNombre.PlaceholderText = "Nombre ";
             tbNombre.Size = new Size(195, 23);
             tbNombre.TabIndex = 5;
             // 
@@ -97,7 +97,7 @@
             // 
             tbID.Location = new Point(282, 114);
             tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID del cliente";
+            tbID.PlaceholderText = "ID ";
             tbID.Size = new Size(195, 23);
             tbID.TabIndex = 6;
             // 

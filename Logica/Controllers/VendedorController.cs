@@ -41,9 +41,9 @@ namespace Logica.Controllers
         public List<VendedorEntity> MostrarVendedores()
         {
             DataVendedor db = new DataVendedor();
-            List<VendedorEntity> clientes = db.MostrarVendedores();
+            List<VendedorEntity> vendedores = db.MostrarVendedores();
 
-            return clientes;
+            return vendedores;
         }
 
         public string ActualizarVendedor(int ID_vendedor, string Nombre_vendedor, string Email, string Telefono, decimal Salario, string Contraseña)

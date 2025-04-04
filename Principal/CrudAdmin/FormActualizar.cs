@@ -102,6 +102,11 @@ namespace Principal
                     this.Controls.Add(btnSeleccionar_Imagen);
                     break;
 
+                case "Proveedor":
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
+                    break;
+
                 case "Factura":
                     this.Controls.Remove(tbID);
                     tbID.Dispose();
@@ -151,8 +156,8 @@ namespace Principal
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController Clientecontroller = new ClienteController();
-                    var cliente = Clientecontroller.ConsultarCliente(int.Parse(tbID.Text));
+                    ClienteController ClienteController = new ClienteController();
+                    var cliente = ClienteController.ConsultarCliente(int.Parse(tbID.Text));
                     resultado = "";
 
                     tbNombre.Text = cliente.Nombre_cliente;
@@ -186,6 +191,18 @@ namespace Principal
                     MostrarImagen(producto.Imagen);
 
                     break;
+
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    var proveedor = ProveedorController.ConsultarProveedor(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    tbNombre.Text = proveedor.Nombre_proveedor;
+                    tbEmail.Text = proveedor.Email;
+                    tbTelefono.Text = proveedor.Telefono;
+
+                    break;
+
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
@@ -209,6 +226,11 @@ namespace Principal
                 case "Producto":
                     ProductoController ProductoController = new ProductoController();
                     resultado = ProductoController.ActualizarProducto(int.Parse(tbID.Text), tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                    lbResultado.Text = resultado;
+                    break;
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    resultado = ProveedorController.ActualizarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
                     lbResultado.Text = resultado;
                     break;
                 default:

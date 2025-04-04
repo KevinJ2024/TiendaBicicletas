@@ -65,7 +65,31 @@ namespace Principal
 
                     foreach (var productoActual in productos)
                     {
-                        resultado += "ID: " + productoActual.ID_producto + "---Nombre: " + productoActual.Nombre_producto + "---Email: " + productoActual.Precio_producto + "---Telefono: " + productoActual.Stock + "---Salario: " + productoActual.Descripcion + "--- Contraseña: " + productoActual.Imagen + "\n";
+                        resultado += "ID: " + productoActual.ID_producto + "---Nombre: " + productoActual.Nombre_producto + "---Precio_producto: " + productoActual.Precio_producto + "---Stock: " + productoActual.Stock + "---Descripcion: " + productoActual.Descripcion + "--- Imagen: " + productoActual.Imagen + "\n";
+                    }
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    var proveedores = ProveedorController.MostrarProveedores();
+                    resultado = "";
+
+                    foreach (var proveedorActual in proveedores)
+                    {
+                        resultado += "ID: " + proveedorActual.ID_proveedor + "---Nombre: " + proveedorActual.Nombre_proveedor + "---Email: " + proveedorActual.Email + "---Telefono: " + proveedorActual.Telefono +"\n";
+                    }
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Factura":
+                    FacturaController FacturaController = new FacturaController();
+                    var facturas = FacturaController.MostrarFacturas();
+                    resultado = "";
+
+                    foreach (var FacturaActual in facturas)
+                    {
+                        resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---ID_producto: " + FacturaActual.ID_producto + "---Fecha: " + FacturaActual.Fecha + "\n";
                     }
                     lbResultado.Text = resultado;
                     break;
@@ -79,8 +103,8 @@ namespace Principal
             switch (entidad)
             {
                 case "Cliente":
-                    ClienteController Clientecontroller = new ClienteController();
-                    var cliente = Clientecontroller.ConsultarCliente(int.Parse(tbID.Text));
+                    ClienteController ClienteController = new ClienteController();
+                    var cliente = ClienteController.ConsultarCliente(int.Parse(tbID.Text));
                     string resultado = "";
 
                     resultado += "ID: " + cliente.ID_cliente + "---Nombre: " + cliente.Nombre_cliente + "---Email: " + cliente.Email + "---Telefono: " + cliente.Telefono + "--- Contraseña: " + cliente.Contraseña + "\n";
@@ -89,14 +113,15 @@ namespace Principal
                     break;
 
                 case "Vendedor":
-                    VendedorController Vendedorcontroller = new VendedorController();
-                    var vendedor = Vendedorcontroller.ConsultarVendedor(int.Parse(tbID.Text));
+                    VendedorController VendedorController = new VendedorController();
+                    var vendedor = VendedorController.ConsultarVendedor(int.Parse(tbID.Text));
                     resultado = "";
 
                     resultado += "ID: " + vendedor.ID_vendedor + "---Nombre: " + vendedor.Nombre_vendedor + "---Email: " + vendedor.Email + "---Telefono: " + vendedor.Telefono + "---Salario: "+ vendedor.Salario + "--- Contraseña: " + vendedor.Contraseña + "\n";
 
                     lbResultado.Text = resultado;
                     break;
+
                 case "Producto":
                     ProductoController ProductoController = new ProductoController();
                     var producto = ProductoController.ConsultarProducto(int.Parse(tbID.Text));
@@ -105,6 +130,26 @@ namespace Principal
                     MostrarImagen(producto.Imagen);
                     lbResultado.Text = resultado;
                     break;
+
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    var proveedor = ProveedorController.ConsultarProveedor(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    resultado += "ID: " + proveedor.ID_proveedor + "---Nombre: " + proveedor.Nombre_proveedor + "---Email: " + proveedor.Email + "---Telefono: " + proveedor.Telefono  +"\n";
+
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Factura":
+                    FacturaController FacturaController = new FacturaController();
+                    var factura = FacturaController.ConsultarFactura(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    resultado += "ID_factura: " + factura.ID_factura + "---ID_cliente: " + factura.ID_cliente + "---ID_vendedor: " + factura.ID_vendedor + "---ID_producto: " + factura.ID_producto + "---Fecha: " + factura.Fecha + "\n";
+                    lbResultado.Text = resultado;
+                    break;
+
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;

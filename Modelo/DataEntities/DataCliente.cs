@@ -89,5 +89,21 @@ namespace Modelo.DataEntities
             return resultado;
         }
 
+        public bool VerificarCliente(string Email, string Contraseña)
+        {
+            bool clienteExiste = false;
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT COUNT(*) FROM cliente WHERE Email = @Email AND Contraseña = @Contraseña";
+            cmd.Parameters.AddWithValue("@Email", Email);
+            cmd.Parameters.AddWithValue("@Contraseña", Contraseña);
+
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            if (count > 0)
+            {
+                clienteExiste = true;
+            }
+
+            return clienteExiste;
+        }
     }
 }
