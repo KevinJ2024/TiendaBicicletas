@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entities
 {
-    public  class VendedorEntity
+    public class ProveedorEntity
     {
-        public int ID_vendedor;
-        public string Nombre_vendedor;
+        public int ID_Proveedor;
+        public string Nombre_proveedor;
         public string Email;
         public string Telefono;
-        public decimal Salario;
-        public string Contraseña;
+
+        public int ID_proveedor { get; internal set; }
     }
 }

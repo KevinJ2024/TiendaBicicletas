@@ -1613,11 +1613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SENA\\Desktop\\Bici\\TiendaBicicletas\\Modelo\\Modelo.csproj",
+      "projectUniqueName": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\Modelo.csproj",
       "projectName": "Modelo",
-      "projectPath": "C:\\Users\\SENA\\Desktop\\Bici\\TiendaBicicletas\\Modelo\\Modelo.csproj",
+      "projectPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\Modelo.csproj",
       "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SENA\\Desktop\\Bici\\TiendaBicicletas\\Modelo\\obj\\",
+      "outputPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1676,5 +1676,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

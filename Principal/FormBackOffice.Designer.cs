@@ -33,8 +33,7 @@
             btnVendedor = new Button();
             btnProducto = new Button();
             btnFactura = new Button();
-            button1 = new Button();
-            button2 = new Button();
+            btnProveedor = new Button();
             SuspendLayout();
             // 
             // Titulo
@@ -53,7 +52,7 @@
             btnCliente.Name = "btnCliente";
             btnCliente.Size = new Size(163, 64);
             btnCliente.TabIndex = 1;
-            btnCliente.Text = "Usuario";
+            btnCliente.Text = "Cliente";
             btnCliente.UseVisualStyleBackColor = true;
             btnCliente.Click += btnCliente_Click;
             // 
@@ -79,7 +78,7 @@
             // 
             // btnFactura
             // 
-            btnFactura.Location = new Point(92, 245);
+            btnFactura.Location = new Point(292, 246);
             btnFactura.Name = "btnFactura";
             btnFactura.Size = new Size(163, 64);
             btnFactura.TabIndex = 4;
@@ -87,39 +86,29 @@
             btnFactura.UseVisualStyleBackColor = true;
             btnFactura.Click += btnFactura_Click;
             // 
-            // button1
+            // btnProveedor
             // 
-            button1.Location = new Point(309, 245);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 64);
-            button1.TabIndex = 5;
-            button1.Text = "Factura";
-            button1.UseVisualStyleBackColor = true;
+            btnProveedor.Location = new Point(92, 246);
+            btnProveedor.Name = "btnProveedor";
+            btnProveedor.Size = new Size(163, 64);
+            btnProveedor.TabIndex = 5;
+            btnProveedor.Text = "Proveedor";
+            btnProveedor.UseVisualStyleBackColor = true;
+            btnProveedor.Click += btnProveedor_Click;
             // 
-            // button2
-            // 
-            button2.Location = new Point(511, 245);
-            button2.Name = "button2";
-            button2.Size = new Size(163, 64);
-            button2.TabIndex = 6;
-            button2.Text = "Factura";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // FormPrincipal
+            // FormBackOffice
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnProveedor);
             Controls.Add(btnFactura);
             Controls.Add(btnProducto);
             Controls.Add(btnVendedor);
             Controls.Add(btnCliente);
             Controls.Add(Titulo);
-            Name = "FormPrincipal";
+            Name = "FormBackOffice";
             Text = "FormPrincipal";
-            Load += FormPrincipal_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,7 +120,6 @@
         private Button btnVendedor;
         private Button btnProducto;
         private Button btnFactura;
-        private Button button1;
-        private Button button2;
+        private Button btnProveedor;
     }
 }

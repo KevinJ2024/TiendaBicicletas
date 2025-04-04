@@ -11,9 +11,9 @@ namespace Modelo.Entities
     {
         public int ID_producto;
         public string Nombre_producto;
-        public int Precio_producto;
+        public decimal Precio_producto;
         public int Stock;
         public string Descripcion;
-        public Blob Imagen;
+        public byte[] Imagen;
     }
 }

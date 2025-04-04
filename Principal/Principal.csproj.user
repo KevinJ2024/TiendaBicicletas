@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="CrudAdmin\FormActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CrudAdmin\FormConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CrudAdmin\FormCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CrudAdmin\FormEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Entrar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormActualizar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormConsultar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormCRUD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormEliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormBackOffice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormPrincipalCliente.cs">
+    <Compile Update="CrudAdmin\FormRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormRegistro.cs">
+    <Compile Update="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormPrincipalCliente.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

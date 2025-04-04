@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using TiendaBicicletas.Logica.Controller;
 using Modelo.Entities;
+using Logica.Controllers.InicioController;
 
 namespace Principal
 {
@@ -24,21 +24,21 @@ namespace Principal
                 LoginController controllerLogin = new LoginController();
                 string resultado = controllerLogin.Login(email, contraseña);
 
-                MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                FormPrincipalCliente cliente = new FormPrincipalCliente();
-                cliente.ShowDialog();
-                //if ()
-                //{
-
-                //}
+                if (resultado == "Login exitoso. Usuario encontrado")
+                {
+                    MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FormPrincipalCliente cliente = new FormPrincipalCliente();
+                    cliente.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error durante el login: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

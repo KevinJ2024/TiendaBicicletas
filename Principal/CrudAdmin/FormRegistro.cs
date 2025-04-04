@@ -3,23 +3,38 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using System.Xml.Linq;
+using Logica;
+using Logica.Controllers;
 
 namespace Principal
 {
-    public partial class FormActualizar : Form
+    public partial class FormRegistro : Form
     {
 
-        private string entidad;
+        public string entidad;
+        public TextBox tbSalario;
+        public TextBox tbPrecio_producto;
+        public TextBox tbStock;
+        public TextBox tbDescripcion_producto;
+        public PictureBox pbImagen;
+        public byte[] imagenSeleccionada;
+        public TextBox tbID_cliente;
+        public TextBox tbID_vendedor;
+        public TextBox tbID_producto;
 
-        public FormActualizar(string entidad)
+
+        public FormRegistro(string entidad)
         {
             InitializeComponent();
             lbTitle.Text += entidad;
+            tbID.PlaceholderText += entidad;
+            tbNombre.PlaceholderText += entidad;
 
             this.entidad = entidad;
 
@@ -34,11 +49,15 @@ namespace Principal
                     lbTitle.Location = new Point(262, 59);
                     tbID.PlaceholderText = "ID del vendedor";
                     tbNombre.PlaceholderText = "Nombre Vendedor";
-                    TextBox tbSalario = new TextBox();
+                    tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
-                    tbSalario.Location = new Point(304, 300);
+                    tbSalario.Location = new Point(282, 298);
                     tbSalario.Size = new Size(195, 23);
                     tbSalario.PlaceholderText = "Ingrese el salario";
+
+                    tbContraseña.Location = new Point(282, 340);
+                    btnConfirmar.Location = new Point(257, 380);
+                    btnCancelar.Location = new Point(388, 380);
 
                     this.Controls.Add(tbSalario);
                     break;
@@ -50,33 +69,28 @@ namespace Principal
                     tbEmail.Dispose();
                     this.Controls.Remove(tbTelefono);
                     tbTelefono.Dispose();
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
 
                     lbTitle.Location = new Point(272, 59);
                     tbNombre.PlaceholderText = "Nombre Producto";
                     tbNombre.Location = new Point(282, 148);
 
-                    TextBox tbID_producto = new TextBox(); 
-                    tbID_producto.Location = new Point(282, 140);
-                    tbID_producto.Name = "tbPrecio_producto";
-                    tbID_producto.PlaceholderText = "Precio del producto";
-                    tbID_producto.Size = new Size(195, 23);
-                    tbID_producto.TabIndex = 2;
-
-                    TextBox tbPrecio_producto = new TextBox();
+                    tbPrecio_producto = new TextBox();
                     tbPrecio_producto.Location = new Point(282, 180);
                     tbPrecio_producto.Name = "tbPrecio_producto";
                     tbPrecio_producto.PlaceholderText = "Precio del producto";
                     tbPrecio_producto.Size = new Size(195, 23);
                     tbPrecio_producto.TabIndex = 2;
 
-                    TextBox tbStock = new TextBox();
+                    tbStock = new TextBox();
                     tbStock.Location = new Point(282, 210);
                     tbStock.Name = "tbStock";
                     tbStock.PlaceholderText = "Stock del producto";
                     tbStock.Size = new Size(195, 23);
                     tbStock.TabIndex = 3;
 
-                    TextBox tbDescripcion_producto = new TextBox();
+                    tbDescripcion_producto = new TextBox();
                     tbDescripcion_producto.Location = new Point(282, 240);
                     tbDescripcion_producto.Name = "tbDescripcion_producto";
                     tbDescripcion_producto.PlaceholderText = "descripcion del producto";
@@ -91,12 +105,15 @@ namespace Principal
                     btnSeleccionar_Imagen.Click += new EventHandler(btnSeleccionar_Imagen_Click);
                     tbDescripcion_producto.TabIndex = 5;
 
-
-
                     this.Controls.Add(tbPrecio_producto);
                     this.Controls.Add(tbStock);
                     this.Controls.Add(tbDescripcion_producto);
                     this.Controls.Add(btnSeleccionar_Imagen);
+                    break;
+
+                case "Proveedor":
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
                     break;
 
                 case "Factura":
@@ -108,28 +125,29 @@ namespace Principal
                     tbEmail.Dispose();
                     this.Controls.Remove(tbTelefono);
                     tbTelefono.Dispose();
+                    this.Controls.Remove(tbContraseña);
+                    tbContraseña.Dispose();
 
-                    TextBox tbID_cliente = new TextBox();
-                    tbID_cliente.Location = new Point(282, 170);
+                    tbID_cliente = new TextBox();
+                    tbID_cliente.Location = new Point(282, 140);
                     tbID_cliente.Name = "tbID_cliente";
                     tbID_cliente.PlaceholderText = "ID_cliente";
                     tbID_cliente.Size = new Size(195, 23);
                     tbID_cliente.TabIndex = 1;
 
-                    TextBox tbID_vendedor = new TextBox();
-                    tbID_vendedor.Location = new Point(282, 220);
+                    tbID_vendedor = new TextBox();
+                    tbID_vendedor.Location = new Point(282, 170);
                     tbID_vendedor.Name = "tbID_vendedor";
                     tbID_vendedor.PlaceholderText = "ID_vendedor";
                     tbID_vendedor.Size = new Size(195, 23);
                     tbID_vendedor.TabIndex = 2;
 
                     tbID_producto = new TextBox();
-                    tbID_producto.Location = new Point(282, 270);
+                    tbID_producto.Location = new Point(282, 210);
                     tbID_producto.Name = "tbID_Producto";
                     tbID_producto.PlaceholderText = "ID_producto";
                     tbID_producto.Size = new Size(195, 23);
                     tbID_producto.TabIndex = 3;
-
 
                     this.Controls.Add(tbID_cliente);
                     this.Controls.Add(tbID_vendedor);
@@ -140,6 +158,86 @@ namespace Principal
 
                     break;
             }
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            string resultado;
+            switch (entidad)
+            {
+                case "Cliente":
+                    ClienteController ClienteController = new ClienteController();
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
+                    {
+                        lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
+                    }
+                    else
+                    {
+                        resultado = ClienteController.RegistrarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
+                        lbResultado.Text = resultado;
+                    }
+                    break;
+                case "Vendedor":
+                    VendedorController VendedorController = new VendedorController();
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbSalario.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
+                    {
+                        lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
+                    }
+                    else
+                    {
+                        resultado = VendedorController.RegistrarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
+                        lbResultado.Text = resultado;
+                    }
+                    break;
+
+                case "Producto":
+                    ProductoController ProductoController = new ProductoController();
+                    resultado = ProductoController.RegistrarProducto(tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    resultado = ProveedorController.RegistrarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Factura":
+                    DateTime fechaUtc = DateTime.UtcNow;
+                    FacturaController FacturaController = new FacturaController();
+                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID_cliente.Text), int.Parse(tbID_vendedor.Text), int.Parse(tbID_producto.Text), fechaUtc);
+                    lbResultado.Text = resultado;
+
+                    break;
+                default:
+                    lbResultado.Text = "algo salio mal";
+                    break;
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            tbID.Text = "";
+            tbNombre.Text = "";
+            tbEmail.Text = "";
+            tbTelefono.Text = "";
+            tbContraseña.Text = "";
+            if (tbSalario != null )
+            {
+                tbSalario.Text = "";
+                
+            } else if (tbPrecio_producto != null || tbStock != null || tbDescripcion_producto != null || pbImagen != null) // fallita en la verificacion de la imagen
+            {
+                tbPrecio_producto.Text = "";
+                tbStock.Text = "";
+                tbDescripcion_producto.Text = "";
+                pbImagen.Image = null;
+            }
+            string entidad;
+
+
+            Entrar entrada = new Entrar();
+            entrada.ShowDialog();
         }
 
         private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
@@ -178,11 +276,6 @@ namespace Principal
                 labelPrueba.Text = rutaImagen;
             }
         }
-
-       private void btnBuscarEntidad_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
+

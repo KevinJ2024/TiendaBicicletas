@@ -36,13 +36,15 @@
             btnConfirmar = new Button();
             lbTitle = new Label();
             btnBuscarEntidad = new Button();
+            lbResultado = new Label();
+            tbContraseña = new TextBox();
             SuspendLayout();
             // 
             // tbID
             // 
             tbID.Location = new Point(304, 112);
             tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID del cliente";
+            tbID.PlaceholderText = "ID ";
             tbID.Size = new Size(195, 23);
             tbID.TabIndex = 13;
             // 
@@ -50,7 +52,7 @@
             // 
             tbNombre.Location = new Point(304, 156);
             tbNombre.Name = "tbNombre";
-            tbNombre.PlaceholderText = "Nombre Cliente";
+            tbNombre.PlaceholderText = "Nombre ";
             tbNombre.Size = new Size(195, 23);
             tbNombre.TabIndex = 12;
             // 
@@ -78,6 +80,7 @@
             btnCancelar.TabIndex = 9;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnConfirmar
             // 
@@ -87,6 +90,7 @@
             btnConfirmar.TabIndex = 8;
             btnConfirmar.Text = "Actualizar ";
             btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
             // lbTitle
             // 
@@ -108,11 +112,30 @@
             btnBuscarEntidad.UseVisualStyleBackColor = true;
             btnBuscarEntidad.Click += btnBuscarEntidad_Click;
             // 
+            // lbResultado
+            // 
+            lbResultado.AutoSize = true;
+            lbResultado.Location = new Point(636, 112);
+            lbResultado.Name = "lbResultado";
+            lbResultado.Size = new Size(56, 15);
+            lbResultado.TabIndex = 15;
+            lbResultado.Text = "resultado";
+            // 
+            // tbContraseña
+            // 
+            tbContraseña.Location = new Point(304, 299);
+            tbContraseña.Name = "tbContraseña";
+            tbContraseña.PlaceholderText = "Contraseña";
+            tbContraseña.Size = new Size(195, 23);
+            tbContraseña.TabIndex = 16;
+            // 
             // FormActualizar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tbContraseña);
+            Controls.Add(lbResultado);
             Controls.Add(btnBuscarEntidad);
             Controls.Add(tbID);
             Controls.Add(tbNombre);
@@ -137,5 +160,7 @@
         private Button btnConfirmar;
         private Label lbTitle;
         private Button btnBuscarEntidad;
+        private Label lbResultado;
+        private TextBox tbContraseña;
     }
 }

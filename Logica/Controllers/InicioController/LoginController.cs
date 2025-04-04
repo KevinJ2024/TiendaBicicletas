@@ -1,6 +1,7 @@
 ﻿using Modelo;
+using Modelo.DataEntities;
 
-namespace TiendaBicicletas.Logica.Controller
+namespace Logica.Controllers.InicioController
 {
     public class LoginController
     {

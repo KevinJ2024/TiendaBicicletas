@@ -40,16 +40,18 @@ namespace Principal
             us.ShowDialog();
         }
 
+        private void btnProveedor_Click(object sender, EventArgs e)
+        {
+            entidad = "Proveedor";
+            FormCRUD us = new FormCRUD(entidad);
+            us.ShowDialog();
+        }
+
         private void btnFactura_Click(object sender, EventArgs e)
         {
             entidad = "Factura";
             FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
-        }
-
-        private void FormPrincipal_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
