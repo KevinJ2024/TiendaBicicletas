@@ -46,5 +46,10 @@ namespace Logica.Controllers
 
             return productosfacturas;
         }
+
+        public IEnumerable<ProductoFacturaEntity?> MostrarProductoFactura()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
