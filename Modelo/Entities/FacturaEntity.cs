@@ -12,5 +12,6 @@ namespace Modelo.Entities
         public int ID_cliente;
         public int ID_vendedor;
         public DateTime Fecha;
+        public decimal Total;
     }
 }

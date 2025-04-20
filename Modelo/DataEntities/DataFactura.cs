@@ -17,8 +17,7 @@ namespace Modelo.DataEntities
         {
             int resultado = 0;
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO factura (ID_cliente, ID_vendedor, Fecha) " +
-                              "VALUES (@ID_cliente, @ID_vendedor, @Fecha)";
+            cmd.CommandText = "CALL registrar_factura(@ID_cliente, @ID_vendedor, @Fecha)";
 
             cmd.Parameters.AddWithValue("@ID_cliente", ID_cliente);
             cmd.Parameters.AddWithValue("@ID_vendedor", ID_vendedor);
@@ -43,6 +42,7 @@ namespace Modelo.DataEntities
                 factura.ID_cliente = dr.GetInt32(1);
                 factura.ID_vendedor = dr.GetInt32(2);
                 factura.Fecha = dr.GetDateTime(3);
+                factura.Total = dr.GetDecimal(4);
 
             }
             return factura;
@@ -62,6 +62,7 @@ namespace Modelo.DataEntities
                 facturaActual.ID_cliente = dr.GetInt32(1);
                 facturaActual.ID_vendedor = dr.GetInt32(2);
                 facturaActual.Fecha = dr.GetDateTime(3);
+                facturaActual.Total = dr.GetDecimal(4);
 
 
                 facturas.Add(facturaActual);

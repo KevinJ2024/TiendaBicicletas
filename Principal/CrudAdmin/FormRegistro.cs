@@ -209,28 +209,56 @@ namespace Principal
 
                 case "Producto":
                     ProductoController ProductoController = new ProductoController();
-                    resultado = ProductoController.RegistrarProducto(tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
-                    lbResultado.Text = resultado;
+                    if (tbNombre.Text == "" || tbPrecio_producto.Text == "" || tbStock.Text == "" || tbDescripcion_producto.Text == "")
+                    {
+                        lbResultado.Text = "Completa todos los campos";
+                    }
+                    else
+                    {
+                        resultado = ProductoController.RegistrarProducto(tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                        lbResultado.Text = resultado;
+                    }
                     break;
 
                 case "Proveedor":
                     ProveedorController ProveedorController = new ProveedorController();
-                    resultado = ProveedorController.RegistrarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
-                    lbResultado.Text = resultado;
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || !int.TryParse(tbID.Text, out _))
+                    {
+                        lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
+                    }
+                    else
+                    {
+                        resultado = ProveedorController.RegistrarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
+                        lbResultado.Text = resultado;
+                    }
                     break;
 
                 case "Factura":
                     DateTime fechaUtc = DateTime.UtcNow;
                     FacturaController FacturaController = new FacturaController();
-                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID.Text), int.Parse(tbID_vendedor.Text), fechaUtc);
-                    lbResultado.Text = resultado;
+                    if (tbID.Text == "" || tbID_vendedor.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbID_vendedor.Text, out _))
+                    {
+                        lbResultado.Text = "Completa todos los campos y verifica que los ID sean numericos";
+                    }
+                    else
+                    { 
+                        resultado = FacturaController.RegistrarFactura(int.Parse(tbID.Text), int.Parse(tbID_vendedor.Text), fechaUtc);
+                        lbResultado.Text = resultado;
+                    }
 
                     break;
 
                 case "ProductoFactura":
                     ProductoFacturaController ProductoFacturaController = new ProductoFacturaController();
-                    resultado = ProductoFacturaController.RegistrarProductoFactura(int.Parse(tbID.Text), int.Parse(tbID_producto.Text), int.Parse(tbCantidadProducto.Text));
-                    lbResultado.Text = resultado;
+                    if (tbID.Text == "" || tbID_producto.Text == "" || tbCantidadProducto.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbID_producto.Text, out _))
+                    {
+                        lbResultado.Text = "Completa todos los campos y verifica que los ID sean numericos";
+                    }
+                    else
+                    {
+                        resultado = ProductoFacturaController.RegistrarProductoFactura(int.Parse(tbID.Text), int.Parse(tbID_producto.Text), int.Parse(tbCantidadProducto.Text));
+                        lbResultado.Text = resultado;
+                    }
 
                     break;
 

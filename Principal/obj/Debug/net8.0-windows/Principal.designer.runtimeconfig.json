@@ -12,11 +12,13 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\SENA\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\SENA\\.nuget\\packages"
+      "C:\\Users\\lukit\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lukit\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
