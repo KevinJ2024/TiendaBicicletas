@@ -53,12 +53,5 @@ namespace Principal
             FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
         }
-
-        private void btnProductoFactura_Click(object sender, EventArgs e)
-        {
-            entidad = "ProductoFactura";
-            FormCRUD us = new FormCRUD(entidad);
-            us.ShowDialog();
-        }
     }
 }
