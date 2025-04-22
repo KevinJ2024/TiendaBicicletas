@@ -250,7 +250,6 @@ namespace Principal
         private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
         {
             PictureBox pbImagen = this.Controls["pbImagen"] as PictureBox;
-            Label labelPrueba = this.Controls["labelPrueba"] as Label;
             if (pbImagen == null)
             {
                 pbImagen = new PictureBox();
@@ -262,15 +261,6 @@ namespace Principal
                 this.Controls.Add(pbImagen);
             }
 
-            if (labelPrueba == null)
-            {
-                labelPrueba = new Label();
-                labelPrueba.Name = "labelPrueba";
-                labelPrueba.Location = new Point(500, 400);
-                labelPrueba.Size = new Size(300, 195);
-                this.Controls.Add(labelPrueba);
-            }
-
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
             openFileDialog.Title = "Seleccionar Imagen";
@@ -280,7 +270,6 @@ namespace Principal
             {
                 string rutaImagen = openFileDialog.FileName;
                 pbImagen.Image = Image.FromFile(rutaImagen);
-                labelPrueba.Text = rutaImagen;
             }
         }
     }

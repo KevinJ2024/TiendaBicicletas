@@ -11,7 +11,7 @@ using Logica.Controllers;
 
 namespace Principal
 {
-    public partial class FormEliminar : Form
+    public partial class FormEliminar : FormButton
     {
 
         public string entidad;

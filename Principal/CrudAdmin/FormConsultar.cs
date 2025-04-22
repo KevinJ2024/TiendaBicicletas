@@ -14,7 +14,7 @@ using MySqlX.XDevAPI;
 
 namespace Principal
 {
-    public partial class FormConsultar : Form
+    public partial class FormConsultar : FormButton
     {
 
         public string entidad;
@@ -41,7 +41,7 @@ namespace Principal
 
                     foreach (var clienteActual in clientes)
                     {
-                        resultado += "ID: " + clienteActual.ID_cliente + "---Nombre: " + clienteActual.Nombre_cliente + "---Email: " + clienteActual.Email + "---Telefono: " + clienteActual.Telefono + "--- Contraseña: " + clienteActual.Contraseña + "\n";
+                        resultado += "ID: " + clienteActual.ID_cliente + "---Nombre: " + clienteActual.Nombre_cliente + "---Email: " + clienteActual.Email + "---Telefono: " + clienteActual.Telefono + "--- Contraseña: " + clienteActual.Contraseña + "\n\n\n\n\n\n\n\n";
                     }
                     lbResultado.Text = resultado;
                     break;
@@ -53,20 +53,23 @@ namespace Principal
 
                     foreach (var vendedorActual in vendedores)
                     {
-                        resultado += "ID: " + vendedorActual.ID_vendedor + "---Nombre: " + vendedorActual.Nombre_vendedor + "---Email: " + vendedorActual.Email + "---Telefono: " + vendedorActual.Telefono + "---Salario: " + vendedorActual.Salario + "--- Contraseña: " + vendedorActual.Contraseña + "\n";
+                        resultado += "ID: " + vendedorActual.ID_vendedor + "---Nombre: " + vendedorActual.Nombre_vendedor + "---Email: " + vendedorActual.Email + "---Telefono: " + vendedorActual.Telefono + "---Salario: " + vendedorActual.Salario + "--- Contraseña: " + vendedorActual.Contraseña + "\n\n\n\n\n\n\n\n";
                     }
                     lbResultado.Text = resultado;
                     break;
 
                 case "Producto":
+                    List<byte[]> listaDeImagenes = new List<byte[]>();
                     ProductoController ProductoController = new ProductoController();
                     var productos = ProductoController.MostrarProductos();
                     resultado = "";
 
                     foreach (var productoActual in productos)
                     {
-                        resultado += "ID: " + productoActual.ID_producto + "---Nombre: " + productoActual.Nombre_producto + "---Precio_producto: " + productoActual.Precio_producto + "---Stock: " + productoActual.Stock + "---Descripcion: " + productoActual.Descripcion + "--- Imagen: " + productoActual.Imagen + "\n";
+                        resultado += "ID: " + productoActual.ID_producto + "---Nombre: " + productoActual.Nombre_producto + "---Precio_producto: " + productoActual.Precio_producto + "---Stock: " + productoActual.Stock + "---Descripcion: " + productoActual.Descripcion + "\n\n\n\n\n\n\n\n";
+                        listaDeImagenes.Add(productoActual.Imagen);
                     }
+                    MostrarImagen(listaDeImagenes);
                     lbResultado.Text = resultado;
                     break;
 
@@ -77,7 +80,7 @@ namespace Principal
 
                     foreach (var proveedorActual in proveedores)
                     {
-                        resultado += "ID: " + proveedorActual.ID_proveedor + "---Nombre: " + proveedorActual.Nombre_proveedor + "---Email: " + proveedorActual.Email + "---Telefono: " + proveedorActual.Telefono +"\n";
+                        resultado += "ID: " + proveedorActual.ID_proveedor + "---Nombre: " + proveedorActual.Nombre_proveedor + "---Email: " + proveedorActual.Email + "---Telefono: " + proveedorActual.Telefono + "\n\n\n\n\n\n\n\n";
                     }
                     lbResultado.Text = resultado;
                     break;
@@ -89,7 +92,7 @@ namespace Principal
 
                     foreach (var FacturaActual in facturas)
                     {
-                        resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---Fecha: " + FacturaActual.Fecha + "---Total: " +FacturaActual.Total+ "\n";
+                        resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---Fecha: " + FacturaActual.Fecha + "---Total: " +FacturaActual.Total+ "\n\n\n\n\n\n\n\n";
                     }
                     lbResultado.Text = resultado;
                     break;
@@ -114,7 +117,7 @@ namespace Principal
                         var cliente = ClienteController.ConsultarCliente(int.Parse(tbID.Text));
                         string resultado = "";
 
-                        resultado += "ID: " + cliente.ID_cliente + "---Nombre: " + cliente.Nombre_cliente + "---Email: " + cliente.Email + "---Telefono: " + cliente.Telefono + "--- Contraseña: " + cliente.Contraseña + "\n";
+                        resultado += "ID: " + cliente.ID_cliente + "---Nombre: " + cliente.Nombre_cliente + "---Email: " + cliente.Email + "---Telefono: " + cliente.Telefono + "--- Contraseña: " + cliente.Contraseña + "\n\n\n\n";
 
                         lbResultado.Text = resultado;
                         break;
@@ -124,17 +127,19 @@ namespace Principal
                         var vendedor = VendedorController.ConsultarVendedor(int.Parse(tbID.Text));
                         resultado = "";
 
-                        resultado += "ID: " + vendedor.ID_vendedor + "---Nombre: " + vendedor.Nombre_vendedor + "---Email: " + vendedor.Email + "---Telefono: " + vendedor.Telefono + "---Salario: " + vendedor.Salario + "--- Contraseña: " + vendedor.Contraseña + "\n";
+                        resultado += "ID: " + vendedor.ID_vendedor + "---Nombre: " + vendedor.Nombre_vendedor + "---Email: " + vendedor.Email + "---Telefono: " + vendedor.Telefono + "---Salario: " + vendedor.Salario + "--- Contraseña: " + vendedor.Contraseña + "\n\n\n\n";
 
                         lbResultado.Text = resultado;
                         break;
 
                     case "Producto":
+                        List<byte[]> listaDeImagenes = new List<byte[]>();
                         ProductoController ProductoController = new ProductoController();
                         var producto = ProductoController.ConsultarProducto(int.Parse(tbID.Text));
                         resultado = "";
-                        resultado += "ID: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Stock: " + producto.Stock + "---Descripcion: " + producto.Descripcion + "\n";
-                        MostrarImagen(producto.Imagen);
+                        resultado += "ID: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Stock: " + producto.Stock + "---Descripcion: " + producto.Descripcion + "\n\n\n\n";
+                        listaDeImagenes.Add(producto.Imagen);
+                        MostrarImagen(listaDeImagenes);
                         lbResultado.Text = resultado;
                         break;
 
@@ -143,7 +148,7 @@ namespace Principal
                         var proveedor = ProveedorController.ConsultarProveedor(int.Parse(tbID.Text));
                         resultado = "";
 
-                        resultado += "ID: " + proveedor.ID_proveedor + "---Nombre: " + proveedor.Nombre_proveedor + "---Email: " + proveedor.Email + "---Telefono: " + proveedor.Telefono + "\n";
+                        resultado += "ID: " + proveedor.ID_proveedor + "---Nombre: " + proveedor.Nombre_proveedor + "---Email: " + proveedor.Email + "---Telefono: " + proveedor.Telefono + "\n\n\n\n";
 
                         lbResultado.Text = resultado;
                         break;
@@ -153,7 +158,7 @@ namespace Principal
                         var factura = FacturaController.ConsultarFactura(int.Parse(tbID.Text));
                         resultado = "";
 
-                        resultado += "ID_factura: " + factura.ID_factura + "---ID_cliente: " + factura.ID_cliente + "---ID_vendedor: " + factura.ID_vendedor + "---Fecha: " + factura.Fecha + "---Total: " + factura.Total + "\n";
+                        resultado += "ID_factura: " + factura.ID_factura + "---ID_cliente: " + factura.ID_cliente + "---ID_vendedor: " + factura.ID_vendedor + "---Fecha: " + factura.Fecha + "---Total: " + factura.Total + "\n\n\n\n";
                         lbResultado.Text = resultado;
 
                         ProductoFacturaController ProductoFacturaController = new ProductoFacturaController();
@@ -176,42 +181,6 @@ namespace Principal
         {
             tbID.Text = "";
             MostrarEntidades();
-        }
-
-        private void MostrarImagen(byte[] imagen)
-        {
-            PictureBox pbImagen = this.Controls["pbImagen"] as PictureBox;
-
-            if (pbImagen == null)
-            {
-                pbImagen = new PictureBox();
-                pbImagen.Location = new Point(500, 140);
-                pbImagen.Name = "pbImagen";
-                pbImagen.Size = new Size(195, 195);
-                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-                pbImagen.TabIndex = 6;
-                this.Controls.Add(pbImagen);
-            }
-
-            if (imagen != null && imagen.Length > 0)
-            {
-                using (MemoryStream ms = new MemoryStream(imagen))
-                {
-                    try
-                    {
-                        pbImagen.Image = Image.FromStream(ms);  
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error al cargar la imagen: " + ex.Message);
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("No hay imagen disponible para mostrar.");
-                pbImagen.Image = null; 
-            }
         }
     }
 }

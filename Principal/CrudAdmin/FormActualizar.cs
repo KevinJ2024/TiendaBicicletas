@@ -13,7 +13,7 @@ using Logica.Controllers;
 
 namespace Principal
 {
-    public partial class FormActualizar : Form
+    public partial class FormActualizar : FormButton
     {
 
         private string entidad;

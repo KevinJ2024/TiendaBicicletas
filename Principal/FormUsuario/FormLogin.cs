@@ -5,7 +5,7 @@ using Logica.Controllers.InicioController;
 
 namespace Principal
 {
-    public partial class FormLogin : Form
+    public partial class FormLogin : FormButton
     {
         public FormLogin()
         {
