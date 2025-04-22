@@ -18,6 +18,7 @@ namespace Principal
             InitializeComponent();
             this.entidad = entidad;
             lbTitle.Text += entidad;
+            EditarCrud();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -42,6 +43,15 @@ namespace Principal
         {
             FormEliminar us = new FormEliminar(entidad);
             us.ShowDialog();
+        }
+
+        private void EditarCrud()
+        {
+            if (entidad == "Factura")
+            {
+                btnActualizar.Enabled = false;
+                btnEliminar.Enabled = false;
+            }
         }
 
     }

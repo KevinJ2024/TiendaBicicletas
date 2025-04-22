@@ -13,16 +13,14 @@ namespace Modelo.DataEntities
 {
 	public class DataFactura : ConexionMySql
 	{
-        public int RegistrarFactura(int ID_cliente, int ID_vendedor, int ID_producto, DateTime Fecha)
+        public int RegistrarFactura(int ID_cliente, int ID_vendedor, DateTime Fecha)
         {
             int resultado = 0;
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO factura (ID_cliente, ID_vendedor, ID_producto, Fecha) " +
-                              "VALUES (@ID_cliente, @ID_vendedor, @ID_producto, @Fecha)";
+            cmd.CommandText = "CALL registrar_factura(@ID_cliente, @ID_vendedor, @Fecha)";
 
             cmd.Parameters.AddWithValue("@ID_cliente", ID_cliente);
             cmd.Parameters.AddWithValue("@ID_vendedor", ID_vendedor);
-            cmd.Parameters.AddWithValue("@ID_producto", ID_producto);
             cmd.Parameters.AddWithValue("@Fecha", Fecha);
 
             resultado = cmd.ExecuteNonQuery();
@@ -40,11 +38,11 @@ namespace Modelo.DataEntities
 
             while (dr.Read())
             {
-                factura.ID_factura= dr.GetInt32(1);
-                factura.ID_cliente = dr.GetInt32(2);
-                factura.ID_vendedor = dr.GetInt32(3);
-                factura.ID_producto = dr.GetInt32(4);
-                factura.Fecha = dr.GetDateTime(5);
+                factura.ID_factura= dr.GetInt32(0);
+                factura.ID_cliente = dr.GetInt32(1);
+                factura.ID_vendedor = dr.GetInt32(2);
+                factura.Fecha = dr.GetDateTime(3);
+                factura.Total = dr.GetDecimal(4);
 
             }
             return factura;
@@ -63,8 +61,8 @@ namespace Modelo.DataEntities
                 facturaActual.ID_factura = dr.GetInt32(0);
                 facturaActual.ID_cliente = dr.GetInt32(1);
                 facturaActual.ID_vendedor = dr.GetInt32(2);
-                facturaActual.ID_producto = dr.GetInt32(3);
-                facturaActual.Fecha = dr.GetDateTime(4);
+                facturaActual.Fecha = dr.GetDateTime(3);
+                facturaActual.Total = dr.GetDecimal(4);
 
 
                 facturas.Add(facturaActual);
