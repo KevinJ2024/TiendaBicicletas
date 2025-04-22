@@ -16,19 +16,22 @@
     <Compile Update="Entrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormBackOffice.cs">
+    <Compile Update="CrudAdmin\FormBackOffice.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CrudAdmin\FormRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormFactura.cs">
+    <Compile Update="FormBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormLogin.cs">
+    <Compile Update="CrudAdmin\FormFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormPrincipalCliente.cs">
+    <Compile Update="FormUsuario\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormUsuario\FormPrincipalCliente.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

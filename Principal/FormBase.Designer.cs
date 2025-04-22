@@ -1,6 +1,6 @@
 ﻿namespace Principal
 {
-    partial class FormPrincipalCliente
+    partial class FormBase
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(341, 179);
-            label1.Name = "label1";
-            label1.Size = new Size(85, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Hola que tal :D";
-            label1.Click += label1_Click;
-            // 
-            // FormPrincipalCliente
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Name = "FormPrincipalCliente";
-            Text = "FormPrincipalCliente";
-            ResumeLayout(false);
-            PerformLayout();
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "FormBase";
         }
 
         #endregion
-
-        private Label label1;
     }
 }

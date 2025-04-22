@@ -3,132 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\formusuario\\formprincipalcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formusuario\\formprincipalcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\entrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\entrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\principal\\crudadmin\\formcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\entrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\entrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\logica\\controllers\\proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\proveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\logica\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\logica\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\logica\\controllers\\historialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\historialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\logica\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\logica\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\modelo\\dataentities\\datafactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\dataentities\\datafactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\modelo\\dataentities\\dataproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\dataentities\\dataproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\modelo\\dataentities\\dataadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\dataentities\\dataadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formeliminar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formeliminar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formcrud.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formcrud.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\modelo\\entities\\productoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\entities\\productoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\formusuario\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formusuario\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\formbackoffice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\modelo\\dataentities\\dataproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\dataentities\\dataproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\principal\\crudadmin\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formeliminar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\modelo\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\principal\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\sena\\desktop\\clone\\tiendabicicletas\\principal\\formusuario\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formusuario\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,396 +30,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FormActualizar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormActualizar.cs",
-              "ToolTip": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T16:16:01.87Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "FormLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormLogin.cs",
-              "RelativeDocumentMoniker": "Principal\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\FormLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\TiendaBicicletas\\Principal\\FormLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T11:30:13.8Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Entrar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\Entrar.cs",
-              "RelativeDocumentMoniker": "Principal\\Entrar.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\Entrar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal\\Entrar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T19:42:42.694Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Entrar.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\Entrar.cs",
-              "RelativeDocumentMoniker": "Principal\\Entrar.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\Entrar.cs",
-              "RelativeToolTip": "Principal\\Entrar.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T18:10:59.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormLogin.cs",
-              "RelativeDocumentMoniker": "Principal\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormLogin.cs",
-              "RelativeToolTip": "Principal\\FormLogin.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T18:10:44.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\Program.cs",
-              "RelativeDocumentMoniker": "Principal\\Program.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\Program.cs*",
-              "RelativeToolTip": "Principal\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T18:09:54.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormCRUD.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormCRUD.cs",
-              "ToolTip": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T18:05:47.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AdministradorController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\AdministradorController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\AdministradorController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\AdministradorController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\AdministradorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:57:48.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HistorialController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\HistorialController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\HistorialController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\HistorialController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\HistorialController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:57:12.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FormEliminar.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.Designer.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormEliminar.Designer.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.Designer.cs",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormEliminar.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:25:54.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FormCRUD.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.Designer.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormCRUD.Designer.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.Designer.cs",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormCRUD.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:25:48.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ProductoEntity.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\Entities\\ProductoEntity.cs",
-              "RelativeDocumentMoniker": "Modelo\\Entities\\ProductoEntity.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\Entities\\ProductoEntity.cs",
-              "RelativeToolTip": "Modelo\\Entities\\ProductoEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:18:33.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DataAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataAdmin.cs",
-              "RelativeDocumentMoniker": "Modelo\\DataEntities\\DataAdmin.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataAdmin.cs",
-              "RelativeToolTip": "Modelo\\DataEntities\\DataAdmin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:13:03.914Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormCRUD.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormCRUD.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormCRUD.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:08:59.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FormRegistro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormRegistro.cs",
-              "ToolTip": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:08:36.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FormBackOffice.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormBackOffice.Designer.cs",
-              "RelativeDocumentMoniker": "Principal\\FormBackOffice.Designer.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormBackOffice.Designer.cs",
-              "RelativeToolTip": "Principal\\FormBackOffice.Designer.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T22:37:28.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FormBackOffice.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormBackOffice.cs",
-              "RelativeDocumentMoniker": "Principal\\FormBackOffice.cs",
-              "ToolTip": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T22:37:09.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DataProducto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataProducto.cs",
-              "RelativeDocumentMoniker": "Modelo\\DataEntities\\DataProducto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataProducto.cs",
-              "RelativeToolTip": "Modelo\\DataEntities\\DataProducto.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAgwCMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T22:21:15.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:51:52.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DataFactura.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataFactura.cs",
-              "RelativeDocumentMoniker": "Modelo\\DataEntities\\DataFactura.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataFactura.cs",
-              "RelativeToolTip": "Modelo\\DataEntities\\DataFactura.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:55:40.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "FormEliminar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormEliminar.cs",
-              "ToolTip": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:51:43.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "FormRegistro.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
               "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormRegistro.cs",
               "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
               "RelativeToolTip": "Principal\\CrudAdmin\\FormRegistro.cs",
-              "ViewState": "AgIAAPEAAAAAAAAAAAAIwAYBAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAnwKMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:51:21.979Z"
+              "WhenOpened": "2025-04-22T21:50:15.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FormEliminar.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormEliminar.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.cs",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormEliminar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormRegistro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
+              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormRegistro.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:51:13.395Z"
+              "WhenOpened": "2025-04-22T21:50:14.412Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FormActualizar.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormActualizar.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormActualizar.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormUsuario\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Principal\\FormUsuario\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormUsuario\\FormLogin.cs",
+              "RelativeToolTip": "Principal\\FormUsuario\\FormLogin.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwC0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:50:57.504Z"
+              "WhenOpened": "2025-04-22T21:50:09.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FormConsultar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormConsultar.cs",
-              "ToolTip": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs [Dise\u00F1o]",
+              "DocumentIndex": 1,
+              "Title": "FormLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormUsuario\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Principal\\FormUsuario\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormUsuario\\FormLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal\\FormUsuario\\FormLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:50:21.213Z"
-            },
+              "WhenOpened": "2025-04-22T21:50:05.816Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "c3bf762e-db11-43e9-8b47-c268b52898ef",
+        "Display": 0,
+        "X": 500,
+        "Y": 212,
+        "Width": 1134,
+        "Height": 965,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FormPrincipalCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormUsuario\\FormPrincipalCliente.cs",
+              "RelativeDocumentMoniker": "Principal\\FormUsuario\\FormPrincipalCliente.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormUsuario\\FormPrincipalCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal\\FormUsuario\\FormPrincipalCliente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:47:37.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FormBackOffice.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormBackOffice.cs",
-              "RelativeDocumentMoniker": "Principal\\FormBackOffice.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\FormBackOffice.cs",
-              "RelativeToolTip": "Principal\\FormBackOffice.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:39:02.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FormConsultar.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormConsultar.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormConsultar.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAgwLwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T21:38:23.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ConexionMySql.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\ConexionMySql.cs",
-              "RelativeDocumentMoniker": "Modelo\\ConexionMySql.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\ConexionMySql.cs",
-              "RelativeToolTip": "Modelo\\ConexionMySql.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T22:09:22.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProveedorController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\ProveedorController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\ProveedorController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\ProveedorController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\ProveedorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T13:40:50.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FacturaController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\FacturaController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\FacturaController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Logica\\Controllers\\FacturaController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\FacturaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T13:23:24.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "DataProveedor.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataProveedor.cs",
-              "RelativeDocumentMoniker": "Modelo\\DataEntities\\DataProveedor.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\clone\\TiendaBicicletas\\Modelo\\DataEntities\\DataProveedor.cs",
-              "RelativeToolTip": "Modelo\\DataEntities\\DataProveedor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T15:50:33Z"
+              "WhenOpened": "2025-04-22T22:15:47.492Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

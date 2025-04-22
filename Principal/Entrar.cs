@@ -10,8 +10,8 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-  
-    public partial class Entrar : Form
+
+    public partial class Entrar : FormBase
     {
         public Entrar()
         {
@@ -25,7 +25,7 @@ namespace Principal
 
         private void button1_Click(object sender, EventArgs e)
         {
-             FormLogin formLogin = new FormLogin();
+            FormLogin formLogin = new FormLogin();
             formLogin.ShowDialog();
         }
 
@@ -37,5 +37,7 @@ namespace Principal
             FormRegistro us = new FormRegistro(entidad);
             us.ShowDialog();
         }
+
+
     }
 }

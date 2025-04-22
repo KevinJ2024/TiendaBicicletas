@@ -13,7 +13,7 @@ using MySqlX.XDevAPI;
 
 namespace Principal
 {
-    public partial class FormFactura : Form
+    public partial class FormFactura : FormBase
     {
         public FormFactura(FacturaEntity factura, List<ProductoFacturaEntity> productoFacturas)
         {
@@ -24,22 +24,25 @@ namespace Principal
             VendedorController VendedorController = new VendedorController();
             var vendedor = VendedorController.ConsultarVendedor(factura.ID_vendedor);
 
-            lbCliente.Text = cliente.Nombre_cliente;
-            lbVendedor.Text = vendedor.Nombre_vendedor;
+            lbCliente.Text = "Comprador: " + cliente.Nombre_cliente;
+            lbVendedor.Text = "Vendedor: " + vendedor.Nombre_vendedor;
             MostrarProductos(productoFacturas);
-            lbFecha.Text = factura.Fecha.ToString();
+            lbFecha.Text = "Fecha: " + factura.Fecha.ToString();
             lbTotal.Text = factura.Total.ToString();
         }
 
         public void MostrarProductos(List<ProductoFacturaEntity> productoFacturas)
         {
             string resultado = "";
+            List<byte[]> listaDeImagenes = new List<byte[]>();
             ProductoController ProductoController = new ProductoController();
             foreach (var ProductoFacturaActual in productoFacturas)
             {
                 var producto = ProductoController.ConsultarProducto(ProductoFacturaActual.ID_producto);
-                resultado += "ID_Producto: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Descripcion" + producto.Descripcion + "---Imagen: " + producto.Imagen + "\n";
+                resultado += "ID_Producto: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Descripcion" + producto.Descripcion + "\n";
+                listaDeImagenes.Add(producto.Imagen);
             }
+            MostrarImagen(listaDeImagenes);
             lbProductos.Text = resultado;
         }
     }

@@ -5,7 +5,7 @@ using Logica.Controllers.InicioController;
 
 namespace Principal
 {
-    public partial class FormLogin : Form
+    public partial class FormLogin : FormBase
     {
         public FormLogin()
         {
@@ -41,7 +41,7 @@ namespace Principal
             }
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_Click(object sender, EventArgs e)
         {
             Entrar entrar = new Entrar();
             entrar.ShowDialog();

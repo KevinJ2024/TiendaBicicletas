@@ -33,11 +33,19 @@
             btnCancelar = new Button();
             btnLogin = new Button();
             lbTitleLogin = new Label();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel4 = new Panel();
+            panel3 = new Panel();
+            btnCancelar_Click = new Button();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // tbContraseñaLogin
             // 
-            tbContraseñaLogin.Location = new Point(304, 199);
+            tbContraseñaLogin.Location = new Point(116, 156);
             tbContraseñaLogin.Name = "tbContraseñaLogin";
             tbContraseñaLogin.PlaceholderText = "contraseña";
             tbContraseñaLogin.Size = new Size(195, 23);
@@ -45,7 +53,7 @@
             // 
             // tbEmailLogin
             // 
-            tbEmailLogin.Location = new Point(304, 127);
+            tbEmailLogin.Location = new Point(116, 90);
             tbEmailLogin.Name = "tbEmailLogin";
             tbEmailLogin.PlaceholderText = "Email";
             tbEmailLogin.Size = new Size(195, 23);
@@ -59,11 +67,11 @@
             btnCancelar.TabIndex = 10;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
+    
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(287, 370);
+            btnLogin.Location = new Point(78, 240);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(112, 48);
             btnLogin.TabIndex = 9;
@@ -74,27 +82,77 @@
             // lbTitleLogin
             // 
             lbTitleLogin.AutoSize = true;
-            lbTitleLogin.Font = new Font("Segoe UI", 20F);
-            lbTitleLogin.Location = new Point(304, 32);
+            lbTitleLogin.BackColor = SystemColors.ControlLightLight;
+            lbTitleLogin.Font = new Font("Old English Text MT", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbTitleLogin.Location = new Point(39, 119);
             lbTitleLogin.Name = "lbTitleLogin";
-            lbTitleLogin.Size = new Size(95, 37);
+            lbTitleLogin.Size = new Size(213, 77);
             lbTitleLogin.TabIndex = 8;
             lbTitleLogin.Text = "sign in";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(-1, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1889, 966);
+            panel1.TabIndex = 16;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.AppWorkspace;
+            panel2.Controls.Add(lbTitleLogin);
+            panel2.Controls.Add(panel4);
+            panel2.Controls.Add(panel3);
+            panel2.Location = new Point(-26, -112);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1951, 1951);
+            panel2.TabIndex = 16;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = SystemColors.ControlLightLight;
+            panel4.Controls.Add(btnCancelar_Click);
+            panel4.Controls.Add(tbEmailLogin);
+            panel4.Controls.Add(btnLogin);
+            panel4.Controls.Add(tbContraseñaLogin);
+            panel4.Location = new Point(754, 402);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(428, 304);
+            panel4.TabIndex = 17;
+            // 
+            // panel3
+            // 
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(200, 100);
+            panel3.TabIndex = 16;
+            // 
+            // btnCancelar_Click
+            // 
+            btnCancelar_Click.Location = new Point(218, 240);
+            btnCancelar_Click.Name = "btnCancelar_Click";
+            btnCancelar_Click.Size = new Size(112, 48);
+            btnCancelar_Click.TabIndex = 16;
+            btnCancelar_Click.Text = "Cancelar";
+            btnCancelar_Click.UseVisualStyleBackColor = true;
+            btnCancelar_Click.Click += this.btnCancelar_Click_Click;
             // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(tbContraseñaLogin);
-            Controls.Add(tbEmailLogin);
+            ClientSize = new Size(1879, 1061);
+            Controls.Add(panel1);
             Controls.Add(btnCancelar);
-            Controls.Add(btnLogin);
-            Controls.Add(lbTitleLogin);
             Name = "FormLogin";
             Text = "FormLogin";
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -104,5 +162,10 @@
         private Button btnCancelar;
         private Button btnLogin;
         private Label lbTitleLogin;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel4;
+        private Panel panel3;
+        private Button btnCancelar_Click;
     }
 }

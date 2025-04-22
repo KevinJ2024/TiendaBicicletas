@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormCRUD : Form
+    public partial class FormCRUD : FormBase
     {
         public string entidad;
         public FormCRUD(string entidad)
@@ -23,30 +23,34 @@ namespace Principal
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             FormRegistro us = new FormRegistro(entidad);
             us.ShowDialog();
+            this.Show();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             FormConsultar us = new FormConsultar(entidad);
             us.ShowDialog();
+            this.Show();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             FormActualizar us = new FormActualizar(entidad);
             us.ShowDialog();
+            this.Show();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             FormEliminar us = new FormEliminar(entidad);
             us.ShowDialog();
+            this.Show();
         }
 
         private void EditarCrud()
