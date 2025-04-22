@@ -109,7 +109,6 @@
             Controls.Add(Titulo);
             Name = "FormBackOffice";
             Text = "FormPrincipal";
-            Load += FormPrincipal_Load;
             ResumeLayout(false);
             PerformLayout();
         }

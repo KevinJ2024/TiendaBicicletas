@@ -1613,11 +1613,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Modelo\\Modelo.csproj",
       "projectName": "Modelo",
       "projectPath": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Modelo\\Modelo.csproj",
       "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Modelo\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\Modelo.csproj",
+      "projectName": "Modelo",
+      "projectPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\Modelo.csproj",
+      "packagesPath": "C:\\Users\\SENA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\obj\\",
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SENA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1682,7 +1690,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problema al leer el archivo de caché C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Modelo\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problema al leer el archivo de caché C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Modelo\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
     }
   ]
 }

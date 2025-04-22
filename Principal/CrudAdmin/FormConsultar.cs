@@ -89,11 +89,18 @@ namespace Principal
 
                     foreach (var FacturaActual in facturas)
                     {
+<<<<<<< HEAD
                         resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---Fecha: " + FacturaActual.Fecha + "---Total: " +FacturaActual.Total+ "\n";
                     }
                     lbResultado.Text = resultado;
                     break;
 
+=======
+                        resultado += "ID_factura: " + FacturaActual.ID_factura + "---ID_cliente: " + FacturaActual.ID_cliente + "---ID_vendedor: " + FacturaActual.ID_vendedor + "---ID_producto: " + FacturaActual.ID_producto + "---Fecha: " + FacturaActual.Fecha + "\n";
+                    }
+                    lbResultado.Text = resultado;
+                    break;
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                 default:
 
                     break;
@@ -101,6 +108,7 @@ namespace Principal
         }
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (!int.TryParse(tbID.Text, out _))
             {
                 lbResultado.Text = "Verifica que el ID sea de tipo numerico entero";
@@ -170,6 +178,62 @@ namespace Principal
                         break;
                 }
             }
+=======
+            switch (entidad)
+            {
+                case "Cliente":
+                    ClienteController ClienteController = new ClienteController();
+                    var cliente = ClienteController.ConsultarCliente(int.Parse(tbID.Text));
+                    string resultado = "";
+
+                    resultado += "ID: " + cliente.ID_cliente + "---Nombre: " + cliente.Nombre_cliente + "---Email: " + cliente.Email + "---Telefono: " + cliente.Telefono + "--- Contraseña: " + cliente.Contraseña + "\n";
+
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Vendedor":
+                    VendedorController VendedorController = new VendedorController();
+                    var vendedor = VendedorController.ConsultarVendedor(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    resultado += "ID: " + vendedor.ID_vendedor + "---Nombre: " + vendedor.Nombre_vendedor + "---Email: " + vendedor.Email + "---Telefono: " + vendedor.Telefono + "---Salario: "+ vendedor.Salario + "--- Contraseña: " + vendedor.Contraseña + "\n";
+
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Producto":
+                    ProductoController ProductoController = new ProductoController();
+                    var producto = ProductoController.ConsultarProducto(int.Parse(tbID.Text));
+                    resultado = "";
+                    resultado += "ID: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Stock: " + producto.Stock + "---Descripcion: " + producto.Descripcion + "\n";
+                    MostrarImagen(producto.Imagen);
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Proveedor":
+                    ProveedorController ProveedorController = new ProveedorController();
+                    var proveedor = ProveedorController.ConsultarProveedor(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    resultado += "ID: " + proveedor.ID_proveedor + "---Nombre: " + proveedor.Nombre_proveedor + "---Email: " + proveedor.Email + "---Telefono: " + proveedor.Telefono  +"\n";
+
+                    lbResultado.Text = resultado;
+                    break;
+
+                case "Factura":
+                    FacturaController FacturaController = new FacturaController();
+                    var factura = FacturaController.ConsultarFactura(int.Parse(tbID.Text));
+                    resultado = "";
+
+                    resultado += "ID_factura: " + factura.ID_factura + "---ID_cliente: " + factura.ID_cliente + "---ID_vendedor: " + factura.ID_vendedor + "---ID_producto: " + factura.ID_producto + "---Fecha: " + factura.Fecha + "\n";
+                    lbResultado.Text = resultado;
+                    break;
+
+                default:
+                    lbResultado.Text = "algo salio mal";
+                    break;
+        }
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 <<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.cs
+=======
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
 using System.Windows.Forms.VisualStyles;
 using System.Xml.Linq;
 using Logica;
 using Logica.Controllers;
+<<<<<<< HEAD
 =======
 using Logica.Controller.InicioController;
 using Modelo.Entities;
 
 >>>>>>> b7759e0961edb9a49c36b2550f8b64477a0d7ec3:Principal/FormRegistro.cs
+=======
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
 
 namespace Principal
 {
@@ -30,9 +36,15 @@ namespace Principal
         public TextBox tbDescripcion_producto;
         public PictureBox pbImagen;
         public byte[] imagenSeleccionada;
+<<<<<<< HEAD
         public TextBox tbID_vendedor;
         public TextBox tbID_producto;
         public TextBox tbCantidadProducto;
+=======
+        public TextBox tbID_cliente;
+        public TextBox tbID_vendedor;
+        public TextBox tbID_producto;
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
 
 
         public FormRegistro(string entidad)
@@ -55,6 +67,7 @@ namespace Principal
                     lbTitle.Location = new Point(262, 59);
                     tbID.PlaceholderText = "ID del vendedor";
                     tbNombre.PlaceholderText = "Nombre Vendedor";
+<<<<<<< HEAD
 <<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.cs
                     tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
@@ -64,6 +77,11 @@ namespace Principal
                     tbSalario.Name = "tbSalario";
                     tbSalario.Location = new Point(282, 300);
 >>>>>>> b7759e0961edb9a49c36b2550f8b64477a0d7ec3:Principal/FormRegistro.cs
+=======
+                    tbSalario = new TextBox();
+                    tbSalario.Name = "tbSalario";
+                    tbSalario.Location = new Point(282, 298);
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                     tbSalario.Size = new Size(195, 23);
                     tbSalario.PlaceholderText = "Ingrese el salario";
 
@@ -114,7 +132,11 @@ namespace Principal
                     btnSeleccionar_Imagen.Name = "btnSeleccionar_Imagen";
                     btnSeleccionar_Imagen.Size = new Size(195, 30);
                     btnSeleccionar_Imagen.Text = "Seleccionar Imagen";
+<<<<<<< HEAD
                     //btnSeleccionar_Imagen.Click += new EventHandler(btnSeleccionar_Imagen_Click);
+=======
+                    btnSeleccionar_Imagen.Click += new EventHandler(btnSeleccionar_Imagen_Click);
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                     tbDescripcion_producto.TabIndex = 5;
 
                     this.Controls.Add(tbPrecio_producto);
@@ -129,6 +151,11 @@ namespace Principal
                     break;
 
                 case "Factura":
+<<<<<<< HEAD
+=======
+                    this.Controls.Remove(tbID);
+                    tbID.Dispose();
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                     this.Controls.Remove(tbNombre);
                     tbNombre.Dispose();
                     this.Controls.Remove(tbEmail);
@@ -138,6 +165,7 @@ namespace Principal
                     this.Controls.Remove(tbContraseña);
                     tbContraseña.Dispose();
 
+<<<<<<< HEAD
                     tbID.Location = new Point(282,180);
                     tbID.PlaceholderText = "ID Cliente";
 
@@ -149,6 +177,22 @@ namespace Principal
                     tbID_vendedor.TabIndex = 2;
 
 <<<<<<< HEAD
+=======
+                    tbID_cliente = new TextBox();
+                    tbID_cliente.Location = new Point(282, 140);
+                    tbID_cliente.Name = "tbID_cliente";
+                    tbID_cliente.PlaceholderText = "ID_cliente";
+                    tbID_cliente.Size = new Size(195, 23);
+                    tbID_cliente.TabIndex = 1;
+
+                    tbID_vendedor = new TextBox();
+                    tbID_vendedor.Location = new Point(282, 170);
+                    tbID_vendedor.Name = "tbID_vendedor";
+                    tbID_vendedor.PlaceholderText = "ID_vendedor";
+                    tbID_vendedor.Size = new Size(195, 23);
+                    tbID_vendedor.TabIndex = 2;
+
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                     tbID_producto = new TextBox();
                     tbID_producto.Location = new Point(282, 210);
                     tbID_producto.Name = "tbID_Producto";
@@ -156,6 +200,7 @@ namespace Principal
                     tbID_producto.Size = new Size(195, 23);
                     tbID_producto.TabIndex = 3;
 
+<<<<<<< HEAD
 <<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.cs
                     tbFecha = new DateTimePicker();
                     tbFecha.Location = new Point(282, 250);
@@ -170,13 +215,21 @@ namespace Principal
 =======
 >>>>>>> e2f8aee21698a9c72cd83aa099f483864c140912
                     this.Controls.Add(tbID_vendedor);
+=======
+                    this.Controls.Add(tbID_cliente);
+                    this.Controls.Add(tbID_vendedor);
+                    this.Controls.Add(tbID_producto);
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                     break;
 
                 default:
 
                     break;
             }
+<<<<<<< HEAD
 <<<<<<< HEAD:Principal/CrudAdmin/FormRegistro.cs
+=======
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
@@ -211,6 +264,7 @@ namespace Principal
 
                 case "Producto":
                     ProductoController ProductoController = new ProductoController();
+<<<<<<< HEAD
                     if (tbNombre.Text == "" || tbPrecio_producto.Text == "" || tbStock.Text == "" || tbDescripcion_producto.Text == "")
                     {
                         lbResultado.Text = "Completa todos los campos";
@@ -220,10 +274,15 @@ namespace Principal
                         resultado = ProductoController.RegistrarProducto(tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
                         lbResultado.Text = resultado;
                     }
+=======
+                    resultado = ProductoController.RegistrarProducto(tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                    lbResultado.Text = resultado;
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                     break;
 
                 case "Proveedor":
                     ProveedorController ProveedorController = new ProveedorController();
+<<<<<<< HEAD
                     if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || !int.TryParse(tbID.Text, out _))
                     {
                         lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
@@ -233,11 +292,16 @@ namespace Principal
                         resultado = ProveedorController.RegistrarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
                         lbResultado.Text = resultado;
                     }
+=======
+                    resultado = ProveedorController.RegistrarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
+                    lbResultado.Text = resultado;
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                     break;
 
                 case "Factura":
                     DateTime fechaUtc = DateTime.UtcNow;
                     FacturaController FacturaController = new FacturaController();
+<<<<<<< HEAD
                     if (tbID.Text == "" || tbID_vendedor.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbID_vendedor.Text, out _))
                     {
                         lbResultado.Text = "Completa todos los campos y verifica que los ID sean numericos";
@@ -250,6 +314,12 @@ namespace Principal
 
                     break;
 
+=======
+                    resultado = FacturaController.RegistrarFactura(int.Parse(tbID_cliente.Text), int.Parse(tbID_vendedor.Text), int.Parse(tbID_producto.Text), fechaUtc);
+                    lbResultado.Text = resultado;
+
+                    break;
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
                 default:
                     lbResultado.Text = "algo salio mal";
                     break;
@@ -279,6 +349,7 @@ namespace Principal
 
             Entrar entrada = new Entrar();
             entrada.ShowDialog();
+<<<<<<< HEAD
             this.Close();
 =======
 >>>>>>> b7759e0961edb9a49c36b2550f8b64477a0d7ec3:Principal/FormRegistro.cs
@@ -367,6 +438,46 @@ namespace Principal
             Entrar entrada = new Entrar();
             entrada.ShowDialog();
         }
+=======
+        }
+
+        private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
+        {
+            PictureBox pbImagen = this.Controls["pbImagen"] as PictureBox;
+            Label labelPrueba = this.Controls["labelPrueba"] as Label;
+            if (pbImagen == null)
+            {
+                pbImagen = new PictureBox();
+                pbImagen.Location = new Point(500, 140);
+                pbImagen.Name = "pbImagen";
+                pbImagen.Size = new Size(195, 195);
+                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImagen.TabIndex = 6;
+                this.Controls.Add(pbImagen);
+            }
+
+            if (labelPrueba == null)
+            {
+                labelPrueba = new Label();
+                labelPrueba.Name = "labelPrueba";
+                labelPrueba.Location = new Point(500, 400);
+                labelPrueba.Size = new Size(300, 195);
+                this.Controls.Add(labelPrueba);
+            }
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+            openFileDialog.Title = "Seleccionar Imagen";
+
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string rutaImagen = openFileDialog.FileName;
+                pbImagen.Image = Image.FromFile(rutaImagen);
+                labelPrueba.Text = rutaImagen;
+            }
+        }
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
     }
 }
 

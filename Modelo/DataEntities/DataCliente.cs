@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelo.Entities;
 using MySql.Data.MySqlClient;
-namespace Modelo
+
+namespace Modelo.DataEntities
 
 {
     public class DataCliente : ConexionMySql
@@ -43,6 +44,7 @@ namespace Modelo
 
         public List<ClienteEntity> MostrarClientes()
         {
+<<<<<<< HEAD
             bool clienteExiste = false;
             MySqlCommand cmd = GetConnection().CreateCommand();
             cmd.CommandText = "SELECT COUNT(*) FROM cliente WHERE Email = @Email AND Contraseña = @Contraseña";
@@ -60,6 +62,9 @@ namespace Modelo
         public ClienteEntity ConsultarCliente(int ID_cliente)
         {
             ClienteEntity cliente = new ClienteEntity();
+=======
+            List<ClienteEntity> clientes = new List<ClienteEntity>();
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
             MySqlCommand cmd = GetConnection().CreateCommand();
             cmd.CommandText = "SELECT * FROM cliente";
             MySqlDataReader dr = cmd.ExecuteReader();
@@ -73,8 +78,14 @@ namespace Modelo
                 clienteActual.Telefono = dr.GetString(3);
                 clienteActual.Contraseña = dr.GetString(4);
 
+<<<<<<< HEAD
             }
             return cliente;
+=======
+                clientes.Add(clienteActual);
+            }
+            return clientes;
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
         }
 
         public int ActualizarCliente(int ID_cliente, string Nombre_cliente, string Email, string Telefono, string Contraseña)

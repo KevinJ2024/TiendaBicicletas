@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "uZrczlLFnXA=",
   "success": true,
   "projectFilePath": "C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\Logica.csproj",
+=======
+  "dgSpecHash": "0eezKVUI/nQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\Logica.csproj",
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
   "expectedPackageFiles": [
     "C:\\Users\\SENA\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\SENA\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
@@ -39,7 +45,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problema al leer el archivo de caché C:\\Users\\SENA\\Desktop\\XXXX\\TiendaBicicletas\\Logica\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problema al leer el archivo de caché C:\\Users\\SENA\\source\\repos\\TiendaBicicletas\\Logica\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
     }
   ]
 }

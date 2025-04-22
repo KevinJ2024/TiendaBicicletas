@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.exe
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.deps.json
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.runtimeconfig.json
@@ -46,6 +49,7 @@ C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\r
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.pdb
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.genruntimeconfig.cache
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\ref\Principal.dll
+<<<<<<< HEAD
 <<<<<<< HEAD
 C:\Users\SENA\Desktop\XXXX\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.exe
 C:\Users\SENA\Desktop\XXXX\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\Principal.deps.json
@@ -193,3 +197,5 @@ C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\
 C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\ref\Principal.dll
 C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormFactura.resources
 >>>>>>> e2f8aee21698a9c72cd83aa099f483864c140912
+=======
+>>>>>>> ee4cced6066a2a30304e6ef147a90dd2ff44c696

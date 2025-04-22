@@ -53,10 +53,5 @@ namespace Principal
             FormCRUD us = new FormCRUD(entidad);
             us.ShowDialog();
         }
-
-        private void FormPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

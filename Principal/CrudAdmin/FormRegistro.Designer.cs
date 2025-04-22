@@ -48,7 +48,6 @@
             lbTitle.Size = new Size(121, 37);
             lbTitle.TabIndex = 0;
             lbTitle.Text = "Registro ";
-            lbTitle.Click += lbTitle_Click;
             // 
             // btnConfirmar
             // 
