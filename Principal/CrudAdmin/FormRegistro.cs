@@ -139,38 +139,6 @@ namespace Principal
                     this.Controls.Add(tbID_vendedor);
                     break;
 
-                case "ProductoFactura":
-                    this.Controls.Remove(tbNombre);
-                    tbNombre.Dispose();
-                    this.Controls.Remove(tbEmail);
-                    tbEmail.Dispose();
-                    this.Controls.Remove(tbTelefono);
-                    tbTelefono.Dispose();
-                    this.Controls.Remove(tbContraseña);
-                    tbContraseña.Dispose();
-
-                    tbID.Location = new Point(282, 180);
-                    tbID.PlaceholderText = "ID Factura";
-
-                    tbID_producto = new TextBox();
-                    tbID_producto.Location = new Point(282, 220);
-                    tbID_producto.Name = "tbID_producto";
-                    tbID_producto.PlaceholderText = "ID Producto";
-                    tbID_producto.Size = new Size(195, 23);
-                    tbID_producto.TabIndex = 2;
-
-                    tbCantidadProducto = new TextBox();
-                    tbCantidadProducto.Location = new Point(282, 260);
-                    tbCantidadProducto.Name = "tbCantidadProducto";
-                    tbCantidadProducto.PlaceholderText = "Cantidad del producto";
-                    tbCantidadProducto.Size = new Size(195, 23);
-                    tbCantidadProducto.TabIndex = 2;
-
-                    this.Controls.Add(tbID_producto);
-                    this.Controls.Add(tbCantidadProducto);
-
-                    break;
-
                 default:
 
                     break;
