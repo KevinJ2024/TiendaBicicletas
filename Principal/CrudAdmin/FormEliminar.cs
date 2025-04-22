@@ -11,7 +11,7 @@ using Logica.Controllers;
 
 namespace Principal
 {
-    public partial class FormEliminar : FormButton
+    public partial class FormEliminar : FormBase
     {
 
         public string entidad;
@@ -19,6 +19,7 @@ namespace Principal
         public FormEliminar(string entidad)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             lbTitle.Text += entidad;
             tbID.PlaceholderText += entidad;
 

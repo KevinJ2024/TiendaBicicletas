@@ -35,52 +35,52 @@
             lbResultado = new Label();
             SuspendLayout();
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Location = new Point(410, 245);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 49);
-            btnCancelar.TabIndex = 8;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
-            // 
-            // btnConfirmar
-            // 
-            btnConfirmar.Location = new Point(289, 245);
-            btnConfirmar.Name = "btnConfirmar";
-            btnConfirmar.Size = new Size(101, 49);
-            btnConfirmar.TabIndex = 7;
-            btnConfirmar.Text = "Eliminar";
-            btnConfirmar.UseVisualStyleBackColor = true;
-            btnConfirmar.Click += btnConfirmar_Click;
-            // 
-            // tbID
-            // 
-            tbID.Location = new Point(304, 180);
-            tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID ";
-            tbID.Size = new Size(186, 23);
-            tbID.TabIndex = 6;
-            // 
             // lbTitle
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(289, 119);
+            lbTitle.Location = new Point(820, 70);
             lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(120, 37);
-            lbTitle.TabIndex = 5;
+            lbTitle.Size = new Size(137, 37);
+            lbTitle.TabIndex = 0;
             lbTitle.Text = "Eliminar ";
+            // 
+            // tbID
+            // 
+            tbID.Location = new Point(820, 150);
+            tbID.Name = "tbID";
+            tbID.PlaceholderText = "ID ";
+            tbID.Size = new Size(186, 23);
+            tbID.TabIndex = 1;
+            // 
+            // btnConfirmar
+            // 
+            btnConfirmar.Location = new Point(800, 200);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.Size = new Size(101, 49);
+            btnConfirmar.TabIndex = 3;
+            btnConfirmar.Text = "Eliminar";
+            btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(950, 200);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(101, 49);
+            btnCancelar.TabIndex = 4;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // lbResultado
             // 
             lbResultado.AutoSize = true;
-            lbResultado.Location = new Point(369, 332);
+            lbResultado.Location = new Point(700, 320);
             lbResultado.Name = "lbResultado";
             lbResultado.Size = new Size(56, 15);
-            lbResultado.TabIndex = 9;
-            lbResultado.Text = "resultado";
+            lbResultado.TabIndex = 5;
+            lbResultado.Text = "";
             // 
             // FormEliminar
             // 

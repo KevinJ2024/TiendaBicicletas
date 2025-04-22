@@ -39,7 +39,7 @@
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(800, 68);
+            lbTitle.Location = new Point(820, 70);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(137, 37);
             lbTitle.TabIndex = 0;
@@ -76,7 +76,7 @@
             // lbResultado
             // 
             lbResultado.AutoSize = true;
-            lbResultado.Location = new Point(680, 320);
+            lbResultado.Location = new Point(820, 320);
             lbResultado.Name = "lbResultado";
             lbResultado.Size = new Size(56, 15);
             lbResultado.TabIndex = 5;
@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1280, 536);
             Controls.Add(lbResultado);
             Controls.Add(btnCancelar);
             Controls.Add(btnConfirmar);

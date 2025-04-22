@@ -13,7 +13,7 @@ using Logica.Controllers;
 
 namespace Principal
 {
-    public partial class FormActualizar : FormButton
+    public partial class FormActualizar : FormBase
     {
 
         private string entidad;
@@ -27,6 +27,7 @@ namespace Principal
         public FormActualizar(string entidad)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             lbTitle.Text += entidad;
 
             this.entidad = entidad;
@@ -41,12 +42,16 @@ namespace Principal
             switch (entidad)
             {
                 case "Vendedor":
-                    lbTitle.Location = new Point(262, 59);
                     tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
-                    tbSalario.Location = new Point(304, 300);
+                    tbSalario.Location = new Point(800, 600);
+                    tbContraseña.Location = new Point(800,650);
                     tbSalario.Size = new Size(195, 23);
                     tbSalario.PlaceholderText = "Ingrese el salario";
+
+                    btnConfirmar.Location = new Point(750,700);
+                    btnCancelar.Location = new Point(950,700);
+                    lbResultado.Location = new Point(800,750);
 
                     this.Controls.Add(tbSalario);
                     break;
@@ -59,40 +64,38 @@ namespace Principal
                     this.Controls.Remove(tbContraseña);
                     tbContraseña.Dispose();
 
-                    btnBuscarEntidad.Location = new Point(200, 112);
-                    lbTitle.Location = new Point(272, 59);
-                    tbID.Location = new Point(282, 112);
-                    tbNombre.Location = new Point(282, 148);
-
+                    btnBuscarEntidad.Location = new Point(720, 400);
+                    tbID.Location = new Point(800, 400);
+                    tbNombre.Location = new Point(800, 450);
 
                     tbPrecio_producto = new TextBox();
-                    tbPrecio_producto.Location = new Point(282, 180);
+                    tbPrecio_producto.Location = new Point(800, 500);
                     tbPrecio_producto.Name = "tbPrecio_producto";
                     tbPrecio_producto.PlaceholderText = "Precio del producto";
                     tbPrecio_producto.Size = new Size(195, 23);
                     tbPrecio_producto.TabIndex = 2;
 
                     tbStock = new TextBox();
-                    tbStock.Location = new Point(282, 210);
+                    tbStock.Location = new Point(800, 550);
                     tbStock.Name = "tbStock";
                     tbStock.PlaceholderText = "Stock del producto";
                     tbStock.Size = new Size(195, 23);
                     tbStock.TabIndex = 3;
 
                     tbDescripcion_producto = new TextBox();
-                    tbDescripcion_producto.Location = new Point(282, 240);
+                    tbDescripcion_producto.Location = new Point(800, 550);
                     tbDescripcion_producto.Name = "tbDescripcion_producto";
                     tbDescripcion_producto.PlaceholderText = "descripcion del producto";
                     tbDescripcion_producto.Size = new Size(195, 23);
                     tbDescripcion_producto.TabIndex = 4;
 
                     Button btnSeleccionar_Imagen = new Button();
-                    btnSeleccionar_Imagen.Location = new Point(282, 270);
+                    btnSeleccionar_Imagen.Location = new Point(800, 600);
                     btnSeleccionar_Imagen.Name = "btnSeleccionar_Imagen";
                     btnSeleccionar_Imagen.Size = new Size(195, 30);
                     btnSeleccionar_Imagen.Text = "Seleccionar Imagen";
                     btnSeleccionar_Imagen.Click += new EventHandler(btnSeleccionar_Imagen_Click);
-                    tbDescripcion_producto.TabIndex = 5;
+                    btnSeleccionar_Imagen.TabIndex = 5;
 
 
 
@@ -180,6 +183,7 @@ namespace Principal
 
                     break;
                 case "Producto":
+                    EliminarTodosLosPictureBox();
                     ProductoController ProductoController = new ProductoController();
                     var producto = ProductoController.ConsultarProducto(int.Parse(tbID.Text));
                     resultado = "";
@@ -256,75 +260,7 @@ namespace Principal
                 tbPrecio_producto.Text = "";
                 tbStock.Text = "";
                 tbDescripcion_producto.Text = "";
-                pbImagen.Image = null;
-            }
-        }
-
-        private void btnSeleccionar_Imagen_Click(object sender, EventArgs e)
-        {
-            pbImagen = this.Controls["pbImagen"] as PictureBox;
-
-            if (pbImagen == null)
-            {
-                pbImagen = new PictureBox();
-                pbImagen.Location = new Point(500, 140);
-                pbImagen.Name = "pbImagen";
-                pbImagen.Size = new Size(195, 195);
-                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-                pbImagen.TabIndex = 6;
-                this.Controls.Add(pbImagen);
-            }
-
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
-            openFileDialog.Title = "Seleccionar Imagen";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string rutaImagen = openFileDialog.FileName;
-                pbImagen.Image = Image.FromFile(rutaImagen);
-
-                using (MemoryStream ms = new MemoryStream())
-                {
-                    pbImagen.Image.Save(ms, pbImagen.Image.RawFormat);
-                    imagenSeleccionada = ms.ToArray();
-                }
-            }
-        }
-
-        private void MostrarImagen(byte[] imagen)
-        {
-            pbImagen = this.Controls["pbImagen"] as PictureBox;
-
-            if (pbImagen == null)
-            {
-                pbImagen = new PictureBox();
-                pbImagen.Location = new Point(500, 140);
-                pbImagen.Name = "pbImagen";
-                pbImagen.Size = new Size(195, 195);
-                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-                pbImagen.TabIndex = 6;
-                this.Controls.Add(pbImagen);
-            }
-
-            if (imagen != null && imagen.Length > 0)
-            {
-                using (MemoryStream ms = new MemoryStream(imagen))
-                {
-                    try
-                    {
-                        pbImagen.Image = Image.FromStream(ms);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error al cargar la imagen: " + ex.Message);
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("No hay imagen disponible para mostrar.");
-                pbImagen.Image = null;
+                EliminarTodosLosPictureBox();
             }
         }
     }

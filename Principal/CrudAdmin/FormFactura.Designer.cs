@@ -40,7 +40,7 @@
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(297, 45);
+            lbTitle.Location = new Point(800, 300);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(205, 37);
             lbTitle.TabIndex = 0;
@@ -49,7 +49,7 @@
             // lbCliente
             // 
             lbCliente.AutoSize = true;
-            lbCliente.Location = new Point(373, 140);
+            lbCliente.Location = new Point(800, 400);
             lbCliente.Name = "lbCliente";
             lbCliente.Size = new Size(44, 15);
             lbCliente.TabIndex = 1;
@@ -58,7 +58,7 @@
             // lbVendedor
             // 
             lbVendedor.AutoSize = true;
-            lbVendedor.Location = new Point(369, 187);
+            lbVendedor.Location = new Point(800, 450);
             lbVendedor.Name = "lbVendedor";
             lbVendedor.Size = new Size(57, 15);
             lbVendedor.TabIndex = 2;
@@ -67,7 +67,7 @@
             // lbFecha
             // 
             lbFecha.AutoSize = true;
-            lbFecha.Location = new Point(379, 237);
+            lbFecha.Location = new Point(800, 500);
             lbFecha.Name = "lbFecha";
             lbFecha.Size = new Size(38, 15);
             lbFecha.TabIndex = 3;
@@ -76,7 +76,7 @@
             // lbProductos
             // 
             lbProductos.AutoSize = true;
-            lbProductos.Location = new Point(369, 287);
+            lbProductos.Location = new Point(800, 550);
             lbProductos.Name = "lbProductos";
             lbProductos.Size = new Size(61, 15);
             lbProductos.TabIndex = 4;
@@ -85,7 +85,7 @@
             // lbTotal
             // 
             lbTotal.AutoSize = true;
-            lbTotal.Location = new Point(379, 340);
+            lbTotal.Location = new Point(800, 800);
             lbTotal.Name = "lbTotal";
             lbTotal.Size = new Size(32, 15);
             lbTotal.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1119, 590);
             Controls.Add(lbTotal);
             Controls.Add(lbProductos);
             Controls.Add(lbFecha);

@@ -11,13 +11,14 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormBackOffice : FormButton
+    public partial class FormBackOffice : FormBase
     {
         public string entidad;
 
         public FormBackOffice()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnCliente_Click(object sender, EventArgs e)

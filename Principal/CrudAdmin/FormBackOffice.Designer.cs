@@ -40,7 +40,7 @@
             // 
             Titulo.AutoSize = true;
             Titulo.Font = new Font("Segoe UI", 20F);
-            Titulo.Location = new Point(202, 47);
+            Titulo.Location = new Point(800, 300);
             Titulo.Name = "Titulo";
             Titulo.Size = new Size(367, 37);
             Titulo.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // btnCliente
             // 
-            btnCliente.Location = new Point(92, 135);
+            btnCliente.Location = new Point(700, 400);
             btnCliente.Name = "btnCliente";
             btnCliente.Size = new Size(163, 64);
             btnCliente.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // btnVendedor
             // 
-            btnVendedor.Location = new Point(292, 135);
+            btnVendedor.Location = new Point(900, 400);
             btnVendedor.Name = "btnVendedor";
             btnVendedor.Size = new Size(163, 64);
             btnVendedor.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // btnProducto
             // 
-            btnProducto.Location = new Point(492, 135);
+            btnProducto.Location = new Point(1100, 400);
             btnProducto.Name = "btnProducto";
             btnProducto.Size = new Size(163, 64);
             btnProducto.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // btnFactura
             // 
-            btnFactura.Location = new Point(292, 246);
+            btnFactura.Location = new Point(700, 500);
             btnFactura.Name = "btnFactura";
             btnFactura.Size = new Size(163, 64);
             btnFactura.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             // btnProveedor
             // 
-            btnProveedor.Location = new Point(92, 246);
+            btnProveedor.Location = new Point(900, 500);
             btnProveedor.Name = "btnProveedor";
             btnProveedor.Size = new Size(163, 64);
             btnProveedor.TabIndex = 5;

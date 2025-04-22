@@ -1,6 +1,6 @@
 ﻿namespace Principal
 {
-    partial class FormButton
+    partial class FormBase
     {
         /// <summary>
         /// Required designer variable.

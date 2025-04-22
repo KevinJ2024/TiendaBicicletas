@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormCRUD : FormButton
+    public partial class FormCRUD : FormBase
     {
         public string entidad;
         public FormCRUD(string entidad)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             this.entidad = entidad;
             lbTitle.Text += entidad;
             EditarCrud();

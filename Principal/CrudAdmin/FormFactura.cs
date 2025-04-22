@@ -13,11 +13,12 @@ using MySqlX.XDevAPI;
 
 namespace Principal
 {
-    public partial class FormFactura : FormButton
+    public partial class FormFactura : FormBase
     {
         public FormFactura(FacturaEntity factura, List<ProductoFacturaEntity> productoFacturas)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             ClienteController ClienteController = new ClienteController();
             var cliente = ClienteController.ConsultarCliente(factura.ID_cliente);
 
@@ -39,10 +40,10 @@ namespace Principal
             foreach (var ProductoFacturaActual in productoFacturas)
             {
                 var producto = ProductoController.ConsultarProducto(ProductoFacturaActual.ID_producto);
-                resultado += "ID_Producto: " + producto.ID_producto + "---Nombre: " + producto.Nombre_producto + "---Precio: " + producto.Precio_producto + "---Descripcion" + producto.Descripcion + "\n";
+                resultado += "ID_Producto: " + producto.ID_producto + "\nNombre: " + producto.Nombre_producto + "\nPrecio: " + producto.Precio_producto + "\nDescripcion: " + producto.Descripcion + "\nCantidad: " + ProductoFacturaActual.Cantidad + "\n\n\n\n\n";
                 listaDeImagenes.Add(producto.Imagen);
             }
-            MostrarImagen(listaDeImagenes);
+            MostrarImagenesFactura(listaDeImagenes);
             lbProductos.Text = resultado;
         }
     }
