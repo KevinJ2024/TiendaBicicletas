@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Modelo.DataEntities;
 using Modelo.Entities;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Logica.Controllers
 {

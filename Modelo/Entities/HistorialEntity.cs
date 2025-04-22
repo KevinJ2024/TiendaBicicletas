@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entities
 {
-    public class FacturaEntity
+    public class HistorialEntity
     {
-        public int ID_factura;
         public int ID_cliente;
-        public int ID_vendedor;
-        public DateTime Fecha;
-        public decimal Total;
+        public int ID_producto;
     }
 }

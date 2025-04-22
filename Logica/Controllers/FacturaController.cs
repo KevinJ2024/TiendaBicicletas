@@ -11,11 +11,11 @@ namespace Logica.Controllers
     public class FacturaController
     {
 
-        public string RegistrarFactura(int ID_cliente, int ID_producto, int ID_vendedor, DateTime Fecha)
+        public string RegistrarFactura(int ID_cliente, int ID_vendedor, DateTime Fecha)
         {
             string resultado = "";
             DataFactura db = new DataFactura();
-            int filasAfectadas = db.RegistrarFactura(ID_cliente, ID_producto, ID_vendedor, Fecha);
+            int filasAfectadas = db.RegistrarFactura(ID_cliente, ID_vendedor, Fecha);
 
             if (filasAfectadas > 0)
             {
