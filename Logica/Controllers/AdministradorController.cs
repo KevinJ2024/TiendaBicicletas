@@ -12,12 +12,12 @@ namespace Logica.Controllers
     public class AdministradorController
     {
 
-        public AdministradorEntity ConsultarAdmin(int ID_admin)
+        public AdministradorEntity ConsultarAdmin(string Email)
         {
 
             DataAdmin db = new DataAdmin();
 
-            AdministradorEntity admin = db.ConsultarAdmin(ID_admin);
+            AdministradorEntity admin = db.ConsultarAdmin(Email);
 
             return admin;
         }

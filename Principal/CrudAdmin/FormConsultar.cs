@@ -107,7 +107,7 @@ namespace Principal
         {
             if (!int.TryParse(tbID.Text, out _))
             {
-                lbResultado.Text = "Verifica que el ID sea de tipo numerico entero";
+                MessageBox.Show("verifica que el ID sea numerico entero");
             }
             else
             {

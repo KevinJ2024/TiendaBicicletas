@@ -40,6 +40,14 @@ namespace Logica.Controllers
             return cliente;
         }
 
+        public ClienteEntity ConsultarClienteEmail(string email)
+        {
+            DataCliente db = new DataCliente();
+            ClienteEntity cliente = db.ConsultarClienteEmail(email);
+
+            return cliente;
+        }
+
         public List<ClienteEntity> MostrarClientes()
         {
             DataCliente db = new DataCliente();

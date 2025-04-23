@@ -153,9 +153,9 @@ namespace Principal
             {
                 case "Cliente":
                     ClienteController ClienteController = new ClienteController();
-                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbTelefono.Text, out _))
                     {
-                        lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
+                        MessageBox.Show("Completa todos los campos y verifica que el ID y telefono sean de tipo numerico entero");
                     }
                     else
                     {
@@ -165,9 +165,9 @@ namespace Principal
                     break;
                 case "Vendedor":
                     VendedorController VendedorController = new VendedorController();
-                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbSalario.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _))
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbSalario.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbTelefono.Text, out _))
                     {
-                        lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
+                        MessageBox.Show("Completa todos los campos y verifica que el ID sea numerico entero");
                     }
                     else
                     {
@@ -180,7 +180,7 @@ namespace Principal
                     ProductoController ProductoController = new ProductoController();
                     if (tbNombre.Text == "" || tbPrecio_producto.Text == "" || tbStock.Text == "" || tbDescripcion_producto.Text == "")
                     {
-                        lbResultado.Text = "Completa todos los campos";
+                        MessageBox.Show("Completa todos los campos");
                     }
                     else
                     {
@@ -191,9 +191,9 @@ namespace Principal
 
                 case "Proveedor":
                     ProveedorController ProveedorController = new ProveedorController();
-                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || !int.TryParse(tbID.Text, out _))
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbTelefono.Text, out _))
                     {
-                        lbResultado.Text = "Completa todos los campos y verifica que el ID sea numerico";
+                        MessageBox.Show("Completa todos los campos y verifica que el ID sea numerico entero");
                     }
                     else
                     {
@@ -207,7 +207,7 @@ namespace Principal
                     FacturaController FacturaController = new FacturaController();
                     if (tbID.Text == "" || tbID_vendedor.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbID_vendedor.Text, out _))
                     {
-                        lbResultado.Text = "Completa todos los campos y verifica que los ID sean numericos";
+                        MessageBox.Show("Completa todos los campos y verifica que el ID sea numerico entero");
                     }
                     else
                     {
@@ -218,7 +218,7 @@ namespace Principal
                     break;
 
                 default:
-                    lbResultado.Text = "algo salio mal";
+                    MessageBox.Show("algo salio mal");
                     break;
             }
         }
@@ -243,10 +243,6 @@ namespace Principal
                 EliminarTodosLosPictureBox();
             }
             string entidad;
-
-
-            Entrar entrada = new Entrar();
-            entrada.ShowDialog();
         }
     }
 }

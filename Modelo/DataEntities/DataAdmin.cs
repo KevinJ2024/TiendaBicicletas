@@ -24,12 +24,12 @@ namespace Modelo.DataEntities
             return adminExiste;
         }
 
-        public AdministradorEntity ConsultarAdmin(int ID_admin)
+        public AdministradorEntity ConsultarAdmin(string Email)
         {
             AdministradorEntity admin = new AdministradorEntity();
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "SELECT * FROM administrador WHERE ID_admin = @ID_admin";
-            cmd.Parameters.AddWithValue("@ID_admin", ID_admin);
+            cmd.CommandText = "SELECT * FROM administrador WHERE Email_admin = @Email_admin";
+            cmd.Parameters.AddWithValue("@Email_admin", Email);
             MySqlDataReader dr = cmd.ExecuteReader();
 
             while (dr.Read())

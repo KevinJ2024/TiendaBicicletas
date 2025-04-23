@@ -25,17 +25,21 @@ namespace Principal
 
         private void button1_Click(object sender, EventArgs e)
         {
-             FormLogin formLogin = new FormLogin();
+            this.Hide();
+            FormLogin formLogin = new FormLogin();
             formLogin.ShowDialog();
+            this.Show();
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             string entidad;
 
+            this.Hide();
             entidad = "Cliente";
             FormRegistro us = new FormRegistro(entidad);
             us.ShowDialog();
+            this.Show();
         }
     }
 }

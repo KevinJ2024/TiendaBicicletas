@@ -9,17 +9,27 @@ namespace Logica.Controllers.InicioController
         {
             DataCliente cliente = new DataCliente();
 
-            bool usuarioExiste = cliente.VerificarCliente(Email, Contraseña);
+            bool adminExistente = cliente.VerificarAdministrador(Email, Contraseña);
 
-            if (usuarioExiste)
+            if (adminExistente)
             {
-                string yes = "Login exitoso. Usuario encontrado";
+                string yes = "Login exitoso. Administrador encontrado";
                 return yes;
             }
             else
             {
-                string no = "El correo o la contraseña son incorrectos.";
-                return no;
+                bool usuarioExiste = cliente.VerificarCliente(Email, Contraseña);
+
+                if (usuarioExiste)
+                {
+                    string yes = "Login exitoso. Usuario encontrado";
+                    return yes;
+                }
+                else
+                {
+                    string no = "El correo o la contraseña son incorrectos.";
+                    return no;
+                }
             }
         }
     }

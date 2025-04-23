@@ -34,21 +34,23 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(341, 179);
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.Location = new Point(836, 71);
             label1.Name = "label1";
-            label1.Size = new Size(85, 15);
+            label1.Size = new Size(247, 37);
             label1.TabIndex = 0;
-            label1.Text = "Hola que tal :D";
-            label1.Click += label1_Click;
+            label1.Text = "TIENDA BICICLETAS";
             // 
             // FormPrincipalCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1861, 899);
             Controls.Add(label1);
             Name = "FormPrincipalCliente";
             Text = "FormPrincipalCliente";
+            Controls.SetChildIndex(label1, 0);
+            Controls.SetChildIndex(btnGlobal, 0);
             ResumeLayout(false);
             PerformLayout();
         }

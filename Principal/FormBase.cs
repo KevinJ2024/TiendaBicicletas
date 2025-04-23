@@ -14,6 +14,7 @@ namespace Principal
     {
 
         public byte[] imagenSeleccionada;
+        public Button btnGlobal;
 
         public FormBase()
         {
@@ -22,7 +23,7 @@ namespace Principal
 
         private void InitializeButton()
         {
-            Button btnGlobal = new Button();
+            btnGlobal = new Button();
             btnGlobal.Text = "Atras";
             btnGlobal.Location = new Point(5, 950); 
             btnGlobal.Size = new Size(100, 50);    
@@ -144,6 +145,44 @@ namespace Principal
                 this.Controls.Add(pbImagen);
 
                 yOffset += pbImagen.Height + 35;
+            }
+        }
+
+        public void MostrarImagenesPrincipal(List<byte[]> imagenes)
+        {
+            int yOffset = 0;
+
+            foreach (var imagen in imagenes)
+            {
+                PictureBox pbImagen = new PictureBox();
+                pbImagen.Location = new Point(1000, 200 + yOffset);
+                pbImagen.Size = new Size(100, 100);
+                pbImagen.Name = "pbImagen";
+                pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbImagen.TabIndex = 6;
+
+                if (imagen != null && imagen.Length > 0)
+                {
+                    using (MemoryStream ms = new MemoryStream(imagen))
+                    {
+                        try
+                        {
+                            pbImagen.Image = Image.FromStream(ms);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error al cargar la imagen: " + ex.Message);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No hay imagen disponible para mostrar.");
+                    pbImagen.Image = null;
+                }
+
+                this.Controls.Add(pbImagen);
+                yOffset += 150;
             }
         }
 

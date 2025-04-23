@@ -42,6 +42,26 @@ namespace Modelo.DataEntities
             return cliente;
         }
 
+        public ClienteEntity ConsultarClienteEmail(string Email)
+        {
+            ClienteEntity cliente = new ClienteEntity();
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT * FROM cliente WHERE Email = @Email";
+            cmd.Parameters.AddWithValue("@Email", Email);
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                cliente.ID_cliente = dr.GetInt32(0);
+                cliente.Nombre_cliente = dr.GetString(1);
+                cliente.Email = dr.GetString(2);
+                cliente.Telefono = dr.GetString(3);
+                cliente.Contraseña = dr.GetString(4);
+
+            }
+            return cliente;
+        }
+
         public List<ClienteEntity> MostrarClientes()
         {
             List<ClienteEntity> clientes = new List<ClienteEntity>();
@@ -89,7 +109,24 @@ namespace Modelo.DataEntities
             return resultado;
         }
 
-        public bool VerificarCliente(string Email, string Contraseña)
+        public bool VerificarAdministrador(string Email, string Contraseña)
+        {
+            bool administradorExistente = false;
+            MySqlCommand cmd = GetConnection().CreateCommand();
+            cmd.CommandText = "SELECT COUNT(*) FROM administrador WHERE Email_admin = @Email_admin AND Contraseña_admin = @Contraseña_admin";
+            cmd.Parameters.AddWithValue("@Email_admin", Email);
+            cmd.Parameters.AddWithValue("@Contraseña_admin", Contraseña);
+
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            if (count > 0)
+            {
+               administradorExistente = true;
+            }
+
+            return administradorExistente;
+        }
+
+            public bool VerificarCliente(string Email, string Contraseña)
         {
             bool clienteExiste = false;
             MySqlCommand cmd = GetConnection().CreateCommand();

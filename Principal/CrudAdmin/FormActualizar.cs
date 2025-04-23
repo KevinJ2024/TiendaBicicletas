@@ -22,7 +22,6 @@ namespace Principal
         public TextBox tbStock;
         public TextBox tbDescripcion_producto;
         public PictureBox pbImagen;
-        public byte[] imagenSeleccionada;
 
         public FormActualizar(string entidad)
         {
@@ -219,26 +218,55 @@ namespace Principal
             {
                 case "Cliente":
                     ClienteController Clientecontroller = new ClienteController();
-                    resultado = Clientecontroller.ActualizarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
-                    lbResultado.Text = resultado;
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbTelefono.Text, out _))
+                    {
+                        MessageBox.Show("Completa todos los campos y verifica que el ID sea numerico entero");
+                    }
+                    else
+                    {
+                        resultado = Clientecontroller.ActualizarCliente(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, tbContraseña.Text);
+                        lbResultado.Text = resultado;
+                    }
                     break;
+
                 case "Vendedor":
                     VendedorController VendedorController = new VendedorController();
-                    resultado = VendedorController.ActualizarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
-                    lbResultado.Text = resultado;
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || tbSalario.Text == "" || tbContraseña.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbTelefono.Text, out _))
+                    {
+                        MessageBox.Show("Completa todos los campos y verifica que el ID sea numerico entero");
+                    }
+                    else
+                    {
+                        resultado = VendedorController.ActualizarVendedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text, decimal.Parse(tbSalario.Text), tbContraseña.Text);
+                        lbResultado.Text = resultado;
+                    }
                     break;
                 case "Producto":
                     ProductoController ProductoController = new ProductoController();
-                    resultado = ProductoController.ActualizarProducto(int.Parse(tbID.Text), tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
-                    lbResultado.Text = resultado;
+                    if (tbNombre.Text == "" || tbPrecio_producto.Text == "" || tbStock.Text == "" || tbDescripcion_producto.Text == "" || imagenSeleccionada == null)
+                    {
+                        MessageBox.Show("Completa todos los campos y verifica que la imagen no este vacia");
+                    }
+                    else
+                    {
+                        resultado = ProductoController.ActualizarProducto(int.Parse(tbID.Text), tbNombre.Text, decimal.Parse(tbPrecio_producto.Text), int.Parse(tbStock.Text), tbDescripcion_producto.Text, imagenSeleccionada);
+                        lbResultado.Text = resultado;
+                    }
                     break;
                 case "Proveedor":
                     ProveedorController ProveedorController = new ProveedorController();
-                    resultado = ProveedorController.ActualizarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
-                    lbResultado.Text = resultado;
+                    if (tbID.Text == "" || tbNombre.Text == "" || tbEmail.Text == "" || tbTelefono.Text == "" || !int.TryParse(tbID.Text, out _) || !int.TryParse(tbTelefono.Text, out _))
+                    {
+                        MessageBox.Show("Completa todos los campos y verifica que el ID sea numerico entero");
+                    }
+                    else
+                    {
+                        resultado = ProveedorController.ActualizarProveedor(int.Parse(tbID.Text), tbNombre.Text, tbEmail.Text, tbTelefono.Text);
+                        lbResultado.Text = resultado;
+                    }
                     break;
                 default:
-                    lbResultado.Text = "algo salio mal";
+                    MessageBox.Show("algo salio mal");
                     break;
             }
         }
