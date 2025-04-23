@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Principal
 {
   
-    public partial class Entrar : Form
+    public partial class Entrar : FormBase
     {
         public Entrar()
         {

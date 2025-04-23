@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\modelo\\dataentities\\dataproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\dataentities\\dataproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\logica\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\modelo\\dataentities\\datafactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\dataentities\\datafactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,31 +35,11 @@
       "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\modelo\\entities\\facturaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\entities\\facturaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\modelo\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\modelo\\dataentities\\dataproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|solutionrelative:modelo\\dataentities\\dataproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -43,12 +47,8 @@
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formactualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\crudadmin\\formregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\principal\\crudadmin\\formcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -83,14 +83,6 @@
       "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\iniciocontroller\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\logica\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE76435-E2F3-46E6-99BA-AD4692896D7A}|Logica\\Logica.csproj|solutionrelative:logica\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\entrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\entrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -101,14 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\formbackoffice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4EDA5C-F7C6-455A-8D40-28E7B6DBA991}|Principal\\Principal.csproj|solutionrelative:principal\\formbackoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8606307-B4CE-45B7-8AD3-8B9898294AEA}|Modelo\\Modelo.csproj|c:\\users\\lukit\\source\\repos\\tiendabicicletas\\modelo\\entities\\vendedorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,65 +134,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConexionMySql.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\ConexionMySql.cs",
-              "RelativeDocumentMoniker": "Modelo\\ConexionMySql.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\ConexionMySql.cs",
-              "RelativeToolTip": "Modelo\\ConexionMySql.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormBase.cs",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBase.cs",
+              "RelativeDocumentMoniker": "Principal\\FormBase.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBase.cs",
+              "RelativeToolTip": "Principal\\FormBase.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAmwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:16:39.416Z",
+              "WhenOpened": "2025-04-23T03:35:36.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "DataFactura.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\DataEntities\\DataFactura.cs",
               "RelativeDocumentMoniker": "Modelo\\DataEntities\\DataFactura.cs",
               "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\DataEntities\\DataFactura.cs",
               "RelativeToolTip": "Modelo\\DataEntities\\DataFactura.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAuwEQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwEQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T21:19:58.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FacturaEntity.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\Entities\\FacturaEntity.cs",
-              "RelativeDocumentMoniker": "Modelo\\Entities\\FacturaEntity.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\Entities\\FacturaEntity.cs",
-              "RelativeToolTip": "Modelo\\Entities\\FacturaEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T20:37:24.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FacturaController.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\FacturaController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\FacturaController.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\FacturaController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\FacturaController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T21:20:22.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "FormRegistro.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
               "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormRegistro.cs",
               "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
               "RelativeToolTip": "Principal\\CrudAdmin\\FormRegistro.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAwwOgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAcwMYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T20:59:37.296Z",
               "EditorCaption": ""
@@ -221,23 +179,73 @@
               "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormConsultar.cs",
               "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs",
               "RelativeToolTip": "Principal\\CrudAdmin\\FormConsultar.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAkwFYAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAswG0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T21:50:07.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "FormActualizar.cs",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
+              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormActualizar.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
+              "RelativeToolTip": "Principal\\CrudAdmin\\FormActualizar.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAYwAkBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:25:40.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Logica\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Logica\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwDUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T20:40:21.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DataProducto.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\DataEntities\\DataProducto.cs",
               "RelativeDocumentMoniker": "Modelo\\DataEntities\\DataProducto.cs",
               "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\DataEntities\\DataProducto.cs",
               "RelativeToolTip": "Modelo\\DataEntities\\DataProducto.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T20:36:09.032Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FacturaController.cs",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\FacturaController.cs",
+              "RelativeDocumentMoniker": "Logica\\Controllers\\FacturaController.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\FacturaController.cs",
+              "RelativeToolTip": "Logica\\Controllers\\FacturaController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T21:20:22.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FacturaEntity.cs",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\Entities\\FacturaEntity.cs",
+              "RelativeDocumentMoniker": "Modelo\\Entities\\FacturaEntity.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\Entities\\FacturaEntity.cs",
+              "RelativeToolTip": "Modelo\\Entities\\FacturaEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T20:37:24.537Z"
             },
             {
               "$type": "Document",
@@ -265,67 +273,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormBackOffice.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.cs",
-              "RelativeDocumentMoniker": "Principal\\FormBackOffice.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal\\FormBackOffice.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:08:35.049Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormActualizar.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormActualizar.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormActualizar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:25:40.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormConsultar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormConsultar.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormConsultar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:09:17.485Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormRegistro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormRegistro.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T03:09:00.47Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormActualizar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormActualizar.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormActualizar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T21:02:53.975Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
               "Title": "DataVendedor.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\DataEntities\\DataVendedor.cs",
@@ -347,18 +294,6 @@
               "ViewState": "AgIAADUAAAAAAAAAAAAIwFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T20:39:25.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormCRUD.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs",
-              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormCRUD.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal\\CrudAdmin\\FormCRUD.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T21:02:53.253Z",
-              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -399,29 +334,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "Logica\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Logica\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "Logica\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T20:40:21.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormLogin.cs",
-              "RelativeDocumentMoniker": "Principal\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormLogin.cs",
-              "RelativeToolTip": "Principal\\FormLogin.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T21:14:43.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "Entrar.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\Entrar.cs",
               "RelativeDocumentMoniker": "Principal\\Entrar.cs",
@@ -432,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "FormRegistro.Designer.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.Designer.cs",
               "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormRegistro.Designer.cs",
@@ -440,12 +352,11 @@
               "RelativeToolTip": "Principal\\CrudAdmin\\FormRegistro.Designer.cs",
               "ViewState": "AgIAACUAAAAAAAAAAADwvzsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T21:01:30.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T21:01:30.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\Program.cs",
               "RelativeDocumentMoniker": "Principal\\Program.cs",
@@ -457,33 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FormBackOffice.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.Designer.cs",
-              "RelativeDocumentMoniker": "Principal\\FormBackOffice.Designer.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.Designer.cs",
-              "RelativeToolTip": "Principal\\FormBackOffice.Designer.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAADwv24AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T20:42:00.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FormBackOffice.cs",
-              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.cs",
-              "RelativeDocumentMoniker": "Principal\\FormBackOffice.cs",
-              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\FormBackOffice.cs",
-              "RelativeToolTip": "Principal\\FormBackOffice.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T20:31:53.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "VendedorEntity.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\Entities\\VendedorEntity.cs",
               "RelativeDocumentMoniker": "Modelo\\Entities\\VendedorEntity.cs",
@@ -495,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
               "Title": "ProductoEntity.cs",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Modelo\\Entities\\ProductoEntity.cs",
               "RelativeDocumentMoniker": "Modelo\\Entities\\ProductoEntity.cs",
@@ -507,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 25,
               "Title": "Logica.csproj",
               "DocumentMoniker": "C:\\Users\\lukit\\Source\\Repos\\TiendaBicicletas\\Logica\\Logica.csproj",
               "RelativeDocumentMoniker": "Logica\\Logica.csproj",
@@ -519,7 +404,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 9,
+              "Title": "FormConsultar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs",
+              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormConsultar.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormConsultar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal\\CrudAdmin\\FormConsultar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:09:17.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormRegistro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs",
+              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormRegistro.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal\\CrudAdmin\\FormRegistro.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:09:00.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormActualizar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs",
+              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormActualizar.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormActualizar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal\\CrudAdmin\\FormActualizar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T21:02:53.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormCRUD.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs",
+              "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormCRUD.cs",
+              "ToolTip": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormCRUD.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal\\CrudAdmin\\FormCRUD.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T21:02:53.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "FormEliminar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\lukit\\source\\repos\\TiendaBicicletas\\Principal\\CrudAdmin\\FormEliminar.cs",
               "RelativeDocumentMoniker": "Principal\\CrudAdmin\\FormEliminar.cs",

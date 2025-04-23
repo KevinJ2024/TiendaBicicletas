@@ -39,7 +39,7 @@
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(245, 68);
+            lbTitle.Location = new Point(820, 70);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(137, 37);
             lbTitle.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // tbID
             // 
-            tbID.Location = new Point(264, 151);
+            tbID.Location = new Point(820, 150);
             tbID.Name = "tbID";
             tbID.PlaceholderText = "ID ";
             tbID.Size = new Size(186, 23);
@@ -55,7 +55,7 @@
             // 
             // btnConfirmar
             // 
-            btnConfirmar.Location = new Point(245, 194);
+            btnConfirmar.Location = new Point(800, 200);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.Size = new Size(101, 49);
             btnConfirmar.TabIndex = 3;
@@ -65,7 +65,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(366, 194);
+            btnCancelar.Location = new Point(950, 200);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(101, 49);
             btnCancelar.TabIndex = 4;
@@ -76,7 +76,7 @@
             // lbResultado
             // 
             lbResultado.AutoSize = true;
-            lbResultado.Location = new Point(245, 281);
+            lbResultado.Location = new Point(820, 320);
             lbResultado.Name = "lbResultado";
             lbResultado.Size = new Size(56, 15);
             lbResultado.TabIndex = 5;
@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1280, 536);
             Controls.Add(lbResultado);
             Controls.Add(btnCancelar);
             Controls.Add(btnConfirmar);

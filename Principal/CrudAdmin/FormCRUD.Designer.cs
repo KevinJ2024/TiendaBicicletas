@@ -39,7 +39,7 @@
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(308, 60);
+            lbTitle.Location = new Point(840, 400);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(95, 37);
             lbTitle.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(21, 240);
+            btnRegistrar.Location = new Point(550, 500);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(174, 71);
             btnRegistrar.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // btnConsultar
             // 
-            btnConsultar.Location = new Point(211, 240);
+            btnConsultar.Location = new Point(750, 500);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(174, 71);
             btnConsultar.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(411, 240);
+            btnActualizar.Location = new Point(950, 500);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(174, 71);
             btnActualizar.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(614, 240);
+            btnEliminar.Location = new Point(1150, 500);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(174, 71);
             btnEliminar.TabIndex = 4;

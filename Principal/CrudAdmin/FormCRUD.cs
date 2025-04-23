@@ -10,38 +10,57 @@ using System.Windows.Forms;
 
 namespace Principal
 {
-    public partial class FormCRUD : Form
+    public partial class FormCRUD : FormBase
     {
         public string entidad;
         public FormCRUD(string entidad)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             this.entidad = entidad;
             lbTitle.Text += entidad;
+            EditarCrud();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormRegistro us = new FormRegistro(entidad);
             us.ShowDialog();
+            this.Show();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormConsultar us = new FormConsultar(entidad);
             us.ShowDialog();
+            this.Show();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormActualizar us = new FormActualizar(entidad);
             us.ShowDialog();
+            this.Show();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormEliminar us = new FormEliminar(entidad);
             us.ShowDialog();
+            this.Show();
+        }
+
+        private void EditarCrud()
+        {
+            if (entidad == "Factura")
+            {
+                btnActualizar.Enabled = false;
+                btnEliminar.Enabled = false;
+            }
         }
 
     }

@@ -75,6 +75,7 @@ namespace Modelo.DataEntities
             return productos;
         }
 
+
         public int ActualizarProducto(int ID_producto, string Nombre_producto, decimal Precio_producto, int Stock, string Descripcion, byte[] Imagen)
         {
             int resultado = 0;

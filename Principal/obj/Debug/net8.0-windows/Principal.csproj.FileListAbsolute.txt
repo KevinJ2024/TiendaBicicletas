@@ -92,3 +92,7 @@ C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\
 C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.pdb
 C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.genruntimeconfig.cache
 C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\ref\Principal.dll
+C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormFactura.resources
+C:\Users\SENA\source\repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormBase.resources
+C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormFactura.resources
+C:\Users\lukit\Source\Repos\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.FormBase.resources

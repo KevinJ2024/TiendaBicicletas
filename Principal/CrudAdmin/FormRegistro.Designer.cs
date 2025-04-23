@@ -43,7 +43,7 @@
             // 
             lbTitle.AutoSize = true;
             lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(282, 9);
+            lbTitle.Location = new Point(800, 300);
             lbTitle.Name = "lbTitle";
             lbTitle.Size = new Size(121, 37);
             lbTitle.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // btnConfirmar
             // 
-            btnConfirmar.Location = new Point(257, 347);
+            btnConfirmar.Location = new Point(750, 650);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.Size = new Size(112, 48);
             btnConfirmar.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(388, 347);
+            btnCancelar.Location = new Point(950, 650);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(112, 48);
             btnCancelar.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // tbEmail
             // 
-            tbEmail.Location = new Point(282, 205);
+            tbEmail.Location = new Point(800, 500);
             tbEmail.Name = "tbEmail";
             tbEmail.PlaceholderText = "Email";
             tbEmail.Size = new Size(195, 23);
@@ -79,7 +79,7 @@
             // 
             // tbTelefono
             // 
-            tbTelefono.Location = new Point(282, 252);
+            tbTelefono.Location = new Point(800, 550);
             tbTelefono.Name = "tbTelefono";
             tbTelefono.PlaceholderText = "Telefono";
             tbTelefono.Size = new Size(195, 23);
@@ -87,7 +87,7 @@
             // 
             // tbNombre
             // 
-            tbNombre.Location = new Point(282, 158);
+            tbNombre.Location = new Point(800, 450);
             tbNombre.Name = "tbNombre";
             tbNombre.PlaceholderText = "Nombre ";
             tbNombre.Size = new Size(195, 23);
@@ -95,7 +95,7 @@
             // 
             // tbID
             // 
-            tbID.Location = new Point(282, 114);
+            tbID.Location = new Point(800, 400);
             tbID.Name = "tbID";
             tbID.PlaceholderText = "ID ";
             tbID.Size = new Size(195, 23);
@@ -104,15 +104,14 @@
             // lbResultado
             // 
             lbResultado.AutoSize = true;
-            lbResultado.Location = new Point(632, 114);
+            lbResultado.Location = new Point(800, 700);
             lbResultado.Name = "lbResultado";
-            lbResultado.Size = new Size(56, 15);
+            lbResultado.Size = new Size(0, 15);
             lbResultado.TabIndex = 7;
-            lbResultado.Text = "resultado";
             // 
             // tbContraseña
             // 
-            tbContraseña.Location = new Point(282, 298);
+            tbContraseña.Location = new Point(800, 600);
             tbContraseña.Name = "tbContraseña";
             tbContraseña.PlaceholderText = "Contraseña";
             tbContraseña.Size = new Size(195, 23);
@@ -122,7 +121,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1859, 897);
             Controls.Add(tbContraseña);
             Controls.Add(lbResultado);
             Controls.Add(tbID);
