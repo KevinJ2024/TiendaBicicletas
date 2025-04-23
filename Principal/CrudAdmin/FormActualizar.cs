@@ -45,13 +45,13 @@ namespace Principal
                     tbSalario = new TextBox();
                     tbSalario.Name = "tbSalario";
                     tbSalario.Location = new Point(800, 600);
-                    tbContraseña.Location = new Point(800,650);
+                    tbContraseña.Location = new Point(800, 650);
                     tbSalario.Size = new Size(195, 23);
                     tbSalario.PlaceholderText = "Ingrese el salario";
 
-                    btnConfirmar.Location = new Point(750,700);
-                    btnCancelar.Location = new Point(950,700);
-                    lbResultado.Location = new Point(800,750);
+                    btnConfirmar.Location = new Point(750, 700);
+                    btnCancelar.Location = new Point(950, 700);
+                    lbResultado.Location = new Point(800, 750);
 
                     this.Controls.Add(tbSalario);
                     break;
@@ -262,6 +262,11 @@ namespace Principal
                 tbDescripcion_producto.Text = "";
                 EliminarTodosLosPictureBox();
             }
+        }
+
+        private void FormActualizar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

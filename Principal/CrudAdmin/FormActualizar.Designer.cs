@@ -40,25 +40,37 @@
             tbContraseña = new TextBox();
             SuspendLayout();
             // 
-            // lbTitle
+            // tbID
             // 
-            lbTitle.AutoSize = true;
-            lbTitle.Font = new Font("Segoe UI", 20F);
-            lbTitle.Location = new Point(780, 300);
-            lbTitle.Name = "lbTitle";
-            lbTitle.Size = new Size(121, 37);
-            lbTitle.TabIndex = 0;
-            lbTitle.Text = "Actualizar ";
+            tbID.Location = new Point(800, 400);
+            tbID.Name = "tbID";
+            tbID.PlaceholderText = "ID ";
+            tbID.Size = new Size(195, 23);
+            tbID.TabIndex = 6;
             // 
-            // btnConfirmar
+            // tbNombre
             // 
-            btnConfirmar.Location = new Point(750, 650);
-            btnConfirmar.Name = "btnConfirmar";
-            btnConfirmar.Size = new Size(112, 48);
-            btnConfirmar.TabIndex = 1;
-            btnConfirmar.Text = "Actualizar";
-            btnConfirmar.UseVisualStyleBackColor = true;
-            btnConfirmar.Click += btnConfirmar_Click;
+            tbNombre.Location = new Point(800, 450);
+            tbNombre.Name = "tbNombre";
+            tbNombre.PlaceholderText = "Nombre ";
+            tbNombre.Size = new Size(195, 23);
+            tbNombre.TabIndex = 5;
+            // 
+            // tbTelefono
+            // 
+            tbTelefono.Location = new Point(800, 550);
+            tbTelefono.Name = "tbTelefono";
+            tbTelefono.PlaceholderText = "Telefono";
+            tbTelefono.Size = new Size(195, 23);
+            tbTelefono.TabIndex = 4;
+            // 
+            // tbEmail
+            // 
+            tbEmail.Location = new Point(800, 500);
+            tbEmail.Name = "tbEmail";
+            tbEmail.PlaceholderText = "Email";
+            tbEmail.Size = new Size(195, 23);
+            tbEmail.TabIndex = 3;
             // 
             // btnCancelar
             // 
@@ -70,54 +82,25 @@
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // tbEmail
+            // btnConfirmar
             // 
-            tbEmail.Location = new Point(800, 500);
-            tbEmail.Name = "tbEmail";
-            tbEmail.PlaceholderText = "Email";
-            tbEmail.Size = new Size(195, 23);
-            tbEmail.TabIndex = 3;
+            btnConfirmar.Location = new Point(750, 650);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.Size = new Size(112, 48);
+            btnConfirmar.TabIndex = 1;
+            btnConfirmar.Text = "Actualizar";
+            btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
-            // tbTelefono
+            // lbTitle
             // 
-            tbTelefono.Location = new Point(800, 550);
-            tbTelefono.Name = "tbTelefono";
-            tbTelefono.PlaceholderText = "Telefono";
-            tbTelefono.Size = new Size(195, 23);
-            tbTelefono.TabIndex = 4;
-            // 
-            // tbNombre
-            // 
-            tbNombre.Location = new Point(800, 450);
-            tbNombre.Name = "tbNombre";
-            tbNombre.PlaceholderText = "Nombre ";
-            tbNombre.Size = new Size(195, 23);
-            tbNombre.TabIndex = 5;
-            // 
-            // tbID
-            // 
-            tbID.Location = new Point(800, 400);
-            tbID.Name = "tbID";
-            tbID.PlaceholderText = "ID ";
-            tbID.Size = new Size(195, 23);
-            tbID.TabIndex = 6;
-            // 
-            // lbResultado
-            // 
-            lbResultado.AutoSize = true;
-            lbResultado.Location = new Point(840, 720);
-            lbResultado.Name = "lbResultado";
-            lbResultado.Size = new Size(56, 15);
-            lbResultado.TabIndex = 7;
-            lbResultado.Text = "";
-            // 
-            // tbContraseña
-            // 
-            tbContraseña.Location = new Point(800, 600);
-            tbContraseña.Name = "tbContraseña";
-            tbContraseña.PlaceholderText = "Contraseña";
-            tbContraseña.Size = new Size(195, 23);
-            tbContraseña.TabIndex = 8;
+            lbTitle.AutoSize = true;
+            lbTitle.Font = new Font("Segoe UI", 20F);
+            lbTitle.Location = new Point(780, 300);
+            lbTitle.Name = "lbTitle";
+            lbTitle.Size = new Size(140, 37);
+            lbTitle.TabIndex = 0;
+            lbTitle.Text = "Actualizar ";
             // 
             // btnBuscarEntidad
             // 
@@ -128,6 +111,23 @@
             btnBuscarEntidad.Text = "Buscar";
             btnBuscarEntidad.UseVisualStyleBackColor = true;
             btnBuscarEntidad.Click += btnBuscarEntidad_Click;
+            // 
+            // lbResultado
+            // 
+            lbResultado.AutoSize = true;
+            lbResultado.Location = new Point(840, 720);
+            lbResultado.Name = "lbResultado";
+            lbResultado.Size = new Size(0, 15);
+            lbResultado.TabIndex = 7;
+            // 
+            // tbContraseña
+            // 
+            tbContraseña.Location = new Point(800, 600);
+            tbContraseña.Name = "tbContraseña";
+            tbContraseña.PlaceholderText = "Contraseña";
+            tbContraseña.Size = new Size(195, 23);
+            tbContraseña.TabIndex = 8;
+            // 
             // FormActualizar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -145,6 +145,7 @@
             Controls.Add(lbTitle);
             Name = "FormActualizar";
             Text = "FormActuallizar";
+            Load += FormActualizar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
