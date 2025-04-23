@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Modelo.Entities;
 using Logica.Controllers.InicioController;
+using Logica.Controllers;
 
 namespace Principal
 {
@@ -27,8 +28,10 @@ namespace Principal
                 if (resultado == "Login exitoso. Usuario encontrado")
                 {
                     MessageBox.Show(resultado, "Resultado del Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    FormPrincipalCliente cliente = new FormPrincipalCliente();
-                    cliente.ShowDialog();
+                    ClienteController clienteController = new ClienteController();
+                    var cliente = clienteController.ConsultarClienteEmail(email);
+                    FormPrincipalCliente FormCliente = new FormPrincipalCliente(cliente.ID_cliente);
+                    FormCliente.ShowDialog();
                 }
                 else
                 {

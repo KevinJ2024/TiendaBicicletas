@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Modelo.DataEntities;
+using Modelo.Entities;
 
 namespace Logica.Controllers
 {
@@ -28,6 +29,14 @@ namespace Logica.Controllers
             }
 
             return resultado;
+        }
+
+        public List<HistorialEntity> MostrarProductos(int ID_Cliente)
+        {
+            DataHistorial db = new DataHistorial();
+            List<HistorialEntity> historialEntities = db.MostrarProductos(ID_Cliente);
+
+            return historialEntities;
         }
     }
 }

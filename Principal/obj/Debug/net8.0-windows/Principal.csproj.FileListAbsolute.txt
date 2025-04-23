@@ -48,3 +48,5 @@ C:\Users\SENA\Desktop\clone\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\
 C:\Users\SENA\Desktop\clone\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.genruntimeconfig.cache
 C:\Users\SENA\Desktop\clone\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\ref\Principal.dll
 C:\Users\SENA\Desktop\clone\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.Properties.Resources.resources
+C:\Users\SENA\Desktop\clone\TiendaBicicletas\Principal\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Users\SENA\Desktop\clone\TiendaBicicletas\Principal\obj\Debug\net8.0-windows\Principal.carrito.resources

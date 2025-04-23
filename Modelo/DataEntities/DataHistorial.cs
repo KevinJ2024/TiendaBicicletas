@@ -41,12 +41,14 @@ namespace Modelo.DataEntities
             return productoHistorial;
         }
 
-        public List<HistorialEntity> MostrarProductos()
+        public List<HistorialEntity> MostrarProductos(int ID_cliente)
         {
             List<HistorialEntity> productosHistorial = new List<HistorialEntity>();
             MySqlCommand cmd = GetConnection().CreateCommand();
-            cmd.CommandText = "SELECT * FROM historial";
+            cmd.CommandText = "SELECT * FROM historial WHERE ID_cliente = @ID_cliente";
+            cmd.Parameters.AddWithValue("@ID_cliente",ID_cliente);
             MySqlDataReader dr = cmd.ExecuteReader();
+            
 
             while (dr.Read())
             {

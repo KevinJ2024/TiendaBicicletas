@@ -36,6 +36,8 @@
             panel6 = new Panel();
             panel7 = new Panel();
             panel8 = new Panel();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -102,11 +104,28 @@
             panel8.Size = new Size(335, 403);
             panel8.TabIndex = 5;
             // 
+            // iconPictureBox1
+            // 
+            iconPictureBox1.BackColor = SystemColors.Control;
+            iconPictureBox1.ForeColor = SystemColors.ControlText;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ShoppingBag;
+            iconPictureBox1.IconColor = SystemColors.ControlText;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.IconSize = 96;
+            iconPictureBox1.InitialImage = null;
+            iconPictureBox1.Location = new Point(1720, 867);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(98, 96);
+            iconPictureBox1.TabIndex = 6;
+            iconPictureBox1.TabStop = false;
+            iconPictureBox1.Click += iconPictureBox1_Click;
+            // 
             // FormPrincipalCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1924, 1061);
+            Controls.Add(iconPictureBox1);
             Controls.Add(panel8);
             Controls.Add(panel7);
             Controls.Add(panel6);
@@ -117,6 +136,7 @@
             Controls.Add(panel1);
             Name = "FormPrincipalCliente";
             Text = "FormPrincipalCliente";
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -130,5 +150,6 @@
         private Panel panel6;
         private Panel panel7;
         private Panel panel8;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
